@@ -5,7 +5,7 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
-    <header class="block-header">
+   <header class="header">
       <div class="container-wrapper">
         <nav class="top-menu">
           <ul class="top-menu__items">
@@ -27,21 +27,25 @@
           </ul>
         </nav>
        </div>
-      <div class="block-about">
+    </header>
+    <main class="main">
+     <div class="about">
         <div class="container-wrapper">
-          <h1 class="block-about__header">Милые штуки ручной работы для дома</h1>
-          <div class="block-about__items">
-            <div class="block-about__item">
-              <span>Предметы интерьера</span>
+          <h1 class="about__header">Милые штуки ручной работы для дома</h1>
+          <div class="about__items">
+            <div class="about__item">
+              <h2>
+                <a href="#" class="about__link">Предметы интерьера</a>
+              </h2>
             </div>
-            <div class="block-about__item">
-              <span>Детские игрушки</span>
+            <div class="about__item">
+              <h2>
+                <a href="#" Детские игрушки>Детские игрушки</a>
+              </h2>
             </div>
           </div>
         </div>
       </div>
-    </header>
-    <main class="block-main">
       <article class="product-of-week">
         <div class="container-wrapper">
           <div class="product-of-week__header">
@@ -53,29 +57,43 @@
             </span>
           </div>
           <div class="product-of-week__description">
-            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+            <p>
+              Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+            </p>
           </div>
           <table class="product-of-week__exposition-items">
             <tr class="product-of-week__exposition-item">
-              <td class="product-of-week__parameter">Цвет:</td>
-              <td class="product-of-week__value">"Тиффани"/серый</td>
+              <td class="product-of-week__parameter">
+                <span>Цвет:</span>
+              </td>
+              <td class="product-of-week__value">
+                <span>"Тиффани"/серый</span>
+              </td>
             </tr>
             <tr class="product-of-week__exposition-item">
-              <td class="product-of-week__parameter">Диаметр:</td>
-              <td class="product-of-week__value">25 см</td>
+              <td class="product-of-week__parameter">
+                <span>Диаметр:</span>
+              </td>
+              <td class="product-of-week__value">
+                <span>25 см</span>
+              </td>
             </tr>
             <tr class="product-of-week__exposition-item">
-              <td class="product-of-week__parameter">Высота:</td>
-              <td class="product-of-week__value">15 см</td>
+              <td class="product-of-week__parameter">
+                <span>Высота:</span>
+              </td>
+              <td class="product-of-week__value">
+                <span>15 см</span>
+              </td>
             </tr>
           </table>
           <div class="product-of-week__image">
             <img src="" alt="">
           </div>
           <div class="product-of-week__price">
-            Цена: 900 руб.
+            <span>Цена: 900 руб.</span>
           </div>
-          <a href="#" class="product-of-week__btn"></a>
+          <a href="#" class="product-of-week__btn">Заказать</a>
         </div>
       </article>
       <div class="about-us">
@@ -95,7 +113,9 @@
           <div class="reviews__items">
             <div class="reviews__item">
               <div class="review__description">
-                Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!
+                <p>
+                  Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!sh
+                </p>
               </div>
               <cite class="review__name">Анастасия Красильникова</cite>
               <span class="review__address">@misssssiskras</span>
@@ -113,30 +133,38 @@
           <h2 class="contacts__title">Контакты</h2>
           <table class="contacts__information">
             <tr class="contacts__email">
-              <td class="contacts__item">e-mail:</td>
-              <td class="contacts__item">info@mimimishkashop.</td>
+              <td class="contacts__item">
+                <span>e-mail:</span>
+              </td>
+              <td class="contacts__item">
+                <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              </td>
             </tr>
             <tr class="contacts__address">
-              <td class="contacts__item">адрес:</td>
-              <td class="contacts__item">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+              <td class="contacts__item">
+                <span>адрес:</span>
+              </td>
+              <td class="contacts__item">
+                <span>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+              </td>
             </tr>
           </table>
         <div class="contacts__map"></div>
-        <a href="#" class="contacts__sent-message">Напишите нам</a>
+        <a href="#" class="contacts__send-message">Напишите нам</a>
         </div>
       </div>
     </main>
-    <footer class="block-footer">
+    <footer class="footer">
       <div class="container-wrapper">
-        <div class="block-footer__logo">
+        <div class="footer__logo">
           <img src="" alt="footer logo">
         </div>
-        <div class="block-footer__social-buttons">
-          <a href="#" class="block-footer__social-btn block-footer__social-btn--insta"></a>
-          <a href="#" class="block-footer__social-btn block-footer__social-btn--fb"></a>
-          <a href="#" class="block-footer__social-btn block-footer__social-btn--tw"></a>
+        <div class="footer__social-buttons">
+          <a href="#" class="footer__social-btn footer__social-btn--insta"></a>
+          <a href="#" class="footer__social-btn footer__social-btn--fb"></a>
+          <a href="#" class="footer__social-btn footer__social-btn--tw"></a>
         </div>
-        <div class="block-footer__creators">
+        <div class="footer__creators">
 
         </div>
       </div>
