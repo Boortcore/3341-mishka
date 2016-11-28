@@ -1,0 +1,10 @@
+.about-us {
+  font-family: 'Open Sans Bold';
+  &__title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  &__item {
+    font-size: 17px;
+  }
+}

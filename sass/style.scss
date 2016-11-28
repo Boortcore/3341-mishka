@@ -1,3 +1,18 @@
+@import 'variables';
+@import 'fonts';
+@import 'container-wrapper';
+@import 'header';
+@import 'top-menu';
+@import 'about';
+@import 'product-of-week';
+@import 'about-us';
+@import 'reviews';
+@import 'contacts';
+@import 'footer';
 body {
-  background: red;
+  font-family: 'Open Sans Regular';
+}
+
+a {
+  text-decoration: none;
 }

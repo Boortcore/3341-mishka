@@ -1,0 +1,11 @@
+.contacts {
+  color: $main-color;
+  &__title {
+    font-family: 'Open Sans Bold';
+    font-size: 25px;
+    line-height: 30px;
+  }
+  &__item a {
+    color: $main-color;
+  }
+}

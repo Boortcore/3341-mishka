@@ -4,14 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" href="css/style.css" >
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="header">
-    <div class="container-wrapper">
+    <div class="container-wrapper container-wrapper--first">
       <div class="header__logo">
-        <img src="#" alt="logo">
+        <img src="img/logo-mobile.svg" height="35" width="86" alt="logo">
       </div>
       <nav class="top-menu">
         <ul class="top-menu__items">
@@ -43,7 +43,7 @@
           </div>
           <div class="about__item">
             <h2>
-              <a href="#">Детские игрушки</a>
+              <a href="#" class="about__link">Детские игрушки</a>
             </h2>
           </div>
         </div>
@@ -91,43 +91,47 @@
           </tr>
         </table>
         <div class="product-of-week__image">
-          <img src="" alt="">
+          <img src="img/triple-set-mobile@1x.jpg" height="315" width="260" alt="">
         </div>
         <span class="product-of-week__price">Цена: 900 руб.</span>
         <a href="#" class="product-of-week__btn">Заказать</a>
       </div>
     </article>
     <section class="about-us">
-      <h2 class="about-us__title">Коротко о нас:</h2>
-      <ul class="about-us__items">
-        <li class="about-us__item">Экологически чистые материалы</li>
-        <li class="about-us__item">Скандинавский стиль по российской цене</li>
-        <li class="about-us__item">Увеличивает лайки на фотографиях</li>
-        <li class="about-us__item">Связано вручную с любовью и умилением</li>
-        <li class="about-us__item">Поддержка отечественного производителя</li>
-        <li class="about-us__item">Поставляется в подарочной упаковке</li>
-      </ul>
+      <div class="container-wrapper">
+        <h2 class="about-us__title">Коротко о нас:</h2>
+        <ul class="about-us__items">
+          <li class="about-us__item">Экологически чистые материалы</li>
+          <li class="about-us__item">Скандинавский стиль по российской цене</li>
+          <li class="about-us__item">Увеличивает лайки на фотографиях</li>
+          <li class="about-us__item">Связано вручную с любовью и умилением</li>
+          <li class="about-us__item">Поддержка отечественного производителя</li>
+          <li class="about-us__item">Поставляется в подарочной упаковке</li>
+        </ul>
+      </div>
+
     </section>
     <section class="reviews">
       <div class="container-wrapper">
         <h2 class="reviews__title">Отзывы</h2>
         <div class="reviews__items">
           <div class="reviews__item">
-            <div class="review__description">
+            <div class="reviews__description">
               <p>
                 Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!sh
               </p>
             </div>
-            <cite class="review__name">Анастасия Красильникова</cite>
-            <span class="review__address">@misssssiskras</span>
+            <cite class="reviews__name">Анастасия Красильникова</cite>
+            <span class="reviews__address">@misssssiskras</span>
           </div>
         </div>
+
+        <div class="reviews__buttons">
+          <a href="#" class="reviews__btn">Предыдущий отзывы</a>
+          <a href="#" class="reviews__btn">Следующий отзыв</a>
+        </div>
+        <a href="#" class="reviews__send-review">Написать</a>
       </div>
-      <div class="reviews__buttons">
-        <a href="#" class="reviews__btn">Предыдущий отзывы</a>
-        <a href="#" class="reviews__btn">Следующий отзыв</a>
-      </div>
-      <a href="#" class="reviews__send-review"></a>
     </section>
     <section class="contacts">
       <div class="container-wrapper">
@@ -150,25 +154,24 @@
             </td>
           </tr>
         </table>
-        <div class="contacts__map">
-
-        </div>
+      </div>
+      <div class="contacts__map">
+        <img src="img/map-mobile@1x.jpg" alt="">
+      </div>
+      <div class="container-wrapper">
         <a href="#" class="contacts__send-message">Напишите нам</a>
       </div>
     </section>
   </main>
   <footer class="footer">
     <div class="container-wrapper">
-      <div class="footer__logo">
-        <img src="" alt="footer logo">
-      </div>
       <div class="footer__social-buttons">
-        <a href="#" class="footer__social-btn footer__social-btn--insta"></a>
-        <a href="#" class="footer__social-btn footer__social-btn--fb"></a>
-        <a href="#" class="footer__social-btn footer__social-btn--tw"></a>
+        <a href="" class="footer__social-btn footer__social-btn--insta"></a>
+        <a href="" class="footer__social-btn footer__social-btn--fb"></a>
+        <a href="" class="footer__social-btn footer__social-btn--tw"></a>
       </div>
       <div class="footer__creators">
-
+        <h2 class="footer__title">Разработано</h2>
       </div>
     </div>
   </footer>

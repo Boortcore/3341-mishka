@@ -1,0 +1,20 @@
+.reviews {
+  &__title {
+    font-family: 'Open Sans Bold';
+    font-size: 25px;
+    line-height: 30px;
+  }
+  &__description {
+    color: $main-color;
+    line-height: 30px;
+  }
+  &__name {
+    font-family: 'Open Sans Bold';
+    font-size: 18px;
+    font-style: normal;
+  }
+  &__address {
+    color: $main-color;
+    font-size: 18px;
+  }
+}

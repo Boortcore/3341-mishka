@@ -1,0 +1,30 @@
+.product-of-week {
+  font-family: 'Open Sans Bold';
+  &__title a {
+    font-size: 25px;
+    line-height: 30px;
+    color: #000;
+  }
+  &__week {
+    color: #63d1bb;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 17px;
+  }
+  &__description {
+    font-family: 'Open Sans Regular';
+    color: $main-color;
+  }
+  &__exposition-items {
+    font-family: 'Open Sans Regular';
+    font-size: 15px;
+    line-height: 24px;
+  }
+  &__price {
+    font-siz: 17px;
+    line-height: 24px;
+  }
+  &__btn {
+    text-transform: uppercase;
+  }
+}
