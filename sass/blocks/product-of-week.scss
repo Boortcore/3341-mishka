@@ -1,5 +1,5 @@
 .product-of-week {
-  font-family: 'Open Sans Bold';
+  font-family: $main-font-bold;
   &__title a {
     @include general-title;
   }
@@ -10,17 +10,17 @@
     line-height: 17px;
   }
   &__description {
-    font-family: 'Open Sans Regular';
+    font-family: $main-font-regular;
     color: $main-color;
   }
   &__exposition-items {
-    font-family: 'Open Sans Regular';
+    font-family: $main-font-regular;
     font-size: 15px;
   }
   &__price {
     font-siz: 17px;
   }
   &__btn {
-    text-transform: uppercase;
+
   }
 }
