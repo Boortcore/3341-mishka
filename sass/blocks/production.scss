@@ -1,0 +1,12 @@
+.production{
+  &__title{
+    font-family: 'Open Sans Bold';
+    font-size: 17px;
+    line-height: 24px;
+  }
+  &__description{
+    color: $main-color;
+    font-size: 13px;
+    line-height: 24px;
+  }
+}

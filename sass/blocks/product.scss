@@ -1,0 +1,20 @@
+.product{
+  &__title{
+    font-family: 'Open Sans Bold';
+    font-size: 17px;
+    line-height: 24px;
+    a {
+      color: #000;
+    }
+  }
+  &__value{
+    color: $main-color;
+    font-size: 13px;
+    line-height: 30px;
+  }
+  &__price{
+    font-family: 'Open Sans Bold';
+    font-size: 15px;
+    line-height: 24px;
+  }
+}

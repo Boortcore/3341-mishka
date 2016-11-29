@@ -1,4 +1,6 @@
 .about {
+  font-family: 'Open Sans Bold';
+  background-image: url('../img/hero-mobile@1x.jpg');
   &__header {
     line-height: 30px;
     font-size: 27px;
@@ -9,6 +11,4 @@
     font-size: 19px;
     color: #fff;
   }
-  font-family: 'Open Sans Bold';
-  background-image: url('../img/hero-mobile@1x.jpg');
 }
