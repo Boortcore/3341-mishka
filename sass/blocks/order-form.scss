@@ -1,0 +1,30 @@
+.order-form {
+  &__description {
+    color: $main-color;
+    font-size: 13px;
+    line-height: 24px;
+  }
+  &__title {
+    font-family: 'Open Sans Bold';
+    text-transform: uppercase;
+    color: $style-color;
+    font-size: 17px;
+    line-height: 16px;
+    
+  } 
+  &__values { 
+    input[type='radio'],input[type='checkbox'] {
+      display: none;
+    }
+    label {
+      font-family: 'Open Sans Bold';
+      display: block;
+      font-size: 17px;
+      line-height: 16px;
+    }
+  }
+  &__more-info-text{
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
