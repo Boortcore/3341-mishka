@@ -9,13 +9,11 @@
     padding: 28px;
   }
   &__title {
-    font-family: 'Open Sans Bold';
+    font-family: $main-font-bold;
     font-size: 17px;
-    line-height: 24px;
   }
   &__description {
     color: $main-color;
     font-size: 13px;
-    line-height: 24px;
   }
 }

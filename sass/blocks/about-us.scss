@@ -1,8 +1,7 @@
 .about-us {
-  font-family: 'Open Sans Bold';
+  font-family: $main-font-bold;
   &__title {
-    font-size: 25px;
-    line-height: 30px;
+    @include general-title;
   }
   &__item {
     font-size: 17px;

@@ -1,31 +1,27 @@
-.product{
+.product {
   margin-top: 30px;
   border: 1px solid #ededed;
   border-radius: 4px;
-  
-  &__product-wrapper{
+  &__product-wrapper {
     padding: 28px;
   }
-  &__title{
+  &__title {
     font-family: 'Open Sans Bold';
     font-size: 17px;
-    line-height: 24px;
     a {
       color: #000;
     }
   }
-  &__image img{
+  &__image img {
     width: 100%;
   }
-  &__value{
+  &__value {
     color: $main-color;
     font-size: 13px;
     line-height: 30px;
   }
-  &__price{
-    font-family: 'Open Sans Bold';
+  &__price {
+    font-family: $main-font-bold;
     font-size: 15px;
-    line-height: 24px;
   }
-  
 }

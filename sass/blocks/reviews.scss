@@ -1,15 +1,13 @@
 .reviews {
   &__title {
-    font-family: 'Open Sans Bold';
-    font-size: 25px;
-    line-height: 30px;
+    @include general-title;
   }
   &__description {
     color: $main-color;
     line-height: 30px;
   }
   &__name {
-    font-family: 'Open Sans Bold';
+    font-family: $main-font-bold;
     font-size: 18px;
     font-style: normal;
   }

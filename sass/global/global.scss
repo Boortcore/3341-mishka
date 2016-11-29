@@ -1,5 +1,6 @@
-sbody {
-  font-family: 'Open Sans Regular';
+body {
+  font-family: $main-font-regular;
+  line-height: 24px;
 }
 
 a {
