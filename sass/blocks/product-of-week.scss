@@ -1,7 +1,10 @@
 .product-of-week {
   font-family: $main-font-bold;
-  &__title a {
-    @include general-title;
+  &__title  {
+    a{
+      @include general-title;
+    }
+    
   }
   &__week {
     color: #63d1bb;
