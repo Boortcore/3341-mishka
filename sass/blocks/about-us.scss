@@ -1,0 +1,9 @@
+.about-us {
+  font-family: $main-font-bold;
+  &__title {
+    @include general-title;
+  }
+  &__item {
+    font-size: 17px;
+  }
+}

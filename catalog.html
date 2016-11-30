@@ -4,28 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
-</head>
+  <link rel="stylesheet" href="css/style.css"> </head>
 
 <body>
   <header class="header">
-    <div class="container-wrapper">
-      <div class="header__logo">
-        <img src="#" alt="logo">
-      </div>
+    <div class="container-wrapper container-wrapper--first">
+      <div class="header__logo"> <img src="img/logo-mobile.svg" height="35" width="86" alt="logo"> </div>
       <nav class="top-menu">
         <ul class="top-menu__items">
-          <li class="top-menu__item">
-            <a href="#">Каталог товаров</a>
-          </li>
-          <li class="top-menu__item">
-            <a href="#">Вязание на заказ</a>
-          </li>
-          <li class="top-menu__item">
-            <a href="#">Поиск по сайту</a>
-          </li>
-          <li class="top-menu__item">
-            <a href="#">Корзина: пока пуста</a>
-          </li>
+          <li class="top-menu__item"> <a href="#">Каталог товаров</a> </li>
+          <li class="top-menu__item"> <a href="#">Вязание на заказ</a> </li>
+          <li class="top-menu__item"> <a href="#">Поиск по сайту</a> </li>
+          <li class="top-menu__item"> <a href="#">Корзина: пока пуста</a> </li>
         </ul>
       </nav>
     </div>
@@ -33,80 +23,60 @@
   <main class="main">
     <div class="container-wrapper">
       <section class="about">
-        <h1 class="about__header">Каталог товаров</h1>
-      </section>
+        <h1 class="about__header">Каталог товаров</h1> </section>
       <article class="product">
-        <a href="#" class="product__image">
-          <img src="#" alt="">
-        </a>
-        <div class="product__description">
-          <h1 class="product__title">
+        <a href="#" class="product__image"> <img src="img/photo-1-mobile@1x.jpg" alt=""> </a>
+        <div class="product__product-wrapper">
+          <div class="product__description">
+            <h1 class="product__title">
             <a href="#">Зайчик-попрыгайчик</a>
-          </h1>
-          <span class="product__value">Рост 30 см, вес 200 г</span>
-        </div>
-        <div class="product__sale">
-          <span class="product__price">1200 руб.</span>
-          <a href="#" class="product__add-btn">Добавить в корзину</a>
+          </h1> <span class="product__value">Рост 30 см, вес 200 г</span> </div>
+          <div class="product__sale"> <span class="product__price">1200 руб.</span> <a href="#" class="product__add-btn">Добавить в корзину</a> </div>
         </div>
       </article>
       <article class="product">
-        <a href="#" class="product__image">
-          <img src="#" alt="">
-        </a>
-        <div class="product__description">
-          <h1 class="product__title">
+        <a href="#" class="product__image"> <img src="img/photo-2-mobile@1x.jpg" alt=""> </a>
+        <div class="product__product-wrapper">
+          <div class="product__description">
+            <h1 class="product__title">
             <a href="#">Корзинка для белья</a>
           </h1>
-          <p class="product__value">Диаметр 15 см, высота 10 см</p>
-        </div>
-        <div class="product__sale">
-          <span class="product__price">690 руб.</span>
-          <a href="#" class="product__add-btn">Добавить в корзину</a>
+            <p class="product__value">Диаметр 15 см, высота 10 см</p>
+          </div>
+          <div class="product__sale"> <span class="product__price">690 руб.</span> <a href="#" class="product__add-btn">Добавить в корзину</a> </div>
         </div>
       </article>
       <article class="product">
-        <a href="#" class="product__image">
-          <img src="#" alt="">
-        </a>
-        <div class="product__description">
-          <h1 class="product__title">
+        <a href="#" class="product__image"> <img src="img/photo-3-mobile@1x.jpg" alt=""> </a>
+        <div class="product__product-wrapper">
+          <div class="product__description">
+            <h1 class="product__title">
             <a href="#">Большая корзинка для игрушек</a>
           </h1>
-          <p class="product__value">Диаметр 30 см, высота 30 см</p>
-        </div>
-        <div class="product__sale">
-          <span class="product__price">1 500 руб.</span>
-          <a href="#" class="product__add-btn">Добавить в корзину</a>
+            <p class="product__value">Диаметр 30 см, высота 30 см</p>
+          </div>
+          <div class="product__sale"> <span class="product__price">1 500 руб.</span> <a href="#" class="product__add-btn">Добавить в корзину</a> </div>
         </div>
       </article>
       <article class="production">
         <h1 class="production__title">Процесс производства</h1>
-        <div class="production__video">
-
-        </div>
-        <div class="production__description">
-          <p>
-            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-          </p>
-          <a href="#" class="production__buy-btn">Сделать заказ</a>
+        <div class="production__video"> <img src="img/video-mobile@1x.jpg" alt=""> </div>
+        <div class="production__production-wrapper">
+          <div class="production__description">
+            <p> По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары. </p> <a href="#" class="button">Сделать заказ</a> </div>
         </div>
       </article>
     </div>
   </main>
   <footer class="footer">
     <div class="container-wrapper">
-      <div class="footer__logo">
-        <img src="" alt="footer logo">
-      </div>
       <div class="footer__social-buttons">
         <a href="#" class="footer__social-btn footer__social-btn--insta"></a>
         <a href="#" class="footer__social-btn footer__social-btn--fb"></a>
         <a href="#" class="footer__social-btn footer__social-btn--tw"></a>
       </div>
       <div class="footer__creators">
-
-      </div>
+        <h2 class="footer__title">Разработано</h2> </div>
     </div>
   </footer>
 </body>

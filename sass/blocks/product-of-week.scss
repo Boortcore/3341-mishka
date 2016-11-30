@@ -1,0 +1,29 @@
+.product-of-week {
+  font-family: $main-font-bold;
+  &__title  {
+    a{
+      @include general-title;
+    }
+    
+  }
+  &__week {
+    color: #63d1bb;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 17px;
+  }
+  &__description {
+    font-family: $main-font-regular;
+    color: $main-color;
+  }
+  &__exposition-items {
+    font-family: $main-font-regular;
+    font-size: 15px;
+  }
+  &__price {
+    font-siz: 17px;
+  }
+  &__btn {
+
+  }
+}

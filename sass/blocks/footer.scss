@@ -1,0 +1,8 @@
+.footer {
+  font-family: $main-font-bold;
+  background-color: $footer-bg;
+  &__title {
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
