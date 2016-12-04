@@ -26,4 +26,10 @@
       margin-left: 130px;
     }
   }
+
+  &--production {
+    @include respond-to(tablet) {
+      max-width: 100%;
+    }
+  }
 }
