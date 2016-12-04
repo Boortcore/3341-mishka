@@ -52,7 +52,6 @@
       padding-left: 40px;
     }
   }
-
   &__map {
     @include respond-to(desktop) {
       position: absolute;

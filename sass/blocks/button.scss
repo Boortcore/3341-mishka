@@ -26,7 +26,6 @@
       margin-left: 175px;
     }
   }
-
   &--production {
     @include respond-to(tablet) {
       max-width: 100%;
