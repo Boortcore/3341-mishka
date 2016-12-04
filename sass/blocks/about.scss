@@ -10,7 +10,6 @@
     @include respond-to(desktop) {
       @include general-title-desktop;
     }
-
   }
   &__link {
     line-height: 24px;
@@ -19,7 +18,6 @@
     @include respond-to(tablet) {
       font-size: 20px;
       line-height: 30px;
-
     }
   }
   &__item {
@@ -33,5 +31,10 @@
   }
   &__item--toys {
     background-color: $color-turquoise;
+  }
+  @include respond-to(tablet) {
+    &__wrapper {
+      padding: 40px;
+    }
   }
 }

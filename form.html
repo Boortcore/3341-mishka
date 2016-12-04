@@ -40,9 +40,9 @@
           </div>
         </section>
         <section class="order-form__section">
-          <div class="order-form__item">
+          <div class="order-form__item order-form__item--colors">
             <div class="order-form__title"> <span>Цвет</span> </div>
-            <div class="order-form__values">
+            <div class="order-form__values order-form__values--colors">
               <input type="checkbox" name="white">
               <label for="white">Белый</label>
               <input type="checkbox" name="grey">
@@ -100,7 +100,7 @@
             <div class="order-form__values order-form__values--more-info">
               <textarea name="more-info" id="more-info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
-            <p class="order-form__more-info-text">Все поля являются обязательными</p>
+            <p class="order-form__more-info-text">* Все поля являются обязательными</p>
           </div>
         </section>
         <button class="button" type="submit">Отправить заказ</button>
@@ -108,14 +108,25 @@
     </div>
   </main>
   <footer class="footer">
-    <div class="container-wrapper">
+    <div class="container-wrapper footer__wrapper">
+      <div class="footer__logo">
+        <img src="img/logo-mobile.svg" height="35" width="86" alt="logo">
+      </div>
       <div class="footer__social-buttons">
-        <a href="#" class="footer__social-btn footer__social-btn--insta"></a>
-        <a href="#" class="footer__social-btn footer__social-btn--fb"></a>
-        <a href="#" class="footer__social-btn footer__social-btn--tw"></a>
+        <a href="#" class="footer__social-btn footer__social-btn--insta">
+          <img src="img/icon-insta.svg" alt="">
+        </a>
+        <a href="#" class="footer__social-btn footer__social-btn--fb">
+          <img src="img/icon-fb.svg" alt="">
+        </a>
+        <a href="#" class="footer__social-btn footer__social-btn--tw">
+          <img src="img/icon-twitter.svg" alt="">
+        </a>
       </div>
       <div class="footer__creators">
-        <h2 class="footer__title">Разработано</h2> </div>
+        <h2 class="footer__title">Разработано</h2>
+        <img src="img/logo-htmlacademy.svg" alt="">
+      </div>
     </div>
   </footer>
 </body>

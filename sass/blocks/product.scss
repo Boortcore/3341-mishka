@@ -8,6 +8,11 @@
   @include respond-to(tablet) {
     flex-direction: row;
   }
+  @include respond-to(desktop) {
+    flex-direction: column;
+    width: 315px;
+
+  }
   &__product-wrapper {
     padding: 28px;
     display: flex;
