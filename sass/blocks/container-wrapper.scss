@@ -1,18 +1,17 @@
 .container-wrapper {
-  width: 320px;
-  padding: 0 30px;
+  width: 262px;
   margin: 0 auto;
   position: relative;
-
-  &--no-padding {
-    padding: 0;
-  }
-
   @include respond-to(tablet) {
-    width: 758px;
+    width: 668px;
   }
-
   @include respond-to(desktop) {
-    width: 1150px;
+    width: 1050px;
+  }
+  &--map {
+    width: 320px;
+    @include respond-to(tablet) {
+      width: 768px;
+    }
   }
 }
