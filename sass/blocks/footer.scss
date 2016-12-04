@@ -1,8 +1,41 @@
 .footer {
   font-family: $main-font-bold;
   background-color: $footer-bg;
+  padding-top: 55px;
+  padding-bottom: 45px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include respond-to(tablet) {
+      flex-direction: row;
+      justify-content: space-between
+    }
+  }
   &__title {
     font-size: 19px;
     line-height: 18px;
+  }
+  &__logo {
+    display: none;
+    @include respond-to(tablet) {
+      display: block;
+    }
+  }
+  &__social-buttons {
+    display: flex;
+    justify-content: space-around;
+    @include respond-to(tablet) {
+      width: 147px;
+    }
+  }
+  &__creators {
+    display: flex;
+    justify-content: space-around;
+
+    @include respond-to(tablet) {
+      justify-content: space-between;
+      width: 190px;
+    }
   }
 }

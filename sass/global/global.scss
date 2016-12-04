@@ -1,6 +1,10 @@
+html {
+  min-width: 320px;
+}
 body {
   font-family: $main-font-regular;
   line-height: 24px;
+
 }
 
 a {
@@ -9,4 +13,8 @@ a {
 
 * {
   box-sizing: border-box
+}
+
+li {
+  list-style: none;
 }

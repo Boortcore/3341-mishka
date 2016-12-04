@@ -1,4 +1,18 @@
 .container-wrapper {
   width: 320px;
   padding: 0 30px;
+  margin: 0 auto;
+  position: relative;
+
+  &--no-padding {
+    padding: 0;
+  }
+
+  @include respond-to(tablet) {
+    width: 758px;
+  }
+
+  @include respond-to(desktop) {
+    width: 1200px;
+  }
 }
