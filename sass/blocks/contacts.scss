@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     @include respond-to(desktop) {
-      margin-left: 190px;
+      padding-left: 190px;
     }
   }
   &__title {
@@ -47,17 +47,12 @@
     }
   }
   &__value {
-    padding-left: 10px;
+    padding-left: 25px;
     @include respond-to(tablet) {
-      padding-left: 20px;
+      padding-left: 40px;
     }
   }
-  &__email,
-  &__address {
-    @include respond-to(tablet) {
-      padding-right: 20px;
-    }
-  }
+
   &__map {
     @include respond-to(desktop) {
       position: absolute;

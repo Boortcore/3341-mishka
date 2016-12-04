@@ -34,7 +34,7 @@
   &__buttons {
     @include respond-to(tablet) {
       position: absolute;
-      right: 0;
+      right: 50px;
       bottom: 10px;
       display: inline-block;
     }
