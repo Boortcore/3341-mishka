@@ -1,21 +1,46 @@
 .production {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   margin-top: 30px;
   border: 1px solid #ededed;
   border-radius: 4px;
+  @include respond-to(desktop) {
+    flex-direction: row;
+  }
   &__video {
     img {
       width: 100%;
+      @include respond-to(desktop) {
+        min-width: 680px;
+      }
+    }
+    @include respond-to(tablet) {
+      order: -1;
     }
   }
   &__production-wrapper {
-    padding: 28px;
+    padding-right: 28px;
+    padding-left: 28px;
   }
   &__title {
     font-family: $main-font-bold;
     font-size: 17px;
+    @include respond-to(desktop) {
+      font-size: 20px;
+      position: absolute;
+      top: 50px;
+      right: 100px;
+    }
   }
   &__description {
     color: $main-color;
     font-size: 13px;
+    @include respond-to(tablet) {
+      font-size: 15px;
+    }
+    @include respond-to(desktop) {
+      padding-top: 80px;
+    }
   }
 }

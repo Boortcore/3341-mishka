@@ -1,12 +1,40 @@
 .about {
   font-family: $main-font-bold;
   background-image: url('../img/hero-mobile@1x.jpg');
+  font-size: 0;
   &__header {
     @include general-title;
+    @include respond-to(tablet) {
+      @include general-title-tablet;
+    }
+    @include respond-to(desktop) {
+      @include general-title-desktop;
+    }
   }
   &__link {
     line-height: 24px;
     font-size: 19px;
     color: #fff;
+    @include respond-to(tablet) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+  &__item {
+    @include respond-to(tablet) {
+      display: inline-block;
+      width: 50%;
+    }
+  }
+  &__item--home {
+    background-color: $color-aqua;
+  }
+  &__item--toys {
+    background-color: $color-turquoise;
+  }
+  @include respond-to(tablet) {
+    &__wrapper {
+      padding: 40px;
+    }
   }
 }

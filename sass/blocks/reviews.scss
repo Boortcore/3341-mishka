@@ -1,18 +1,42 @@
 .reviews {
+  @include respond-to(tablet) {
+    padding-top: 80px;
+  }
   &__title {
     @include general-title;
+    @include respond-to(tablet) {
+      @include general-title-tablet;
+    }
+    @include respond-to(desktop) {
+      @include general-title-desktop;
+    }
   }
   &__description {
     color: $main-color;
     line-height: 30px;
+    font-size: 15px;
+    @include respond-to(tablet) {
+      font-size: 17px;
+    }
   }
   &__name {
     font-family: $main-font-bold;
-    font-size: 18px;
+    font-size: 17px;
     font-style: normal;
   }
   &__address {
     color: $main-color;
-    font-size: 18px;
+    font-size: 17px;
+    @include respond-to(tablet) {
+      display: block;
+    }
+  }
+  &__buttons {
+    @include respond-to(tablet) {
+      position: absolute;
+      right: 50px;
+      bottom: 10px;
+      display: inline-block;
+    }
   }
 }

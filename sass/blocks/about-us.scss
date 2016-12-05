@@ -1,9 +1,36 @@
 .about-us {
   font-family: $main-font-bold;
+  font-size: 0;
   &__title {
     @include general-title;
+    @include respond-to(tablet) {
+      @include general-title-tablet;
+    }
+    @include respond-to(desktop) {
+  @include general-title-desktop;
+}
   }
   &__item {
     font-size: 17px;
+    list-style: none;
+    @include respond-to(tablet) {
+      width: 46%;
+      font-size: 20px;
+    }
+    @include respond-to(desktop) {
+      width: 46%;
+      font-size: 20px;
+      padding: 60px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    @include respond-to(tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 }

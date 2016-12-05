@@ -1,11 +1,62 @@
 .contacts {
   color: $main-color;
+  line-height: 30px;
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    @include respond-to(desktop) {
+      padding-left: 175px;
+    }
+  }
   &__title {
     font-family: $main-font-bold;
     font-size: 18px;
-    line-height: 30px;
+    color: $black;
+    @include respond-to(tablet) {
+      @include general-title-tablet;
+    }
+    @include respond-to(desktop) {
+      @include general-title-desktop;
+    }
   }
-  &__item a {
-    color: $main-color;
+  &__item {
+    a {
+      color: $main-color;
+    }
+  }
+  &__information {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include respond-to(tablet) {
+      font-size: 17px;
+    }
+    @include respond-to(desktop) {
+      width: 40%;
+    }
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    padding-bottom: 29px;
+    @include respond-to(tablet) {
+      max-width: 300px;
+    }
+  }
+  &__value {
+    padding-left: 25px;
+    @include respond-to(tablet) {
+      padding-left: 40px;
+    }
+  }
+  &__map {
+    @include respond-to(desktop) {
+      position: absolute;
+      right: -90px;
+      bottom: -144px;
+    }
   }
 }

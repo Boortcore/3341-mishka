@@ -2,28 +2,85 @@
   &__description {
     color: $main-color;
     font-size: 13px;
+    @include respond-to(tablet) {
+      font-size: 17px;
+    }
   }
   &__item {
     font-size: 17px;
     line-height: 16px;
+    label {
+      font-family: $main-font-bold;
+      margin-top: 18px;
+      margin-bottom: 18px;
+      @include respond-to(tablet) {
+        font-size: 19px;
+        line-height: 18px;
+        margin-top: 28px;
+        margin-bottom: 28px;
+      }
+    }
+    input {
+      margin-top: 18px;
+      margin-bottom: 18px;
+    }
+    @include respond-to(tablet) {
+      margin-top: 28px;
+      margin-bottom: 28px;
+    }
   }
   &__title {
     font-family: $main-font-bold;
     text-transform: uppercase;
     color: $style-color;
+    @include respond-to(tablet) {
+      position: absolute;
+      left: 0px;
+      top: 28px;
+    }
   }
   &__values {
+    display: flex;
+    flex-direction: column;
     input[type='radio'],
     input[type='checkbox'] {
       display: none;
     }
     label {
-      font-family: $main-font-bold;
-      display: block;
+      @include respond-to(tablet) {
+        width: 50%;
+      }
+      @include respond-to(desktop) {
+        width: 33%;
+      }
+    }
+    &--colors {
+      @include respond-to(tablet) {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
     }
   }
   &__more-info-text {
     font-size: 14px;
     line-height: 16px;
+    color: $main-color;
+    @include respond-to(tablet) {
+      font-size: 17px;
+      line-height: 30px;
+      position: absolute;
+      right: 0;
+      top: 60px;
+    }
+  }
+  &__section {
+    position: relative;
+    @include respond-to(tablet) {
+      padding-left: 170px;
+    }
+    @include respond-to(tablet) {
+      font-size: 17px;
+      line-height: 16px;
+    }
   }
 }

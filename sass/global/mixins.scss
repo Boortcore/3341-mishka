@@ -4,3 +4,37 @@
   line-height: 30px;
   color: #000;
 }
+
+@mixin general-title-tablet() {
+  font-family: $main-font-bold;
+  font-size: 43px;
+  line-height: 50px;
+  color: #000;
+}
+
+@mixin general-title-desktop() {
+  font-family: $main-font-bold;
+  font-size: 53px;
+  line-height: 57px;
+  color: #000;
+}
+
+@mixin respond-to($media) {
+
+  @if $media == tablet {
+    @media screen and (min-width: $tablet-width) { @content }
+  };
+
+  @if $media == desktop {
+    @media screen and (min-width: $desktop-width) { @content; }
+  }
+}
+
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

@@ -10,4 +10,25 @@
   background: #fff;
   width: 100%;
   box-sizing: border-box;
+  @include respond-to(tablet) {
+    max-width: 293px;
+  }
+  &--reviews {
+    @include respond-to(tablet) {
+      position: absolute;
+      top: 0;
+      right: 50px;
+    }
+  }
+  &--write-us {
+    @include respond-to(tablet) {}
+    @include respond-to(desktop) {
+      margin-left: 175px;
+    }
+  }
+  &--production {
+    @include respond-to(tablet) {
+      max-width: 100%;
+    }
+  }
 }
