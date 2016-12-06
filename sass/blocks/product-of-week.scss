@@ -1,7 +1,7 @@
 .product-of-week {
   font-family: $main-font-bold;
   font-size: 15px;
-  @include respond-to(desktop) {}
+  margin-bottom: 40px;
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -11,6 +11,7 @@
     }
   }
   &__title {
+    margin-bottom: 4px;
     a {
       @include general-title;
       @include respond-to(tablet) {
@@ -41,7 +42,9 @@
   &__description {
     font-family: $main-font-regular;
     color: $main-color;
-    line-height: 30px;
+    line-height: 24px;
+    padding-top: 5px;
+
     @include respond-to(tablet) {
       width: 45%;
       font-size: 17px;
@@ -52,13 +55,32 @@
     font-family: $main-font-regular;
   }
   &__price {
+    color: $main-color;
     font-size: 17px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 25px;
   }
   &__image {
+    margin-bottom: 19px;
     @include respond-to(tablet) {
       position: absolute;
       right: 30px;
       top: 90px;
     }
+  }
+
+  &__exposition-items {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 27px;
+  }
+  &__parameter, &__value {
+    padding: 10px;
+    border-bottom: 1px solid #ececec;
+  }
+  &__parameter {
+    padding-left: 0;
+    padding-right: 4%
   }
 }

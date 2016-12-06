@@ -5,12 +5,13 @@
   background-position: top center;
   background-color: #f9f9f9;
   font-size: 0;
+  margin-bottom: 6px;
   &__header {
     font-size: 27px;
     line-height: 30px;
     color: #000;
-    padding-top: 73px;
-    padding-bottom: 120px;
+    padding-top: 72px;
+    padding-bottom: 121px;
     margin: 0;
     text-align: center;
     @include respond-to(tablet) {
@@ -21,7 +22,7 @@
     }
   }
   &__link {
-    line-height: 26px;
+    line-height: 24px;
     font-size: 19px;
     color: #fff;
     width: 110px;

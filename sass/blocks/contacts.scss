@@ -13,6 +13,7 @@
     font-family: $main-font-bold;
     font-size: 18px;
     color: $black;
+    margin-bottom: 25px;
     @include respond-to(tablet) {
       @include general-title-tablet;
     }
@@ -47,7 +48,7 @@
     }
   }
   &__value {
-    padding-left: 25px;
+    padding-left: 30px;
     @include respond-to(tablet) {
       padding-left: 40px;
     }

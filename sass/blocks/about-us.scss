@@ -1,18 +1,25 @@
 .about-us {
   font-family: $main-font-bold;
   font-size: 0;
+  padding-bottom: 17px;
   &__title {
     @include general-title;
     @include respond-to(tablet) {
       @include general-title-tablet;
     }
     @include respond-to(desktop) {
-  @include general-title-desktop;
-}
+      @include general-title-desktop;
+    }
+  }
+  &__items {
+    padding: 0;
   }
   &__item {
     font-size: 17px;
+    line-height: 20px;
     list-style: none;
+    padding-top: 67px;
+    padding-bottom: 16px;
     @include respond-to(tablet) {
       width: 46%;
       font-size: 20px;
@@ -34,5 +41,3 @@
     }
   }
 }
-
-
