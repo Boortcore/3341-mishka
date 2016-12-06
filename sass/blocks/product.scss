@@ -5,6 +5,7 @@
   border: 1px solid #ededed;
   border-radius: 4px;
   line-height: 24px;
+  margin-bottom: 0px;
   @include respond-to(tablet) {
     flex-direction: row;
   }
@@ -13,20 +14,27 @@
     width: 315px;
   }
   &__product-wrapper {
-    padding: 28px;
+    padding: 21px 28px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: space-between;
   }
   &__title {
     font-family: $main-font-bold;
     font-size: 17px;
+    padding-bottom: 5px;
+    margin: 0;
     a {
       color: #000;
     }
     @include respond-to(tablet) {
       font-size: 20px;
     }
+  }
+  &__description {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #cecece;
   }
   &__image {
     img {

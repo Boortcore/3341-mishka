@@ -1,7 +1,6 @@
 .about-us {
   font-family: $main-font-bold;
   font-size: 0;
-  padding-bottom: 17px;
   &__title {
     @include general-title;
     @include respond-to(tablet) {
