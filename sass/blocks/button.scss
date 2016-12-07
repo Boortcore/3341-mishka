@@ -14,17 +14,30 @@
     max-width: 293px;
   }
   &--reviews {
+    margin-top: 30px;
+    margin-bottom: 12px;
     @include respond-to(tablet) {
       position: absolute;
-      top: 0;
-      right: 50px;
+      top: 2px;
+      right: 47px;
+      width: 175px
+    }
+    @include respond-to(desktop) {
+      position: absolute;
+      top: -20px;
     }
   }
   &--write-us {
     margin: 40px 0;
-    @include respond-to(tablet) {}
+    display: block;
+    @include respond-to(tablet) {
+      margin: 0 auto 57px auto;
+      display: block;
+      width: 230px
+    }
     @include respond-to(desktop) {
-      margin-left: 175px;
+      margin-left: 0;
+      width: 230px
     }
   }
   &--production {

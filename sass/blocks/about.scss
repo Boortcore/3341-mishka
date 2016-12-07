@@ -16,6 +16,8 @@
     text-align: center;
     @include respond-to(tablet) {
       @include general-title-tablet;
+      margin-top:100px;
+      margin-bottom: 251px;
     }
     @include respond-to(desktop) {
       @include general-title-desktop;
@@ -40,9 +42,10 @@
     }
   }
   &__item {
-    padding: 24px 29px;
+    padding: 25px 29px 23px 29px;;
     @include respond-to(tablet) {
       width: 50%;
+      padding: 28px 26px 20px 34px;
     }
   }
   &__item--home {

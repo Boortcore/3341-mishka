@@ -1,13 +1,24 @@
 .reviews {
-  margin-bottom: 72px;
+  margin-bottom: 37px;
+  padding-top: 17px;
   @include respond-to(tablet) {
-    padding-top: 80px;
+    margin-bottom: 130px;
+  }
+  @include respond-to(desktop) {
+    padding-top: 2px;
+    padding-bottom: 45px;
+  }
+  &__wrapper {
+     @include respond-to(desktop) {
+      padding-left: 225px;
+    }
   }
   &__title {
     margin-bottom: 23px;
     @include general-title;
     @include respond-to(tablet) {
       @include general-title-tablet;
+      margin-bottom: 49px;
     }
     @include respond-to(desktop) {
       @include general-title-desktop;
@@ -20,10 +31,15 @@
     margin-bottom: 22px;
     @include respond-to(tablet) {
       font-size: 17px;
+      margin-bottom: 53px;
+    }
+    @include respond-to(desktop) {
+      font-size: 17px;
+      margin-bottom: 36px;
     }
   }
   &__name {
-    margin-bottom: 27px;
+    //margin-bottom: 27px;
     font-family: $main-font-bold;
     font-size: 17px;
     line-height: 33px;
