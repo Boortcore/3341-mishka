@@ -41,6 +41,8 @@
     }
   }
   &--production {
+    font-size: 17px;
+    line-height: 16px;
     @include respond-to(tablet) {
       max-width: 100%;
     }

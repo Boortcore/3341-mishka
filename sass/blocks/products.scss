@@ -1,8 +1,10 @@
 .products {
   display: flex;
   flex-direction: column;
+  margin-top: 30px;
   @include respond-to(desktop) {
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 108px;
   }
 }

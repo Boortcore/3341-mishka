@@ -2,15 +2,40 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
   border: 1px solid #ededed;
   border-radius: 4px;
+  @include respond-to(tablet) {
+    margin-bottom: 63px;
+  }
   @include respond-to(desktop) {
     flex-direction: row;
   }
+  &__title {
+    font-family: $main-font-bold;
+    font-size: 17px;
+    width: 70%;
+    padding-left: 35%;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    @include respond-to(tablet) {
+      padding-left: 107px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+    @include respond-to(desktop) {
+      font-size: 20px;
+      position: absolute;
+      top: 50px;
+      right: 100px;
+    }
+  }
   &__video {
+    margin-bottom: 8px;
     img {
       width: 100%;
+      @include respond-to(tablet) {
+        min-height: 455px;
+      }
       @include respond-to(desktop) {
         min-width: 680px;
       }
@@ -20,27 +45,30 @@
     }
   }
   &__production-wrapper {
-    padding-right: 28px;
-    padding-left: 28px;
-  }
-  &__title {
-    font-family: $main-font-bold;
-    font-size: 17px;
-    @include respond-to(desktop) {
-      font-size: 20px;
-      position: absolute;
-      top: 50px;
-      right: 100px;
+    padding-right: 34px;
+    padding-left: 34px;
+    @include respond-to(tablet) {
+      padding-left: 41px;
+      padding-right: 41px;
+      padding-bottom: 10px;
     }
   }
   &__description {
     color: $main-color;
     font-size: 13px;
+    padding-bottom: 35px;
     @include respond-to(tablet) {
       font-size: 15px;
+      line-height: 30px;
     }
     @include respond-to(desktop) {
       padding-top: 80px;
+    }
+    p {
+      margin-bottom: 27px;
+      @include respond-to(tablet) {
+        margin-bottom: 36px;
+      }
     }
   }
 }
