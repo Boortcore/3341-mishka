@@ -9,12 +9,13 @@
   }
   @include respond-to(desktop) {
     flex-direction: row;
+    margin-bottom: 97px;
   }
   &__title {
     font-family: $main-font-bold;
     font-size: 17px;
     width: 70%;
-    padding-left: 35%;
+    margin-left: 35%;
     padding-top: 10px;
     padding-bottom: 3px;
     @include respond-to(tablet) {
@@ -25,8 +26,9 @@
     @include respond-to(desktop) {
       font-size: 20px;
       position: absolute;
-      top: 50px;
-      right: 100px;
+      top: 71px;
+      right: 195px;
+      width: 200px;
     }
   }
   &__video {
@@ -43,6 +45,9 @@
     @include respond-to(tablet) {
       order: -1;
     }
+    @include respond-to(desktop) {
+      margin-bottom: 0;
+    }
   }
   &__production-wrapper {
     padding-right: 34px;
@@ -51,6 +56,9 @@
       padding-left: 41px;
       padding-right: 41px;
       padding-bottom: 10px;
+    }
+    @include respond-to(desktop) {
+      padding-bottom: 0;
     }
   }
   &__description {
@@ -62,12 +70,18 @@
       line-height: 30px;
     }
     @include respond-to(desktop) {
-      padding-top: 80px;
+      padding-top: 160px;
+      padding-left: 40px;
+      padding-right: 15px;
+
     }
     p {
       margin-bottom: 27px;
       @include respond-to(tablet) {
         margin-bottom: 36px;
+      }
+      @include respond-to(desktop) {
+        margin-bottom: 47px;
       }
     }
   }
