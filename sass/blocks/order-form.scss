@@ -1,86 +1,65 @@
 .order-form {
-  &__description {
-    color: $main-color;
-    font-size: 13px;
-    @include respond-to(tablet) {
-      font-size: 17px;
-    }
-  }
-  &__item {
+  padding-top: 16px;
+  padding-bottom: 58px;
+  @include respond-to(tablet) {
+    padding-bottom: 80px;
     font-size: 17px;
-    line-height: 16px;
-    label {
-      font-family: $main-font-bold;
-      margin-top: 18px;
-      margin-bottom: 18px;
-      @include respond-to(tablet) {
-        font-size: 19px;
-        line-height: 18px;
-        margin-top: 28px;
-        margin-bottom: 28px;
-      }
-    }
-    input {
-      margin-top: 18px;
-      margin-bottom: 18px;
-    }
-    @include respond-to(tablet) {
-      margin-top: 28px;
-      margin-bottom: 28px;
-    }
+    padding-top: 74px;
   }
-  &__title {
-    font-family: $main-font-bold;
-    text-transform: uppercase;
-    color: $style-color;
-    @include respond-to(tablet) {
-      position: absolute;
-      left: 0px;
-      top: 28px;
-    }
-  }
-  &__values {
-    display: flex;
-    flex-direction: column;
-    input[type='radio'],
-    input[type='checkbox'] {
-      display: none;
-    }
-    label {
-      @include respond-to(tablet) {
-        width: 50%;
-      }
-      @include respond-to(desktop) {
-        width: 33%;
-      }
-    }
-    &--colors {
-      @include respond-to(tablet) {
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-    }
-  }
-  &__more-info-text {
-    font-size: 14px;
-    line-height: 16px;
-    color: $main-color;
+  &__description {
+    font-size: 13px;
+    margin-bottom: 20px;
     @include respond-to(tablet) {
       font-size: 17px;
       line-height: 30px;
+      margin-bottom: 10px;
+    }
+  }
+  &__item {
+    @include respond-to(tablet) {
+      padding-left: 186px;
+      position: relative;
+    }
+    &--type {}
+    &--colors {}
+    &--name {}
+    &--phone {}
+    &--email {}
+    &--more-info {}
+  }
+  &__title {
+    text-transform: uppercase;
+    font-family: $main-font-bold;
+    margin-bottom: 10px;
+    @include respond-to(tablet) {
       position: absolute;
-      right: 0;
-      top: 60px;
+      line-height: 18px;
+      left: 0px;
+      top: 62px;
     }
   }
-  &__section {
-    position: relative;
-    @include respond-to(tablet) {
-      padding-left: 170px;
+  &__values {
+    font-family: $main-font-bold;
+    display: flex;
+    flex-direction: column;
+    input[type="radio"],
+    input[type="checkbox"] {
+      display: none;
     }
-    @include respond-to(tablet) {
-      font-size: 17px;
-      line-height: 16px;
+    &--type {}
+    &--colors {}
+    &--name {}
+    &--phone {}
+    &--email {}
+    &--more-info {
+      textarea {
+        padding: 15px;
+        margin-top: 10px;
+      }
     }
   }
+}
+
+&__section:nth-child(odd) {
+  background-color: gray;
 }

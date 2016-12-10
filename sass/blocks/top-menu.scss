@@ -74,9 +74,7 @@
         border-bottom: none;
       }
       a {
-        @include respond-to(tablet) {
-
-        }
+        @include respond-to(tablet) {}
       }
     }
     &--search {
@@ -96,6 +94,11 @@
           justify-content: flex-end;
         }
       }
+    }
+    &--new,
+    &--sale,
+    &--delivery {
+      display: none;
     }
   }
 }
