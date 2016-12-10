@@ -2,8 +2,8 @@
   text-align: center;
   font-size: 17px;
   font-family: $main-font-bold;
-  background-color: #f9f9f9;
-  max-width: 1150px;
+  z-index: 2;
+  position: relative;
   &__items {
     display: flex;
     flex-direction: column;
@@ -17,7 +17,6 @@
     }
   }
   &__item {
-    background-color: #fff;
     border-bottom: 1px solid #ececec;
     display: flex;
     justify-content: center;
@@ -60,11 +59,11 @@
       @include respond-to(tablet) {
         font-size: 15px;
         order: 1;
-        background-color: transparent;
         border-bottom: none;
       }
       a {
         @include respond-to(tablet) {
+          margin-right: 35px;
         }
       }
     }
@@ -72,12 +71,11 @@
       @include respond-to(tablet) {
         font-size: 15px;
         order: 1;
-        background-color: transparent;
         border-bottom: none;
       }
       a {
         @include respond-to(tablet) {
-          padding-left: 35px;
+
         }
       }
     }

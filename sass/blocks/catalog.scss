@@ -2,6 +2,9 @@
   background-color: #f9f9f9;
   padding-top: 55px;
   padding-bottom: 57px;
+  @include respond-to(tablet) {
+    margin-top: -90px;
+  }
   &__header {
     font-size: 27px;
     line-height: 30px;
