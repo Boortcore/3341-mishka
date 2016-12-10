@@ -1,14 +1,15 @@
 .product-of-week {
+  outline: 1px solid red;
   font-family: $main-font-bold;
   font-size: 15px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   @include respond-to(tablet) {
-    margin-top: 32px;
-    margin-bottom: 64px;
+   padding-top: 28px;
+   padding-bottom: 62px;
   }
   @include respond-to(desktop) {
-    margin-top: 110px;
-    margin-bottom: 85px;
+    padding-top: 105px;
+    padding-bottom: 85px;
   }
   &__wrapper {
     display: flex;

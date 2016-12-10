@@ -3,11 +3,11 @@
   line-height: 30px;
   padding-top: 24px;
   @include respond-to(tablet) {
-    padding-top: 32px;
+    padding-top: 70px;
   }
   @include respond-to(desktop) {
-    padding-top: 112px;
-    margin-bottom: 105px
+    padding-top: 153px;
+    padding-bottom:50px
   }
   &__wrapper {
     position: relative;
@@ -67,6 +67,7 @@
     }
   }
   &__map {
+    margin-bottom: 0px;
     @include respond-to(tablet) {
       margin-bottom: 47px;
     }
