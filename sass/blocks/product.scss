@@ -5,17 +5,17 @@
   border-radius: 4px;
   line-height: 24px;
   padding-bottom: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   @include respond-to(tablet) {
     flex-direction: row;
     padding-bottom: 0;
-    max-height: 333px;
     margin-bottom: 55px;
+    height: 334px;
   }
   @include respond-to(desktop) {
     flex-direction: column;
     width: 320px;
-    max-height: none;
+    height: auto;
   }
   &__product-wrapper {
     padding: 21px 28px;
@@ -46,8 +46,8 @@
     }
   }
   &__description {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+   margin-bottom: 20px;
+
     @include respond-to(tablet) {
       align-self: stretch;
     }
@@ -92,6 +92,7 @@
   &__sale {
     border-top: 1px solid #cecece;
     padding-top: 20px;
+
     @include respond-to(tablet) {
       padding-top: 25px;
     }

@@ -14,20 +14,21 @@
   &__title {
     font-family: $main-font-bold;
     font-size: 17px;
-    width: 70%;
+    width: 65%;
     margin-left: 35%;
-    padding-top: 10px;
-    padding-bottom: 3px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     @include respond-to(tablet) {
-      padding-left: 107px;
+      margin-left: 105px;
       font-size: 20px;
       line-height: 24px;
+      padding-bottom: 2px;
     }
     @include respond-to(desktop) {
       font-size: 20px;
       position: absolute;
       top: 71px;
-      right: 195px;
+      right: 85px;
       width: 200px;
     }
   }
