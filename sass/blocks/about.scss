@@ -16,8 +16,6 @@
     text-align: center;
     @include respond-to(tablet) {
       @include general-title-tablet;
-      margin-top:100px;
-      margin-bottom: 251px;
     }
     @include respond-to(desktop) {
       @include general-title-desktop;
