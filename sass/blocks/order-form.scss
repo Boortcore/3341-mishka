@@ -1,6 +1,6 @@
 .order-form {
   padding-top: 16px;
-  padding-bottom: 58px;
+  padding-bottom: 45px;
   @include respond-to(tablet) {
     padding-bottom: 80px;
     font-size: 17px;
@@ -8,24 +8,55 @@
   }
   &__description {
     font-size: 13px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     @include respond-to(tablet) {
       font-size: 17px;
       line-height: 30px;
-      margin-bottom: 10px;
     }
   }
   &__item {
+    font-size: 17px;
+    line-height: 18px;
+    padding: 10px 0;
     @include respond-to(tablet) {
+      padding: 60px 0;
+      font-size: 19px;
+      line-height: 18px;
       padding-left: 186px;
       position: relative;
     }
-    &--type {}
-    &--colors {}
-    &--name {}
-    &--phone {}
-    &--email {}
-    &--more-info {}
+    &--type {
+      outline: 1px solid red;
+      @include respond-to(tablet) {
+        font-size: 17px;
+        line-height: 30px;
+        padding-bottom: 17px;
+       padding-top: 50px;
+      }
+    }
+    &--colors {
+      padding-top: 15px;
+      @include respond-to(tablet) {
+        padding-top: 40px;
+      }
+    }
+    &--name {
+      padding-top: 15px;
+      @include respond-to(tablet) {
+        //padding-bottom: 23px;
+        //padding-left: 170px;
+      }
+    }
+    &--phone {
+      padding-top: 3px;
+    }
+    &--email {
+      padding-bottom: 25px;
+    }
+    &--more-info {
+      padding-top: 15px;
+      padding-bottom: 10px;
+    }
   }
   &__title {
     text-transform: uppercase;
@@ -33,7 +64,7 @@
     margin-bottom: 10px;
     @include respond-to(tablet) {
       position: absolute;
-      line-height: 18px;
+      line-height: 16px;
       left: 0px;
       top: 62px;
     }
@@ -46,20 +77,78 @@
     input[type="checkbox"] {
       display: none;
     }
-    &--type {}
-    &--colors {}
-    &--name {}
-    &--phone {}
-    &--email {}
+    &--type {
+      padding-left: 61px;
+      @include respond-to(tablet) {
+
+      }
+      label {
+        padding-top: 22px;
+        padding-bottom: 10px;
+        @include respond-to(tablet) {
+            padding-top: 0px;
+            padding-bottom: 47px;
+        }
+      }
+    }
+    &--colors {
+      padding-left: 61px;
+      @include respond-to(tablet) {
+        // padding-top: 25px;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      label {
+        padding-top: 25px;
+        padding-bottom: 18px;
+        @include respond-to(tablet) {
+          width: 50%;
+          // padding-bottom: 33px;
+        }
+      }
+    }
+    &--name {
+      padding-top: 12px;
+      @include respond-to(tablet) {
+        //  padding-top: 45px;
+      }
+    }
+    &--phone {
+      padding-top: 8px;
+      padding-bottom: 25px;
+    }
+    &--email {
+      padding-top: 8px;
+     padding-bottom: 8px;
+    }
     &--more-info {
       textarea {
         padding: 15px;
-        margin-top: 10px;
+        margin-top: 11px;
       }
     }
   }
-}
-
-&__section:nth-child(odd) {
-  background-color: gray;
+  &__name-block {
+    padding: 5px 0;
+    @include respond-to(tablet) {
+      padding-bottom: 16px;
+    }
+  }
+  &__name-block-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    @include respond-to(tablet) {
+      padding-right: 30px;
+    }
+  }
+  &__name-block-input {
+    margin-bottom: 27px;
+  }
+  &__more-info-text {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+  &__section {
+    outline: 1px solid red;
+  }
 }

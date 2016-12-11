@@ -53,9 +53,13 @@
   }
   &__item--home {
     background-color: $color-aqua;
+    @include respond-to(desktop){
+       padding-left: 39px;
+    }
   }
   &__item--toys {
     background-color: $color-turquoise;
+     padding-left: 35px;
   }
   @include respond-to(tablet) {
     &__wrapper {
