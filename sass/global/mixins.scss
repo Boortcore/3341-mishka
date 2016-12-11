@@ -1,3 +1,8 @@
+@mixin desktop-wrapper() {
+  padding-left: 170px;
+  padding-right: 170px;
+}
+
 @mixin general-title() {
   font-family: $main-font-bold;
   font-size: 25px;

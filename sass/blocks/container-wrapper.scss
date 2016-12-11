@@ -10,9 +10,7 @@
   @include respond-to(desktop) {
     width: 1150px;
     padding: 0 50px;
-    /*@include respond-to(desktop) {
-      padding-left: 225px;
-    }*/
+
   }
   &--map {
     padding: 0;

@@ -48,4 +48,13 @@
       max-width: 100%;
     }
   }
+
+  &--submit {
+    @include respond-to(tablet) {
+      width: 230px;
+    }
+    @include respond-to(desktop) {
+      margin-left: 170px;
+    }
+  }
 }
