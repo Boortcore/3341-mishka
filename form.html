@@ -8,24 +8,24 @@
 
 <body>
   <header class="header">
-    <div class="container-wrapper container-wrapper--first">
-      <div class="header__logo">
-        <a href="index.html">
-          <img src="img/logo-mobile.svg" height="35" width="86" alt="logo">
-        </a>
-      </div>
+    <div class="header__wrapper">
       <nav class="top-menu">
         <ul class="top-menu__items">
-          <li class="top-menu__item">
+          <li class="top-menu__item top-menu__item--logo">
+            <a href="index.html">
+              <img src="img/logo-mobile.svg" height="35" width="86" alt="logo">
+            </a>
+          </li>
+          <li class="top-menu__item top-menu__item--toggle top-menu__item--catalog ">
             <a href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="top-menu__item">
+          <li class="top-menu__item  top-menu__item--toggle top-menu__item--knitting">
             <a href="form.html">Вязание на заказ</a>
           </li>
-          <li class="top-menu__item">
+          <li class="top-menu__item  top-menu__item--toggle top-menu__item--search">
             <a href="#">Поиск по сайту</a>
           </li>
-          <li class="top-menu__item">
+          <li class="top-menu__item  top-menu__item--toggle top-menu__item--card">
             <a href="#">Корзина: пока пуста</a>
           </li>
         </ul>
@@ -33,27 +33,33 @@
     </div>
   </header>
   <main class="main">
-    <div class="container-wrapper">
-      <section class="about">
-        <h1 class="about__header">Вязание на заказ</h1> </section>
-      <form action="" class="order-form">
-        <div class="order-form__description"> <span>
-            Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
-          </span> </div>
-        <section class="order-form__section">
-          <div class="order-form__item">
+    <section class="about">
+      <h1 class="about__header">Вязание на заказ</h1> </section>
+    <form action="" class="order-form">
+      <div class="container-wrapper">
+        <div class="order-form__description">
+          <span> Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</span>
+        </div>
+      </div>
+      <section class="order-form__section">
+        <div class="container-wrapper">
+          <div class="order-form__item order-form__item--type">
             <div class="order-form__title"> <span>Тип</span> </div>
-            <div class="order-form__values">
+            <div class="order-form__values order-form__values--type">
               <input type="radio">
               <label for="">Аксессуар для интерьера</label>
               <input type="radio">
               <label for="">Детская игрушка</label>
             </div>
           </div>
-        </section>
-        <section class="order-form__section">
+        </div>
+      </section>
+      <section class="order-form__section">
+        <div class="container-wrapper">
           <div class="order-form__item order-form__item--colors">
-            <div class="order-form__title"> <span>Цвет</span> </div>
+            <div class="order-form__title">
+              <span>Цвет</span>
+            </div>
             <div class="order-form__values order-form__values--colors">
               <input type="checkbox" name="white">
               <label for="white">Белый</label>
@@ -69,55 +75,65 @@
               <label for="white">Оранжевый</label>
             </div>
           </div>
-        </section>
-        <section class="order-form__section">
-          <div class="order-form__item">
+        </div>
+      </section>
+      <section class="order-form__section">
+        <div class="container-wrapper">
+          <div class="order-form__item order-form__item--name">
             <div class="order-form__title"> <span>ФИО</span> </div>
-            <div class="order-form__values">
-              <div class="order-form__name-block">
-                <label for="" class="order-form__name-block-label">Фамилия:</label>
-                <input type="text" class="order-form__name-block-input" placeholder="Укажите фамилию" required> </div>
+            <div class="order-form__values order-form__values--name">
               <div class="order-form__name-block">
                 <label for="" class="order-form__name-block-label">Имя:</label>
-                <input type="text" class="order-form__name-block-input" placeholder="Введите ваше имя" required> </div>
+                <input type="text" class="order-form__name-block-input" placeholder="Введите ваше имя" required>
+              </div>
+              <div class="order-form__name-block">
+                <label for="" class="order-form__name-block-label">Фамилия:</label>
+                <input type="text" class="order-form__name-block-input" placeholder="Укажите фамилию" required>
+              </div>
               <div class="order-form__name-block">
                 <label for="" class="order-form__name-block-label">Отчество:</label>
-                <input type="text" class="order-form__name-block-input" placeholder="Отчество, если желаете"> </div>
+                <input type="text" class="order-form__name-block-input" placeholder="Отчество, если желаете">
+              </div>
             </div>
           </div>
-        </section>
-        <section class="order-form__section">
-          <div class="order-form__item">
+        </div>
+      </section>
+      <section class="order-form__section">
+        <div class="container-wrapper">
+          <div class="order-form__item order-form__item--phone">
             <div class="order-form__title">
               <label for="phone">ТЕЛ</label>
             </div>
             <div class="order-form__values order-form__values--phone">
-              <input type="tel" name="phone" id="phone" placeholder="+7 XXX XX XX"> </div>
+              <input type="tel" name="phone" id="phone" placeholder="+7 XXX XX XX">
+            </div>
           </div>
-        </section>
-        <section class="order-form__section">
-          <div class="order-form__item">
+          <div class="order-form__item order-form__item--email">
             <div class="order-form__title">
               <label for="e-mail">E-MAIL</label>
             </div>
             <div class="order-form__values order-form__values--email">
               <input type="email" name="e-mail" id="e-mail" placeholder="Ваш Email" required> </div>
           </div>
-        </section>
-        <section class="order-form__section">
-          <div class="order-form__item">
+        </div>
+      </section>
+      <section class="order-form__section">
+        <div class="container-wrapper">
+          <div class="order-form__item order-form__item--more-info">
             <div class="order-form__title">
               <label for="more-info">ДОП</label>
             </div>
             <div class="order-form__values order-form__values--more-info">
-              <textarea name="more-info" id="more-info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <textarea name="more-info" id="more-info" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
-            <p class="order-form__more-info-text">* Все поля являются обязательными</p>
           </div>
-        </section>
-        <button class="button" type="submit">Отправить заказ</button>
-      </form>
-    </div>
+        </div>
+        <div class="container-wrapper">
+          <p class="order-form__more-info-text">* Поля обязательны для заполнения</p>
+          <button class="button button--submit" type="submit">Отправить заказ</button>
+        </div>
+      </section>
+    </form>
   </main>
   <footer class="footer">
     <div class="container-wrapper footer__wrapper">

@@ -9,25 +9,34 @@
 
 <body>
   <header class="header">
-    <div class="container-wrapper container-wrapper--first">
-      <div class="header__logo">
-        <a href="index.html">
-          <img src="img/logo-mobile.svg" height="35" width="86" alt="logo">
-        </a>
-      </div>
+    <div class="header__wrapper">
       <nav class="top-menu">
         <ul class="top-menu__items">
-          <li class="top-menu__item">
+          <li class="top-menu__item top-menu__item--logo">
+            <a href="index.html">
+              <img src="img/logo-mobile.svg" height="35" width="86" alt="logo">
+            </a>
+          </li>
+          <li class="top-menu__item top-menu__item--toggle top-menu__item--catalog ">
             <a href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="top-menu__item">
+          <li class="top-menu__item  top-menu__item--toggle top-menu__item--knitting">
             <a href="form.html">Вязание на заказ</a>
           </li>
-          <li class="top-menu__item">
+          <li class="top-menu__item  top-menu__item--toggle top-menu__item--search">
             <a href="#">Поиск по сайту</a>
           </li>
-          <li class="top-menu__item">
+          <li class="top-menu__item  top-menu__item--toggle top-menu__item--card">
             <a href="#">Корзина: пока пуста</a>
+          </li>
+          <li class="top-menu__item  top-menu__item--toggle top-menu__item--new">
+            <a href="#">Новые поступления</a>
+          </li>
+          <li class="top-menu__item  top-menu__item--toggle top-menu__item--sale">
+            <a href="#">Распродажа</a>
+          </li>
+          <li class="top-menu__item  top-menu__item--toggle top-menu__item--delivery">
+            <a href="#">Бесплатная доставка по России</a>
           </li>
         </ul>
       </nav>
@@ -37,6 +46,8 @@
     <section class="about">
       <div class="container-wrapper">
         <h1 class="about__header">Милые штуки ручной работы для дома</h1>
+      </div>
+      <div class="container-wrapper container-wrapper--about-items">
         <div class="about__items">
           <div class="about__item about__item--home">
             <h2>
@@ -98,9 +109,9 @@
       </div>
     </article>
     <section class="about-us">
-      <div class="container-wrapper">
+      <div class="container-wrapper about-us__wrapper">
         <h2 class="about-us__title">Коротко о нас:</h2>
-        <ul class="about-us__items about-us__wrapper">
+        <ul class="about-us__items ">
           <li class="about-us__item">Экологически чистые материалы</li>
           <li class="about-us__item">Скандинавский стиль по российской цене</li>
           <li class="about-us__item">Увеличивает лайки на фотографиях</li>
@@ -111,7 +122,7 @@
       </div>
     </section>
     <section class="reviews">
-      <div class="container-wrapper">
+      <div class="container-wrapper reviews__wrapper">
         <h2 class="reviews__title">Отзывы</h2>
         <div class="reviews__items">
           <div class="reviews__item">
@@ -124,10 +135,11 @@
             <span class="reviews__address">@misssssiskras</span>
           </div>
         </div>
-        <div class="reviews__buttons">
+        <!--<div class="reviews__buttons">
           <a href="#" class="reviews__btn">Предыдущий отзывы</a>
           <a href="#" class="reviews__btn">Следующий отзыв</a>
-        </div>
+        </div>-->
+        <a href="#" class="button button--reviews">Написать</a>
         <a href="#" class="button button--reviews">Написать</a>
       </div>
     </section>
@@ -150,7 +162,7 @@
           <img src="img/map-mobile@1x.jpg" alt="">
         </div>
       </div>
-      <div class="container-wrapper">
+      <div class="container-wrapper contacts__wrapper">
         <a href="#" class="button button--write-us">Напишите нам</a>
       </div>
     </section>

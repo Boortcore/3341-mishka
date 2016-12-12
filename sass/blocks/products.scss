@@ -1,8 +1,13 @@
 .products {
   display: flex;
   flex-direction: column;
+  padding-top: 25px;
+  @include respond-to(tablet) {
+    padding-top: 78px;
+  }
   @include respond-to(desktop) {
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 135px;
   }
 }

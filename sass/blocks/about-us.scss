@@ -1,29 +1,33 @@
 .about-us {
   font-family: $main-font-bold;
   font-size: 0;
+  padding-top: 8px;
+  @include respond-to(tablet) {
+   padding-bottom: 30px;
+    padding-top: 58px;
+  }
+  @include respond-to(desktop) {
+    padding-top: 70px;
+  }
+
+  &__wrapper {
+    @include respond-to(desktop) {
+      padding-left: 225px;
+    }
+  }
   &__title {
     @include general-title;
     @include respond-to(tablet) {
       @include general-title-tablet;
+      margin-bottom: 20px;
     }
     @include respond-to(desktop) {
-  @include general-title-desktop;
-}
-  }
-  &__item {
-    font-size: 17px;
-    list-style: none;
-    @include respond-to(tablet) {
-      width: 46%;
-      font-size: 20px;
-    }
-    @include respond-to(desktop) {
-      width: 46%;
-      font-size: 20px;
-      padding: 60px;
+      @include general-title-desktop;
+      margin-bottom: 41px;
     }
   }
-  &__wrapper {
+  &__items {
+    padding: 0;
     display: flex;
     flex-direction: column;
     @include respond-to(tablet) {
@@ -31,6 +35,34 @@
       flex-wrap: wrap;
       font-size: 20px;
       line-height: 24px;
+    }
+    @include respond-to(desktop) {
+      justify-content: flex-start;
+    }
+  }
+  &__item {
+    font-size: 17px;
+    line-height: 20px;
+    list-style: none;
+    padding-top: 67px;
+    padding-bottom: 16px;
+    @include respond-to(tablet) {
+      width: 49%;
+      font-size: 20px;
+      line-height: 24px;
+      padding-top: 80px;
+      padding-bottom: 28px;
+    }
+    @include respond-to(desktop) {
+      width: 50%;
+      font-size: 20px;
+      padding: 59px 90px 47px 0;
+    }
+    &:nth-of-type(2n+1) {
+      @include respond-to(desktop) {
+        width: 40%;
+        padding: 59px 50px 47px 0;
+      }
     }
   }
 }
