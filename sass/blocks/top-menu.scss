@@ -17,6 +17,7 @@
     }
   }
   &__item {
+    position: relative;
     border-bottom: 1px solid #ececec;
     display: flex;
     justify-content: center;
@@ -42,6 +43,16 @@
       a {
         @include respond-to(tablet) {
           justify-content: flex-start;
+        }
+      }
+      img {
+        @include respond-to(tablet) {
+          width: 112px;
+          height: 46px;
+        }
+        @include respond-to(desktop) {
+          width: 148px;
+          height: 73px;
         }
       }
     }
@@ -78,11 +89,22 @@
       }
     }
     &--search {
+
       @include respond-to(tablet) {
+        font-size: 0;
         width: 11%;
         border-left: 1px solid #ececec;
         border-right: 1px solid #ececec;
         justify-content: center;
+      }
+      svg {
+        position: absolute;
+        left: 12%;
+        @include respond-to(tablet) {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%)
+        }
       }
     }
     &--card {
@@ -92,6 +114,15 @@
       a {
         @include respond-to(tablet) {
           justify-content: flex-end;
+        }
+      }
+      svg {
+        position: absolute;
+        left: 12%;
+        @include respond-to(tablet) {
+          top: 50%;
+          left: 15%;
+          transform: translate(-50%, -50%)
         }
       }
     }

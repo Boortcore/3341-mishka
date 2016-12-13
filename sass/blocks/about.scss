@@ -1,39 +1,60 @@
 .about {
   font-family: $main-font-bold;
-  background-image: url('../img/hero-mobile@1x.jpg');
   background-repeat: no-repeat;
   background-position: top center;
   background-color: #f9f9f9;
   font-size: 0;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
   @include respond-to(tablet) {
     margin-top: -90px;
+     margin-bottom: 0px;
+  }
+  @include respond-to(desktop) {
+    padding-top: 75px;
+  }
+  &--background {
+    background-image: url('../img/hero-mobile@1x.jpg');
+    @include respond-to(tablet) {
+      background-image: url('../img/hero-desktop@1x.jpg');
+    }
   }
   &__header {
     font-size: 27px;
     line-height: 30px;
     color: #000;
-    padding-top: 92px;
-    padding-bottom: 75px;
+    padding-top: 69px;
+    padding-bottom: 122px;
     margin: 0;
     text-align: center;
     @include respond-to(tablet) {
       @include general-title-tablet;
-      padding-bottom: 75px;
+      padding-top: 152px;
+      padding-bottom: 374px;
     }
     @include respond-to(desktop) {
       @include general-title-desktop;
+      padding-bottom: 360px;
     }
   }
   &__link {
+    display: block;
     line-height: 24px;
     font-size: 19px;
     color: #fff;
-    width: 110px;
-    display: inline-block;
+    height: 100%;
+    position: relative;
+    padding: 25px 29px 31px 29px;
     @include respond-to(tablet) {
       font-size: 20px;
       line-height: 30px;
+    }
+    span {
+      display: inline-block;
+      width: 50px;
+    }
+    svg {
+      position: absolute;
+      right: 35px;
     }
   }
   &__items {
@@ -44,22 +65,23 @@
     }
   }
   &__item {
-    padding: 25px 29px 23px 29px;
-    ;
     @include respond-to(tablet) {
       width: 50%;
-      padding: 28px 26px 20px 34px;
     }
   }
   &__item--home {
     background-color: $color-aqua;
-    @include respond-to(desktop){
-       padding-left: 39px;
+    @include respond-to(desktop) {
+      //padding-left: 39px;
     }
   }
   &__item--toys {
     background-color: $color-turquoise;
-     padding-left: 35px;
+    svg {
+      position: absolute;
+      right: 25px;
+      top: 20px;
+    }
   }
   @include respond-to(tablet) {
     &__wrapper {

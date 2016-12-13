@@ -1,18 +1,18 @@
 .reviews {
-
   padding-bottom: 37px;
   padding-top: 17px;
-  @include respond-to(tablet) {
-    padding-bottom: 127px;
-    padding-top: 77px;
-  }
-  @include respond-to(desktop) {
-    padding-top: 64px;
-    padding-bottom: 175px;
-  }
+
   &__wrapper {
-     @include respond-to(desktop) {
+    @include respond-to(tablet) {
+      background: url(../../img/review@1x.jpg) no-repeat;
+      padding-bottom: 127px;
+      padding-top: 77px;
+    }
+    @include respond-to(desktop) {
+      padding-top: 64px;
+      padding-bottom: 175px;
       padding-left: 225px;
+      background-position: 15%;
     }
   }
   &__title {

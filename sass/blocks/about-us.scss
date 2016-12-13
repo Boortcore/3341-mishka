@@ -3,13 +3,12 @@
   font-size: 0;
   padding-top: 8px;
   @include respond-to(tablet) {
-   padding-bottom: 30px;
+    padding-bottom: 13px;
     padding-top: 58px;
   }
   @include respond-to(desktop) {
     padding-top: 70px;
   }
-
   &__wrapper {
     @include respond-to(desktop) {
       padding-left: 225px;
@@ -41,6 +40,7 @@
     }
   }
   &__item {
+    position: relative;
     font-size: 17px;
     line-height: 20px;
     list-style: none;
@@ -57,6 +57,41 @@
       width: 50%;
       font-size: 20px;
       padding: 59px 90px 47px 0;
+    }
+    &:before {
+      content: " ";
+      position: absolute;
+      top: 5px;
+      left: 0;
+      display: block;
+      width: 50px;
+      height: 50px;
+      @include respond-to(tablet) {
+        top: 22px;
+      }
+      @include respond-to(desktop) {
+        top: 0px;
+      }
+    }
+    &--ecology:before {
+      background: url(../img/icon-feature-1.svg) no-repeat 50% 50%;
+    }
+    &--scandinavia:before {
+      background: url(../img/icon-feature-3.svg) no-repeat 50% 50%;
+
+    }
+    &--photo-like:before {
+      background: url(../img/icon-feature-5.svg) no-repeat 50% 50%;
+    }
+    &--with-love:before {
+      background: url(../img/icon-feature-2.svg) no-repeat 50% 50%;
+    }
+    &--putin-vodka:before {
+      background: url(../img/icon-feature-4.svg) no-repeat 50% 50%;
+    }
+    &--present-sent:before {
+      background: url(../img/icon-feature-6.svg) no-repeat 50% 50%;
+
     }
     &:nth-of-type(2n+1) {
       @include respond-to(desktop) {

@@ -3,17 +3,17 @@
   line-height: 30px;
   padding-top: 24px;
   @include respond-to(tablet) {
-    padding-top: 70px;
+    padding-top: 33px;
   }
   @include respond-to(desktop) {
     padding-top: 153px;
-    padding-bottom:50px
+    padding-bottom: 50px
   }
   &__wrapper {
     position: relative;
     display: flex;
     flex-direction: column;
-     @include respond-to(desktop) {
+    @include respond-to(desktop) {
       padding-left: 225px;
     }
   }
@@ -73,8 +73,20 @@
     }
     @include respond-to(desktop) {
       position: absolute;
-      right: 0;
-      bottom: -134px;
+      right: 50px;
+      bottom: -110px;
+    }
+    img {
+      width: 320px;
+        height: 457px;
+      @include respond-to(tablet) {
+        width: 768px;
+        height: 457px;
+      }
+      @include respond-to(desktop) {
+        width: 525px;
+        height: 457px;
+      }
     }
   }
 }

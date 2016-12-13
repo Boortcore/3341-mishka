@@ -3,7 +3,7 @@
     margin: 0 auto;
     min-width: 320px;
     @include respond-to(tablet) {
-      min-width: 768px;
+      width: 768px;
       padding: 0 50px;
     }
     @include respond-to(desktop) {

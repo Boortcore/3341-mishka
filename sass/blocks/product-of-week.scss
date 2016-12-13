@@ -1,11 +1,10 @@
 .product-of-week {
-
   font-family: $main-font-bold;
   font-size: 15px;
   padding-bottom: 40px;
   @include respond-to(tablet) {
-   padding-top: 28px;
-   padding-bottom: 62px;
+    padding-top: 28px;
+    padding-bottom: 62px;
   }
   @include respond-to(desktop) {
     padding-top: 105px;
@@ -93,11 +92,26 @@
     }
   }
   &__image {
+    z-index: -1;
     margin-bottom: 18px;
     @include respond-to(tablet) {
       position: absolute;
-      right: 30px;
-      top: 90px;
+      right: 50px;
+      top: 125px;
+      @include respond-to(desktop) {
+         top: -30px;
+      }
+    }
+    img {
+
+      @include respond-to(tablet) {
+        width: 333px;
+        height: 404px;
+      }
+      @include respond-to(desktop) {
+        width: 525px;
+        height: 636px;
+      }
     }
   }
   &__exposition-items {
@@ -120,8 +134,7 @@
   &__value {
     padding: 8px;
     border-bottom: 1px solid #ececec;
-    @include respond-to(desktop) {
-    }
+    @include respond-to(desktop) {}
   }
   &__parameter {
     padding-left: 0;

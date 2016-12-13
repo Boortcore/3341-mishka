@@ -65,12 +65,16 @@
     }
     &--email {
       padding-bottom: 25px;
-      padding-left: 170px;
+      @include respond-to(tablet) {
+        padding-left: 170px;
+      }
     }
     &--more-info {
       padding-top: 15px;
       padding-bottom: 10px;
-      padding-left: 170px;
+      @include respond-to(tablet) {
+        padding-left: 170px;
+      }
     }
   }
   &__title {
@@ -181,7 +185,7 @@
       right: 45px;
       top: 12px
     }
-    @include respond-to(tablet) {
+    @include respond-to(desktop) {
       right: 227px;
       top: 5px
     }
