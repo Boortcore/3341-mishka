@@ -9,10 +9,10 @@
       padding-top: 77px;
     }
     @include respond-to(desktop) {
-      padding-top: 64px;
+      padding-top: 65px;
       padding-bottom: 175px;
       padding-left: 225px;
-      background-position: 15%;
+      background-position: 7% 0;
     }
   }
   &__title {

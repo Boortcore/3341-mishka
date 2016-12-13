@@ -6,7 +6,7 @@
     padding-top: 33px;
   }
   @include respond-to(desktop) {
-    padding-top: 153px;
+    padding-top: 118px;
     padding-bottom: 50px
   }
   &__wrapper {
@@ -74,7 +74,7 @@
     @include respond-to(desktop) {
       position: absolute;
       right: 50px;
-      bottom: -110px;
+      bottom: -107px;
     }
     img {
       width: 320px;
