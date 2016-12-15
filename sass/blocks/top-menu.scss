@@ -16,6 +16,39 @@
       flex-wrap: wrap;
     }
   }
+  &__image-logo {
+    width: 86px;
+    height: 35px;
+    @include respond-to(tablet) {
+      width: 112px;
+      height: 46px;
+    }
+    @include respond-to(desktop) {
+      width: 148px;
+      height: 43px;
+    }
+  }
+  &__icon {
+    fill: $main-color;
+    position: absolute;
+    left: 12%;
+    top: 50%;
+    @include respond-to(tablet) {
+      transform: translate(-50%, -50%);
+      top: 50%;
+    }
+  }
+  &__icon--search {
+    transform: translateY(-50%);
+    @include respond-to(tablet) {
+      transform: translate(-50%, -50%);
+      left: 50%;
+    }
+  }
+  &__icon--cart {
+    transform: translateY(-50%);
+  }
+
   &__item {
     position: relative;
     border-bottom: 1px solid #ececec;
@@ -61,6 +94,12 @@
       a {
         justify-content: flex-start;
         padding-left: 25%;
+        &:hover {
+          color: $style-color;
+          & .top-menu__icon {
+            fill: $style-color;
+          }
+        }
         @include respond-to(tablet) {
           padding-left: 0;
         }
@@ -89,40 +128,27 @@
       }
     }
     &--search {
-
       @include respond-to(tablet) {
         font-size: 0;
-        width: 11%;
+        width: 15%;
         border-left: 1px solid #ececec;
         border-right: 1px solid #ececec;
         justify-content: center;
       }
-      svg {
-        position: absolute;
-        left: 12%;
-        @include respond-to(tablet) {
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%)
-        }
+      @include respond-to(desktop) {
+        width: 11%;
       }
     }
     &--card {
       @include respond-to(tablet) {
+        width: 37%;
+      }
+      @include respond-to(desktop) {
         width: 41%;
       }
       a {
         @include respond-to(tablet) {
           justify-content: flex-end;
-        }
-      }
-      svg {
-        position: absolute;
-        left: 12%;
-        @include respond-to(tablet) {
-          top: 50%;
-          left: 15%;
-          transform: translate(-50%, -50%)
         }
       }
     }

@@ -4,7 +4,7 @@
   border: 1px solid #ededed;
   border-radius: 4px;
   line-height: 24px;
-  padding-bottom: 5px;
+
   margin-bottom: 31px;
   @include respond-to(tablet) {
     flex-direction: row;
@@ -14,7 +14,7 @@
   }
   @include respond-to(desktop) {
     flex-direction: column;
-    width: 320px;
+    width: 316px;
     height: auto;
   }
   &__product-wrapper {
@@ -46,8 +46,7 @@
     }
   }
   &__description {
-   margin-bottom: 20px;
-
+    margin-bottom: 19px;
     @include respond-to(tablet) {
       align-self: stretch;
     }
@@ -60,12 +59,12 @@
     img {
       width: 100%;
       @include respond-to(tablet) {
-        width: 333px;
-        height: 333px;
+        width: 334px;
+        height: 332px;
       }
       @include respond-to(desktop) {
-        width: 317px;
-        height: 460px;
+        width: 100%;
+        height: 462px;
       }
     }
   }
@@ -82,17 +81,24 @@
   &__price {
     font-family: $main-font-bold;
     font-size: 15px;
+
     @include respond-to(tablet) {
       font-size: 17px;
     }
   }
   &__add-btn {
-    display: none;
+    font-size: 0;
+    svg {
+      fill: $main-color;
+      width: 20px;
+      height: 19px;
+    }
   }
   &__sale {
+     display: flex;
+    justify-content: space-between;
     border-top: 1px solid #cecece;
     padding-top: 20px;
-
     @include respond-to(tablet) {
       padding-top: 25px;
     }

@@ -7,7 +7,7 @@
   margin-bottom: 5px;
   @include respond-to(tablet) {
     margin-top: -90px;
-     margin-bottom: 0px;
+    margin-bottom: 0px;
   }
   @include respond-to(desktop) {
     padding-top: 75px;
@@ -34,6 +34,7 @@
     @include respond-to(desktop) {
       @include general-title-desktop;
       padding-bottom: 360px;
+      padding-top: 80px;
     }
   }
   &__link {
@@ -69,19 +70,24 @@
       width: 50%;
     }
   }
+  &__icon {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+
+  }
   &__item--home {
     background-color: $color-aqua;
-    @include respond-to(desktop) {
-      //padding-left: 39px;
-    }
   }
+  &__icon--home{
+    fill: $home-icon-color;
+  }
+
   &__item--toys {
     background-color: $color-turquoise;
-    svg {
-      position: absolute;
-      right: 25px;
-      top: 20px;
-    }
+  }
+  &__icon--toys{
+    fill: $toys-icon-color;
   }
   @include respond-to(tablet) {
     &__wrapper {

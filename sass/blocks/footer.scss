@@ -1,15 +1,17 @@
 .footer {
   font-family: $main-font-bold;
   background-color: $footer-bg;
-  padding-top: 55px;
-  padding-bottom: 45px;
+  padding-bottom: 35px;
+  @include respond-to(tablet) {
+    padding-top: 30px;
+  }
   &__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     @include respond-to(tablet) {
       flex-direction: row;
-      justify-content: space-between
+      justify-content: space-between;
     }
   }
   &__title {
@@ -20,22 +22,69 @@
     display: none;
     @include respond-to(tablet) {
       display: block;
+      padding-top: 20px;
+      padding-right: 95px;
+    }
+    svg {
+      width: 102px;
+      height: 34px;
     }
   }
   &__social-buttons {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 22px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-bottom: 1px solid $main-color;
     @include respond-to(tablet) {
-      width: 147px;
+      width: 250px;
+      border-bottom: none;
+    }
+  }
+  &__social-btn--insta {
+    svg {
+      width: 21px;
+      height: 21px;
+    }
+  }
+  &__social-btn--fb {
+    svg {
+      width: 15px;
+      height: 28px;
+    }
+  }
+  &__social-btn--tw {
+    svg {
+      width: 23px;
+      height: 20px;
     }
   }
   &__creators {
     display: flex;
     justify-content: space-around;
-
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
     @include respond-to(tablet) {
-      justify-content: space-between;
-      width: 190px;
+      padding-top: 10px;
+      justify-content: space-around
     }
+    a {
+      margin-top: 10px;
+      margin-right: 25px;
+      @include respond-to(tablet) {
+        margin-right: 0px;
+        margin-left: 25px;
+      }
+    }
+  }
+  &__logo-htmlacademy {
+    width: 26px;
+    height: 34px;
+    fill: $style-color;
   }
 }

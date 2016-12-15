@@ -41,6 +41,8 @@
       }
       @include respond-to(desktop) {
         min-width: 680px;
+        margin-bottom: 0;
+        height: 100%;
       }
     }
     @include respond-to(tablet) {
@@ -74,7 +76,6 @@
       padding-top: 160px;
       padding-left: 40px;
       padding-right: 15px;
-
     }
     p {
       margin-bottom: 27px;
