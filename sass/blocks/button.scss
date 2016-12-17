@@ -10,6 +10,13 @@
   background: #fff;
   width: 100%;
   box-sizing: border-box;
+  &:hover {
+    background: #444444;
+    color: #fff;
+  }
+  &:active {
+    color: #8f8f8f;
+  }
   @include respond-to(tablet) {
     max-width: 293px;
   }

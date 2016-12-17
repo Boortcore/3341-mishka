@@ -2,13 +2,21 @@
   font-family: $main-font-bold;
   font-size: 15px;
   padding-bottom: 40px;
+  background-image: url(../img/bg-zigzag-line.svg);
+  background-repeat: repeat-x;
+  background-position: 1px bottom;
+  background-size: auto 6px;
   @include respond-to(tablet) {
     padding-top: 28px;
-    padding-bottom: 62px;
+    padding-bottom: 69px;
+    background-position: 0 bottom;
+    background-size: auto 15px;
   }
   @include respond-to(desktop) {
     padding-top: 105px;
-    padding-bottom: 85px;
+    padding-bottom: 97px;
+    background-position: 0 bottom;
+    background-size: auto auto
   }
   &__wrapper {
     display: flex;
@@ -99,11 +107,10 @@
       right: 50px;
       top: 125px;
       @include respond-to(desktop) {
-         top: -30px;
+        top: -30px;
       }
     }
     img {
-
       @include respond-to(tablet) {
         width: 333px;
         height: 404px;

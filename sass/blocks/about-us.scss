@@ -3,11 +3,11 @@
   font-size: 0;
   padding-top: 8px;
   @include respond-to(tablet) {
-    padding-bottom: 13px;
-    padding-top: 58px;
+    padding-bottom: 14px;
+    padding-top: 50px;
   }
   @include respond-to(desktop) {
-    padding-top: 70px;
+    padding-top: 59px;
   }
   &__wrapper {
     @include respond-to(desktop) {

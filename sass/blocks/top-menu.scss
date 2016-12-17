@@ -5,11 +5,11 @@
   z-index: 2;
   position: relative;
   &__items {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
-    position: relative;
     @include respond-to(tablet) {
       flex-direction: row;
       justify-content: flex-start;
@@ -19,6 +19,9 @@
   &__image-logo {
     width: 86px;
     height: 35px;
+    img {
+      opacity: 0.5
+    }
     @include respond-to(tablet) {
       width: 112px;
       height: 46px;
@@ -48,7 +51,6 @@
   &__icon--cart {
     transform: translateY(-50%);
   }
-
   &__item {
     position: relative;
     border-bottom: 1px solid #ececec;
@@ -65,13 +67,28 @@
     a {
       display: flex;
       align-items: center;
-      color: #000;
+      color: $link-color;
       width: 100%;
       justify-content: center;
+      &:hover {
+        color: $link-color-hover;
+        & .top-menu__icon {
+          fill: $style-color;
+        }
+      }
+      &:active {
+        color: $link-color-active;
+        & .top-menu__icon {
+          opacity: .5;
+        }
+      }
     }
     &--logo {
       @include respond-to(tablet) {
         width: 48%;
+      }
+      @include respond-to(desktop) {
+        width: 23.8%;
       }
       a {
         @include respond-to(tablet) {
@@ -94,12 +111,6 @@
       a {
         justify-content: flex-start;
         padding-left: 25%;
-        &:hover {
-          color: $style-color;
-          & .top-menu__icon {
-            fill: $style-color;
-          }
-        }
         @include respond-to(tablet) {
           padding-left: 0;
         }
@@ -111,9 +122,15 @@
         order: 1;
         border-bottom: none;
       }
+      @include respond-to(desktop) {
+        order: -2;
+        font-size: 17px;
+        border-right: 1px solid #ececec;
+        border-bottom: 1px solid #ececec;
+      }
       a {
         @include respond-to(tablet) {
-          margin-right: 35px;
+          margin-right: 37px;
         }
       }
     }
@@ -123,20 +140,28 @@
         order: 1;
         border-bottom: none;
       }
+      @include respond-to(desktop) {
+        order: -2;
+        font-size: 17px;
+        border-bottom: 1px solid #ececec;
+      }
       a {
-        @include respond-to(tablet) {}
+        @include respond-to(desktop) {
+          margin-left: 35px;
+          margin-right: 75px;
+        }
       }
     }
     &--search {
       @include respond-to(tablet) {
         font-size: 0;
-        width: 15%;
+        width: 13%;
         border-left: 1px solid #ececec;
         border-right: 1px solid #ececec;
         justify-content: center;
       }
       @include respond-to(desktop) {
-        width: 11%;
+        width: 8%;
       }
     }
     &--card {
@@ -144,7 +169,7 @@
         width: 37%;
       }
       @include respond-to(desktop) {
-        width: 41%;
+        width: 25%;
       }
       a {
         @include respond-to(tablet) {
@@ -153,9 +178,40 @@
       }
     }
     &--new,
-    &--sale,
+    &--sale
+    {
+      display: none;
+      font-size: 15px;
+      border-bottom: none;
+      @include respond-to(desktop) {
+        display: flex;
+      }
+      a {
+        display: flex;
+        align-items: top;
+      }
+    }
+    &--sale {
+      margin-left: 61px;
+    }
     &--delivery {
       display: none;
+      @include respond-to(tablet) {
+        display: flex;
+        justify-content: flex-end;
+        border-bottom: none;
+        font-size: 15px;
+        order: 3;
+        flex-basis: 53%;
+      }
+      @include respond-to(desktop) {
+        flex-basis: 70%;
+      }
+      span {
+        font-family: $main-font-regular;
+        display: flex;
+        align-items: center;
+      }
     }
   }
 }
