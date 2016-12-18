@@ -55,13 +55,31 @@
       max-width: 100%;
     }
   }
-
   &--submit {
+    &:active {
+      outline: none;
+    }
     @include respond-to(tablet) {
       width: 230px;
     }
     @include respond-to(desktop) {
       margin-left: 174px;
+    }
+  }
+  &--modal {
+    max-width: 100%;
+    border-color: $color-aqua;
+    background: $color-aqua;
+    color: #fff;
+    &:hover {
+      border-color: $color-aqua;
+      background: $color-aqua;
+      color: #fff;
+    }
+    &:active {
+      border-color: $color-aqua;
+      background: $color-aqua;
+      color: #fff;
     }
   }
 }

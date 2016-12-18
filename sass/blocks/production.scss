@@ -4,6 +4,7 @@
   flex-direction: column;
   border: 1px solid #ededed;
   border-radius: 4px;
+  @include make-box-shadow;
   @include respond-to(tablet) {
     margin-bottom: 63px;
   }
@@ -78,14 +79,13 @@
     svg {
       width: 101px;
       height: 77px;
+      transition: transform .3s ease,opacity .3s ease;
     }
     &:hover svg {
-      width: 121px;
-      height: 92px;
+      transform: scale(1.2);
     }
     &:active svg {
-      width: 81px;
-      height: 62px;
+     transform: scale(.8);
       opacity: .6
     }
   }

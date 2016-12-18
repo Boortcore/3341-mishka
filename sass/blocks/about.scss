@@ -91,6 +91,13 @@
           position: absolute;
           right: 35px;
         }
+        &:hover {
+          margin-top: -5px;
+          padding-bottom: 36px;
+        }
+        &:active{
+          color: rgba(255,255,255,.3);
+        }
       }
       &__items {
         display: flex;
@@ -104,19 +111,18 @@
           width: 50%;
         }
       }
-      &__icon {
-        position: absolute;
-        right: 25px;
-        top: 20px;
-      }
       &__item--home {
-        background-color: $color-aqua;
+        a {
+          background-color: $color-aqua;
+        }
       }
       &__icon--home {
         fill: $home-icon-color;
       }
       &__item--toys {
-        background-color: $color-turquoise;
+        a {
+          background-color: $color-turquoise;
+        }
       }
       &__icon--toys {
         fill: $toys-icon-color;
@@ -124,12 +130,6 @@
       @include respond-to(tablet) {
         &__wrapper {
           padding: 40px;
-        }
-      }
-      &--second {
-        .about__header {
-          padding-top: 72px;
-          padding-bottom: 75px;
         }
       }
     }

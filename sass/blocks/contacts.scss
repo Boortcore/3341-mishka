@@ -46,6 +46,13 @@
   &__item {
     a {
       color: $main-color;
+      border-bottom: 1px solid $style-color;
+      &:hover {
+        color: $style-color;
+      }
+      &:active {
+        opacity: .4;
+      }
     }
   }
   &__information {
