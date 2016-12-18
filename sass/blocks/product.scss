@@ -37,11 +37,9 @@
       color: #000;
       &:hover {
         color: $link-color-hover;
-
       }
       &:active {
         color: $link-color-active;
-
       }
     }
     @include respond-to(tablet) {
@@ -99,6 +97,16 @@
       fill: $main-color;
       width: 20px;
       height: 19px;
+    }
+    &:hover {
+      svg {
+        fill: $style-color;
+      }
+    }
+    &:active {
+      svg {
+        opacity: .5;
+      }
     }
   }
   &__sale {

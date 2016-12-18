@@ -92,5 +92,16 @@
       height: 26px;
       width: 50px;
     }
+
+    &:hover {
+      svg {
+        fill: $link-color-hover;
+      }
+    }
+    &:active {
+      svg {
+        fill: $link-color-active;
+      }
+    }
   }
 }
