@@ -35,6 +35,14 @@
     margin: 0;
     a {
       color: #000;
+      &:hover {
+        color: $link-color-hover;
+
+      }
+      &:active {
+        color: $link-color-active;
+
+      }
     }
     @include respond-to(tablet) {
       font-size: 20px;

@@ -2,7 +2,7 @@
       font-family: $main-font-bold;
       background-repeat: no-repeat;
       background-position: top center;
-      background-color: #f9f9f9;
+      background-color: $bg-color;
       font-size: 0;
       margin-bottom: 5px;
       position: relative;
@@ -44,19 +44,31 @@
         font-size: 27px;
         line-height: 30px;
         color: #000;
-        padding-top: 69px;
-        padding-bottom: 122px;
         margin: 0;
         text-align: center;
+        padding-top: 68px;
+        padding-bottom: 76px;
         @include respond-to(tablet) {
           @include general-title-tablet;
-          padding-top: 152px;
-          padding-bottom: 374px;
+          padding-top: 95px;
+          padding-bottom: 80px;
         }
         @include respond-to(desktop) {
           @include general-title-desktop;
-          padding-bottom: 360px;
-          padding-top: 80px;
+          padding-top: 20px;
+          padding-bottom: 100px;
+        }
+        &--for-index {
+          padding-top: 69px;
+          padding-bottom: 122px;
+          @include respond-to(tablet) {
+            padding-top: 152px;
+            padding-bottom: 374px;
+          }
+          @include respond-to(desktop) {
+            padding-bottom: 360px;
+            padding-top: 80px;
+          }
         }
       }
       &__link {

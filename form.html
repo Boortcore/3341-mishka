@@ -63,7 +63,7 @@
       </g>
     </symbol>
   </svg>
-  <header class="header">
+    <header class="header">
     <div class="header__wrapper">
       <nav class="top-menu">
         <ul class="top-menu__items">
@@ -103,7 +103,7 @@
             <a href="#">Распродажа</a>
           </li>
           <li class="top-menu__item  top-menu__item--toggle top-menu__item--delivery">
-            <a href="#">Бесплатная доставка по России</a>
+            <span>Бесплатная доставка по России</span>
           </li>
         </ul>
       </nav>
@@ -120,13 +120,13 @@
       </div>
       <section class="order-form__section">
         <div class="container-wrapper">
-          <div class="order-form__item order-form__item--type">
-            <div class="order-form__title"> <span>Тип</span> </div>
+          <div class="order-form__item order-form__item--type ">
+            <div class="order-form__title order-form__title--type"> <span>Тип</span> </div>
             <div class="order-form__values order-form__values--type">
-              <input type="radio">
-              <label for="">Аксессуар для интерьера</label>
-              <input type="radio">
-              <label for="">Детская игрушка</label>
+              <input type="radio" name="options" id="home">
+              <label for="home" class="order-form__label-type" >Аксессуар для интерьера</label>
+              <input type="radio" name="options" id="toy">
+              <label for="toy" class="order-form__label-type">Детская игрушка</label>
             </div>
           </div>
         </div>
@@ -134,22 +134,22 @@
       <section class="order-form__section">
         <div class="container-wrapper">
           <div class="order-form__item order-form__item--colors">
-            <div class="order-form__title">
+            <div class="order-form__title order-form__title--colors">
               <span>Цвет</span>
             </div>
             <div class="order-form__values order-form__values--colors">
-              <input type="checkbox" name="white">
-              <label for="white">Белый</label>
-              <input type="checkbox" name="grey">
-              <label for="white">Серый</label>
-              <input type="checkbox" name="tiffany">
-              <label for="white">Тифани</label>
-              <input type="checkbox" name="black">
-              <label for="white">Черный</label>
-              <input type="checkbox" name="pink">
-              <label for="white">Розовый</label>
-              <input type="checkbox" name="orange">
-              <label for="white">Оранжевый</label>
+              <input  type="checkbox" name="white" id="white">
+              <label class="order-form__label-colors" for="white">Белый</label>
+              <input type="checkbox" name="grey" id="grey">
+              <label class="order-form__label-colors" for="grey">Серый</label>
+              <input  type="checkbox" name="tiffany" id="tiffany">
+              <label class="order-form__label-colors" for="tiffany">Тифани</label>
+              <input type="checkbox" name="black" id="black">
+              <label class="order-form__label-colors" for="black">Черный</label>
+              <input type="checkbox" name="pink" id="pink">
+              <label class="order-form__label-colors" for="pink">Розовый</label>
+              <input type="checkbox" name="orange" id="orange">
+              <label class="order-form__label-colors" for="orange">Оранжевый</label>
             </div>
           </div>
         </div>
@@ -157,19 +157,19 @@
       <section class="order-form__section">
         <div class="container-wrapper">
           <div class="order-form__item order-form__item--name">
-            <div class="order-form__title"> <span>ФИО</span> </div>
+            <div class="order-form__title order-form__title--name"> <span>ФИО</span> </div>
             <div class="order-form__values order-form__values--name">
               <div class="order-form__name-block">
-                <label for="" class="order-form__name-block-label">Имя:</label>
-                <input type="text" class="order-form__name-block-input" placeholder="Введите ваше имя" required>
+                <label for="name" class="order-form__name-block-label">Имя:</label>
+                <input id="name" name="name" type="text" class="order-form__name-block-input" placeholder="Введите ваше имя" required>
               </div>
               <div class="order-form__name-block">
-                <label for="" class="order-form__name-block-label">Фамилия:</label>
-                <input type="text" class="order-form__name-block-input" placeholder="Укажите фамилию" required>
+                <label for="last-name" class="order-form__name-block-label">Фамилия:</label>
+                <input  type="text" class="order-form__name-block-input" name="last-name" id="last-name" placeholder="Укажите фамилию" required>
               </div>
               <div class="order-form__name-block">
-                <label for="" class="order-form__name-block-label">Отчество:</label>
-                <input type="text" class="order-form__name-block-input" placeholder="Отчество, если желаете">
+                <label for="middle-name" class="order-form__name-block-label">Отчество:</label>
+                <input type="text" class="order-form__name-block-input" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
               </div>
             </div>
           </div>
@@ -178,15 +178,15 @@
       <section class="order-form__section">
         <div class="container-wrapper">
           <div class="order-form__item order-form__item--phone">
-            <div class="order-form__title">
+            <div class="order-form__title order-form__title--phone">
               <label for="phone">ТЕЛ</label>
             </div>
             <div class="order-form__values order-form__values--phone">
               <input type="tel" name="phone" id="phone" placeholder="+7 XXX XX XX">
             </div>
           </div>
-          <div class="order-form__item order-form__item--email">
-            <div class="order-form__title">
+          <div class="order-form__item order-form__item--email ">
+            <div class="order-form__title order-form__title--email">
               <label for="e-mail">E-MAIL</label>
             </div>
             <div class="order-form__values order-form__values--email">
@@ -197,7 +197,7 @@
       <section class="order-form__section">
         <div class="container-wrapper">
           <div class="order-form__item order-form__item--more-info">
-            <div class="order-form__title">
+            <div class="order-form__title order-form__title--more-info">
               <label for="more-info">ДОП</label>
             </div>
             <div class="order-form__values order-form__values--more-info">
@@ -215,9 +215,11 @@
   <footer class="footer">
     <div class="container-wrapper footer__wrapper">
       <div class="footer__logo">
-        <svg>
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-footer"></use>
-        </svg>
+        <a href="#" class="footer__logo-link">
+          <svg>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-footer"></use>
+          </svg>
+        </a>
       </div>
       <div class="footer__social-buttons">
         <a href="#" class="footer__social-btn footer__social-btn--insta">
@@ -236,14 +238,13 @@
           </svg>
         </a>
       </div>
-      <div class="footer__creators">
-        <h2 class="footer__title">Разработано</h2>
-        <a href="http://htmlacademy.ru">
+        <a class="footer__creators" href="http://htmlacademy.ru">
+         <h2 class="footer__title">Разработано</h2>
           <svg class="footer__logo-htmlacademy">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
           </svg>
         </a>
-      </div>
+
     </div>
   </footer>
 </body>

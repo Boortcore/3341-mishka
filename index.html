@@ -103,7 +103,7 @@
             <a href="#">Распродажа</a>
           </li>
           <li class="top-menu__item  top-menu__item--toggle top-menu__item--delivery">
-            <a href="#">Бесплатная доставка по России</a>
+            <span>Бесплатная доставка по России</span>
           </li>
         </ul>
       </nav>
@@ -112,7 +112,7 @@
   <main class="main">
     <section class="about about--background">
       <div class="container-wrapper">
-        <h1 class="about__header">Милые штуки ручной работы для дома</h1>
+        <h1 class="about__header about__header--for-index">Милые штуки ручной работы для дома</h1>
       </div>
       <div class="container-wrapper container-wrapper--about-items">
         <div class="about__items">
@@ -263,9 +263,12 @@
   <footer class="footer">
     <div class="container-wrapper footer__wrapper">
       <div class="footer__logo">
-        <svg>
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-footer"></use>
-        </svg>
+        <a href="#" class="footer__logo-link">
+          <svg>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-footer"></use>
+          </svg>
+        </a>
+
       </div>
       <div class="footer__social-buttons">
         <a href="#" class="footer__social-btn footer__social-btn--insta">
@@ -284,14 +287,14 @@
           </svg>
         </a>
       </div>
-      <div class="footer__creators">
-        <h2 class="footer__title">Разработано</h2>
-        <a href="http://htmlacademy.ru">
+
+        <a class="footer__creators" href="http://htmlacademy.ru">
+         <h2 class="footer__title">Разработано</h2>
           <svg class="footer__logo-htmlacademy">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
           </svg>
         </a>
-      </div>
+
     </div>
   </footer>
 </body>
