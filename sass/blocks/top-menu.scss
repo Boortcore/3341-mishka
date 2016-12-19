@@ -8,6 +8,14 @@
   @include respond-to(tablet) {
     top: 0px;
   }
+  &__link-logo {
+    &:hover {
+      opacity: .7;
+    }
+    &:active {
+      opacity: .4;
+    }
+  }
   &__toggle {
     position: absolute;
     top: 15px;
@@ -73,14 +81,6 @@
       }
     }
   }
-  &__link-logo {
-    &:hover {
-      opacity: .7;
-    }
-    &:active {
-      opacity: .4;
-    }
-  }
   &__image-logo {
     width: 86px;
     height: 35px;
@@ -119,9 +119,11 @@
     justify-content: center;
     min-height: 80px;
     background-color: #fff;
+    border-bottom: 1px solid #ececec;
     @include respond-to(tablet) {
       justify-content: center;
       min-height: 90px;
+      border-bottom: none;
     }
     &:first-child {
       border-top: 1px solid #ececec;

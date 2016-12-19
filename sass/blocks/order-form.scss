@@ -7,7 +7,7 @@
     padding-top: 72px;
   }
   @include respond-to(desktop) {
-    padding-top: 145px
+    padding-top: 125px
   }
   &__description {
     font-size: 13px;
@@ -46,7 +46,7 @@
     }
     &--colors {
       left: 53px;
-      top: 65px;
+      top: 63px;
     }
     &--name {
       left: 53px;
@@ -132,12 +132,18 @@
       }
       textarea {
         padding: 15px;
+        padding-top: 12px;
         margin-top: 11px;
         padding-bottom: 12px;
         border: 2px solid $main-color;
         @include respond-to(tablet) {
           margin-top: 26px;
           margin-bottom: 25px;
+          height: 140px;
+        }
+        @include respond-to(tablet) {
+          margin-top: 31px;
+          margin-bottom: 20px;
           height: 140px;
         }
         &:hover,
@@ -247,8 +253,8 @@
       top: 12px
     }
     @include respond-to(desktop) {
-      right: 227px;
-      top: 5px
+      right: 222px;
+      top: 13px
     }
   }
   &__section:nth-child(2n+1) {
@@ -278,8 +284,8 @@
       border-radius: 50%;
       box-sizing: border-box;
       @include respond-to(tablet) {
-        left: -78px;
-        top: -11px;
+        left: -80px;
+        top: -12px;
         width: 50px;
         height: 50px;
       }
@@ -305,7 +311,7 @@
     height: 17px;
     border-radius: 50%;
     @include respond-to(tablet) {
-      left: -64px;
+      left: -66px;
       top: 3px;
       width: 22px;
       height: 22px;
@@ -351,7 +357,7 @@
       border: 2px solid $main-color;
       @include respond-to(tablet) {
         left: -80px;
-        top: 9px;
+        top: 7px;
         width: 50px;
         height: 50px;
       }

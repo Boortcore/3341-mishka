@@ -20,7 +20,8 @@ window.onresize = function () {
 /* -- Открываем модальное окно --*/
 
 var buyButtons = document.querySelectorAll("a[data-make-order]");
-if (buyButtons) {
+
+if (buyButtons.length > 0) {
   var layuot = document.querySelector(".layout");
   var modal = document.querySelector(".modal");
   for (var i = 0; i < buyButtons.length; i++) {
@@ -35,6 +36,7 @@ if (buyButtons) {
   window.onscroll = function () {
     modal.style.top = window.pageYOffset + (document.documentElement.clientHeight / 2) + "px";
   }
+
   layuot.addEventListener('click', function () {
     layuot.classList.add("layout--hidden")
     modal.classList.add("modal--hidden")
