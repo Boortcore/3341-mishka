@@ -2,6 +2,7 @@
   &__wrapper {
     margin: 0 auto;
     min-width: 320px;
+    padding-top: 80px;
     @include respond-to(tablet) {
       width: 768px;
       padding: 0 50px;

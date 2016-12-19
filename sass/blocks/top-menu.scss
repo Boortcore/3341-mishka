@@ -4,6 +4,10 @@
   font-family: $main-font-bold;
   z-index: 2;
   position: relative;
+  top: -80px;
+  @include respond-to(tablet) {
+     top: 0px;
+    }
   &__toggle {
     position: absolute;
     top: 15px;
@@ -30,12 +34,16 @@
       cursor: pointer;
     }
   }
+  &--closed {
+    position: relative;
+    top: -80px;
+  }
   &--closed &__toggle:before {
     background: url(../img/icon-menu-open.svg) no-repeat 50% 50%;
-
   }
   &__items {
     position: relative;
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -44,6 +52,10 @@
       flex-direction: row;
       justify-content: flex-start;
       flex-wrap: wrap;
+    }
+    &--closed {
+      position: absolute;
+      width: 100%;
     }
   }
   a {
@@ -111,6 +123,7 @@
     display: flex;
     justify-content: center;
     min-height: 80px;
+    background-color: #fff;
     @include respond-to(tablet) {
       justify-content: center;
       min-height: 90px;
@@ -162,6 +175,7 @@
         font-size: 15px;
         order: 1;
         border-bottom: none;
+        background-color: transparent;
       }
       @include respond-to(desktop) {
         order: -2;
@@ -177,6 +191,7 @@
     }
     &--knitting {
       @include respond-to(tablet) {
+        background-color: transparent;
         font-size: 15px;
         order: 1;
         border-bottom: none;
@@ -220,6 +235,7 @@
     }
     &--new,
     &--sale {
+      background-color: transparent;
       display: none;
       font-size: 15px;
       border-bottom: none;
@@ -235,6 +251,7 @@
       margin-left: 61px;
     }
     &--delivery {
+      background-color: transparent;
       display: none;
       @include respond-to(tablet) {
         display: flex;
