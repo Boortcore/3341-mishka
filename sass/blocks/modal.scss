@@ -4,8 +4,14 @@
   padding: 30px;
   border-top: 1px solid $link-color-active;
   border-bottom: 1px solid $link-color-active;
-  @include respond-to(tablet) {}
-  @include respond-to(desktop) {}
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 15;
+  &--hidden {
+    display: none;
+  }
   @include respond-to(tablet) {
     width: 566px;
     padding-left: 110px;
