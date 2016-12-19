@@ -22,16 +22,23 @@
     }
   }
   &__title {
+    position: relative;
     text-transform: uppercase;
     font-family: $main-font-bold, Arial, sans-serif;
     font-weight: bold;
     margin-bottom: 13px;
     color: $style-color;
-    &:after {
-      content: '';
-      width: 800px;
+    &::after {
+      content: " ";
+      position: absolute;
+      right: 0px;
+      top: 10px;
+      width: 200px;
       height: 1px;
-      border-bottom: 2px solid $style-color;
+      background-color: $style-color;
+      @include respond-to(tablet) {
+        content: none;
+      }
     }
     @include respond-to(tablet) {
       position: absolute;
@@ -39,31 +46,45 @@
       font-size: 17px;
     }
     @include respond-to(desktop) {
-      left: 57px;
+      @include respond-to(tablet) {
+        left: 57px;
+      }
     }
     &--type {
-      left: 53px;
-      top: 55px;
+      @include respond-to(tablet) {
+        left: 51px;
+        top: 55px;
+      }
     }
     &--colors {
-      left: 53px;
-      top: 63px;
+      @include respond-to(tablet) {
+        left: 51px;
+        top: 68px;
+      }
     }
     &--name {
-      left: 53px;
-      top: 67px;
+      @include respond-to(tablet) {
+        left: 53px;
+        top: 67px;
+      }
     }
     &--phone {
-      left: 53px;
-      top: 69px;
+      @include respond-to(tablet) {
+        left: 53px;
+        top: 69px;
+      }
     }
     &--email {
-      left: 53px;
-      top: 145px;
+      @include respond-to(tablet) {
+        left: 53px;
+        top: 145px;
+      }
     }
     &--more-info {
-      left: 53px;
-      top: 67px;
+      @include respond-to(tablet) {
+        left: 53px;
+        top: 67px;
+      }
     }
     @include respond-to(desktop) {
       left: 112px;
@@ -86,7 +107,7 @@
       @include respond-to(tablet) {
         font-size: 17px;
         line-height: 30px;
-        padding-bottom: 17px;
+        padding-bottom: 13px;
         padding-top: 50px;
       }
     }
@@ -94,14 +115,14 @@
       padding-top: 15px;
       @include respond-to(tablet) {
         padding-top: 38px;
-        padding-bottom: 38px;
+        padding-bottom: 34px;
       }
     }
     &--name {
       @include respond-to(tablet) {
         padding-bottom: 16px;
         padding-left: 168px;
-        padding-top: 60px;
+        padding-top: 59px;
       }
     }
     &--phone {
@@ -125,7 +146,7 @@
       padding-bottom: 10px;
       @include respond-to(tablet) {
         padding-top: 21px;
-        padding-bottom: 30px;
+        padding-bottom: 32px;
         padding-left: 168px;
       }
       @include respond-to(desktop) {
@@ -133,13 +154,13 @@
       }
       textarea {
         padding: 15px;
-        padding-top: 12px;
         margin-top: 11px;
         padding-bottom: 12px;
         border: 2px solid $main-color;
         @include respond-to(tablet) {
+          padding: 10px;
           margin-top: 26px;
-          margin-bottom: 25px;
+          margin-bottom: 27px;
           height: 140px;
         }
         @include respond-to(tablet) {
@@ -182,6 +203,10 @@
     }
     &--type {
       padding-left: 61px;
+      padding-bottom: 2px;
+      @include respond-to(tablet) {
+        padding-bottom: 0;
+      }
       @include respond-to(desktop) {
         padding-left: 81px;
       }
@@ -191,6 +216,7 @@
       @include respond-to(tablet) {
         flex-direction: row;
         flex-wrap: wrap;
+        padding-top: 5px
       }
       @include respond-to(desktop) {
         padding-left: 81px;
@@ -207,7 +233,7 @@
       }
     }
     &--phone {
-      padding-top: 8px;
+      padding-top: 6px;
       padding-bottom: 11px;
       @include respond-to(tablet) {
         padding-top: 55px;
@@ -222,7 +248,7 @@
   }
   &__name-block {
     padding-top: 3px;
-    padding-bottom: 0;
+    padding-bottom: 1px;
     @include respond-to(tablet) {
       padding-bottom: 15px;
       display: flex;
@@ -251,8 +277,8 @@
     @include respond-to(tablet) {
       font-size: 17px;
       position: absolute;
-      right: 45px;
-      top: 12px
+      right: 50px;
+      top: 13px
     }
     @include respond-to(desktop) {
       right: 222px;
@@ -268,7 +294,7 @@
     position: relative;
     cursor: pointer;
     padding-top: 22px;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     @include respond-to(tablet) {
       padding-top: 3px;
       padding-bottom: 55px;
@@ -278,8 +304,8 @@
     &::before {
       content: "";
       position: absolute;
-      left: -60px;
-      top: 12px;
+      left: -62px;
+      top: 10px;
       width: 39px;
       height: 41px;
       border: 2px solid $main-color;
@@ -307,8 +333,8 @@
     background: $color-aqua;
     content: "";
     position: absolute;
-    left: -49px;
-    top: 24px;
+    left: -50px;
+    top: 23px;
     width: 16px;
     height: 17px;
     border-radius: 50%;
@@ -325,7 +351,7 @@
     position: relative;
     @include respond-to(tablet) {
       width: 50%;
-      padding-bottom: 35px;
+      padding-bottom: 36px;
       font-size: 19px;
       line-height: 18px;
     }
@@ -352,7 +378,7 @@
     &:before {
       content: "";
       position: absolute;
-      top: 9px;
+      top: 12px;
       left: -62px;
       width: 37px;
       height: 36px;
@@ -405,7 +431,7 @@
   }
   &__icon-email {
     position: absolute;
-    top: 146px;
+    top: 144px;
     right: 33px;
     width: 32px;
     height: 32px;
