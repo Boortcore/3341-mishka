@@ -88,13 +88,13 @@
     }
   }
   &__creators {
-    padding-left: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: $link-color;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding-left: 15px;
     &:hover {
       svg {
         fill: $color-turquoise;
@@ -111,12 +111,12 @@
     }
   }
   &__title {
+    display: inline-block;
     font-size: 19px;
     line-height: 18px;
-    display: inline-block;
     margin: 0;
     padding-right: 15px;
-     @include respond-to(tablet) {
+    @include respond-to(tablet) {
       padding-right: 32px;
     }
   }
