@@ -69,7 +69,7 @@
       <div class="modal__sizes">
         <input class="modal__input" type="radio" id="s-size" name="sizes">
         <label for="s-size">S</label>
-        <input class="modal__input" type="radio" id="m-size" name="sizes">
+        <input class="modal__input" type="radio" id="m-size" name="sizes" checked>
         <label for="m-size">M</label>
         <input class="modal__input" type="radio" id="l-size" name="sizes">
         <label for="l-size">L</label>
@@ -264,8 +264,9 @@
           <picture>
             <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
             <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
-            <img src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта местонахождения берлоги Мишки">
+            <img class="contacts__img" src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта местонахождения берлоги Мишки">
           </picture>
+          <iframe class="contacts__frame contacts__frame--hidden" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3361.3918426248565!2d30.32018901307999!3d59.937193949122026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1466516317017" width="320" height="457" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
       <div class="container-wrapper contacts__wrapper">

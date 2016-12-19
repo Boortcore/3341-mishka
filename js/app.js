@@ -35,8 +35,17 @@ if (buyButtons) {
   window.onscroll = function () {
     modal.style.top = window.pageYOffset + (document.documentElement.clientHeight / 2) + "px";
   }
-  layuot.addEventListener('click', function(){
+  layuot.addEventListener('click', function () {
     layuot.classList.add("layout--hidden")
     modal.classList.add("modal--hidden")
   })
+}
+
+/* -- Добавление фреймов -- */
+
+var frame = document.querySelector(".contacts__frame");
+var image = document.querySelector(".contacts__img");
+if (frame) {
+  frame.classList.remove("contacts__frame--hidden");
+  image.classList.add("contacts__img--hidden");
 }

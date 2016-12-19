@@ -115,7 +115,6 @@
   }
   &__item {
     position: relative;
-    border-bottom: 1px solid #ececec;
     display: flex;
     justify-content: center;
     min-height: 80px;
@@ -170,14 +169,12 @@
       @include respond-to(tablet) {
         font-size: 15px;
         order: 1;
-        border-bottom: none;
         background-color: transparent;
       }
       @include respond-to(desktop) {
         order: -2;
         font-size: 17px;
         border-right: 1px solid #ececec;
-        border-bottom: 1px solid #ececec;
       }
       a {
         @include respond-to(tablet) {
@@ -190,12 +187,10 @@
         background-color: transparent;
         font-size: 15px;
         order: 1;
-        border-bottom: none;
       }
       @include respond-to(desktop) {
         order: -2;
         font-size: 17px;
-        border-bottom: 1px solid #ececec;
       }
       a {
         @include respond-to(desktop) {
@@ -234,7 +229,6 @@
       background-color: transparent;
       display: none;
       font-size: 15px;
-      border-bottom: none;
       @include respond-to(desktop) {
         display: flex;
       }
@@ -252,7 +246,6 @@
       @include respond-to(tablet) {
         display: flex;
         justify-content: flex-end;
-        border-bottom: none;
         font-size: 15px;
         order: 3;
         flex-basis: 53%;

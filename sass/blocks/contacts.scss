@@ -1,7 +1,7 @@
 .contacts {
   color: $main-color;
   line-height: 30px;
-  padding-top: 22px;
+  padding-top: 20px;
   @include respond-to(tablet) {
     padding-top: 61px;
   }
@@ -46,6 +46,7 @@
   &__item {
     a {
       color: $main-color;
+      padding-bottom: 4px;
       border-bottom: 1px solid $style-color;
       &:hover {
         color: $style-color;
@@ -96,17 +97,35 @@
       right: 50px;
       bottom: -107px;
     }
-    img {
-      width: 320px;
+  }
+  &__frame {
+    width: 320px;
+    height: 457px;
+    @include respond-to(tablet) {
+      width: 768px;
       height: 457px;
-      @include respond-to(tablet) {
-        width: 768px;
-        height: 457px;
-      }
-      @include respond-to(desktop) {
-        width: 525px;
-        height: 457px;
-      }
+    }
+    @include respond-to(desktop) {
+      width: 525px;
+      height: 457px;
+    }
+    &--hidden {
+      display: none;
+    }
+  }
+  &__img {
+    width: 320px;
+    height: 457px;
+    @include respond-to(tablet) {
+      width: 768px;
+      height: 457px;
+    }
+    @include respond-to(desktop) {
+      width: 525px;
+      height: 457px;
+    }
+    &--hidden {
+      display: none;
     }
   }
 }
