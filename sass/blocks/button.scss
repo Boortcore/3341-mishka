@@ -1,11 +1,10 @@
 .button {
-  display: inline-block;
-  font-family: $main-font-bold, Arial, sans-serif;
-  font-weight: bold;
+  font-family: $main-font-bold;
   text-transform: uppercase;
+  display: inline-block;
   line-height: 17px;
-  text-align: center;
   color: $main-color;
+  text-align: center;
   border: 2px solid $main-color;
   padding: 15px;
   background: #fff;
@@ -36,11 +35,12 @@
     }
   }
   &--write-us {
-    display: block;
     margin-top: 30px;
     margin-bottom: 40px;
+    display: block;
     @include respond-to(tablet) {
       margin: 0 auto 57px auto;
+      display: block;
       width: 230px
     }
     @include respond-to(desktop) {

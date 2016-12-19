@@ -4,8 +4,7 @@
 }
 
 @mixin general-title() {
-  font-family: $main-font-bold, Arial, sans-serif;
-  font-weight: bold;
+  font-family: $main-font-bold;
   font-size: 25px;
   line-height: 30px;
   color: #000;
@@ -13,37 +12,32 @@
 
 @mixin general-title-tablet() {
   margin: 0;
-  font-family: $main-font-bold, Arial, sans-serif;
-  font-weight: bold;
+  font-family: $main-font-bold;
   font-size: 43px;
   line-height: 50px;
   color: #000;
 }
 
 @mixin general-title-desktop() {
-  font-family: $main-font-bold, Arial, sans-serif;
-  font-weight: bold;
+  font-family: $main-font-bold;
   font-size: 53px;
   line-height: 57px;
   color: #000;
 }
 
 @mixin respond-to($media) {
-  @if $media==tablet {
-    @media screen and (min-width: $tablet-width) {
-      @content
-    }
-  }
-  ;
-  @if $media==desktop {
-    @media screen and (min-width: $desktop-width) {
-      @content;
-    }
+
+  @if $media == tablet {
+    @media screen and (min-width: $tablet-width) { @content }
+  };
+
+  @if $media == desktop {
+    @media screen and (min-width: $desktop-width) { @content; }
   }
 }
 
-@mixin make-box-shadow() {
-  &:hover {
+@mixin make-box-shadow(){
+  &:hover{
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   }
   &:active {
@@ -51,8 +45,6 @@
   }
 }
 
-@mixin retina() {
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    @content
-  }
+@mixin retina(){
+  @media (min-resolution: 144dpi),  (min-resolution: 1.5dppx) { @content }
 }

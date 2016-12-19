@@ -1,6 +1,5 @@
 .about-us {
-  font-family: $main-font-bold, Arial, sans-serif;
-  font-weight: bold;
+  font-family: $main-font-bold;
   font-size: 0;
   padding-top: 8px;
   @include respond-to(tablet) {

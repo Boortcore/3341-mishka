@@ -23,8 +23,7 @@
   }
   &__title {
     text-transform: uppercase;
-    font-family: $main-font-bold, Arial, sans-serif;
-    font-weight: bold;
+    font-family: $main-font-bold;
     margin-bottom: 13px;
     color: $style-color;
     &:after {
@@ -156,8 +155,7 @@
     }
   }
   &__values {
-    font-family: $main-font-bold, Arial, sans-serif;
-    font-weight: bold;
+    font-family: $main-font-bold;
     display: flex;
     flex-direction: column;
     input[type="radio"],

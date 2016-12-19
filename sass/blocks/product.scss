@@ -30,8 +30,7 @@
     }
   }
   &__title {
-    font-family: $main-font-bold, Arial, sans-serif;
-    font-weight: bold;
+    font-family: $main-font-bold;
     font-size: 17px;
     padding-bottom: 5px;
     margin: 0;
@@ -87,8 +86,7 @@
     }
   }
   &__price {
-    font-family: $main-font-bold, Arial, sans-serif;
-    font-weight: bold;
+    font-family: $main-font-bold;
     font-size: 15px;
     @include respond-to(tablet) {
       font-size: 17px;

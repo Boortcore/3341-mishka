@@ -26,8 +26,7 @@
   &__header {
     margin: 0;
     padding-bottom: 22px;
-    font-family: $main-font-bold, Arial, sans-serif;
-    font-weight: bold;
+    font-family: $main-font-bold;
     font-size: 25px;
     line-height: 30px;
     @include respond-to(tablet) {
@@ -49,8 +48,7 @@
     margin-top: 22px;
     margin-bottom: 22px;
     justify-content: center;
-    font-family: $main-font-bold, Arial, sans-serif;
-    font-weight: bold;
+    font-family: $main-font-bold;
   }
   label {
     display: inline-block;
