@@ -41,14 +41,14 @@
       font-size: 17px;
       line-height: 30px;
     }
-
   }
   &__sizes {
     display: flex;
     margin-top: 22px;
     margin-bottom: 22px;
     justify-content: center;
-    font-family: $main-font-bold;
+    font-family: $main-font-bold, Arial, sans-serif;
+    font-weight: bold;
   }
   label {
     display: inline-block;

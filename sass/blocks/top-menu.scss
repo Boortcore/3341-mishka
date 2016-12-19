@@ -1,10 +1,11 @@
 .top-menu {
+  position: relative;
   text-align: center;
   font-size: 17px;
-  font-family: $main-font-bold;
-  z-index: 2;
-  position: relative;
+  font-family: $main-font-bold, Arial, sans-serif;
+  font-weight: bold;
   top: -80px;
+  z-index: 2;
   @include respond-to(tablet) {
     top: 0px;
   }
@@ -256,7 +257,8 @@
         flex-basis: 70%;
       }
       span {
-        font-family: $main-font-regular;
+        font-family: $main-font-regular, Arial, sans-serif;
+        font-weight: normal;
         display: flex;
         align-items: center;
       }
