@@ -35,4 +35,8 @@ if (buyButtons) {
   window.onscroll = function () {
     modal.style.top = window.pageYOffset + (document.documentElement.clientHeight / 2) + "px";
   }
+  layuot.addEventListener('click', function(){
+    layuot.classList.add("layout--hidden")
+    modal.classList.add("modal--hidden")
+  })
 }
