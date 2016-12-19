@@ -1,5 +1,6 @@
 .footer {
-  font-family: $main-font-bold;
+  font-family: $main-font-bold, Arial, sans-serif;
+  font-weight: bold;
   background-color: $footer-bg;
   @include respond-to(tablet) {
     padding-top: 30px;

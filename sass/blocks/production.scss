@@ -14,7 +14,8 @@
   }
   &__title {
     position: relative;
-    font-family: $main-font-bold;
+    font-family: $main-font-bold, Arial, sans-serif;
+    font-weight: bold;
     font-size: 17px;
     width: 65%;
     margin-left: 35%;
@@ -79,13 +80,13 @@
     svg {
       width: 101px;
       height: 77px;
-      transition: transform .3s ease,opacity .3s ease;
+      transition: transform .3s ease, opacity .3s ease;
     }
     &:hover svg {
       transform: scale(1.2);
     }
     &:active svg {
-     transform: scale(.8);
+      transform: scale(.8);
       opacity: .6
     }
   }

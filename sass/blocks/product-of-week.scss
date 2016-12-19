@@ -1,5 +1,6 @@
 .product-of-week {
-  font-family: $main-font-bold;
+  font-family: $main-font-bold, Arial, sans-serif;
+  font-weight: bold;
   font-size: 15px;
   padding-bottom: 40px;
   background-image: url(../img/bg-zigzag-line.svg);
@@ -60,7 +61,7 @@
     }
   }
   &__description {
-    font-family: $main-font-regular;
+    font-family: $main-font-regular, Arial, sans-serif;
     color: $main-color;
     line-height: 24px;
     margin-top: 5px;
@@ -125,7 +126,7 @@
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 28px;
-    font-family: $main-font-regular;
+    font-family: $main-font-regular, Arial, sans-serif;
     @include respond-to(tablet) {
       font-size: 15px;
       width: 40%;
