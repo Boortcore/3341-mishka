@@ -44,3 +44,7 @@
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 }
+
+@mixin retina(){
+  @media (min-resolution: 144dpi),  (min-resolution: 1.5dppx) { @content }
+}

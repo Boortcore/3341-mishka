@@ -17,6 +17,9 @@
       background: url(../../img/review@1x.jpg) no-repeat;
       padding-bottom: 94px;
       padding-top: 79px;
+      @include retina() {
+        background: url(../../img/review@2x.jpg) no-repeat;
+      }
     }
     @include respond-to(desktop) {
       padding-top: 62px;
@@ -92,7 +95,6 @@
       height: 26px;
       width: 50px;
     }
-
     &:hover {
       svg {
         fill: $link-color-hover;

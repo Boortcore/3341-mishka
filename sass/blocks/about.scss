@@ -37,8 +37,14 @@
       }
       &--background {
         background-image: url('../img/hero-mobile@1x.jpg');
+        @include retina() {
+          background-image: url('../img/hero-mobile@2x.jpg');
+        }
         @include respond-to(tablet) {
           background-image: url('../img/hero-desktop@1x.jpg');
+          @include retina() {
+            background-image: url('../img/hero-desktop@2x.jpg');
+          }
         }
       }
       &__header {
@@ -96,8 +102,8 @@
           margin-top: -5px;
           padding-bottom: 36px;
         }
-        &:active{
-          color: rgba(255,255,255,.3);
+        &:active {
+          color: rgba(255, 255, 255, .3);
         }
       }
       &__items {
