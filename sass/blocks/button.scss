@@ -4,6 +4,7 @@
   text-transform: uppercase;
   display: inline-block;
   line-height: 17px;
+   font-size: 17px;
   color: $main-color;
   text-align: center;
   border: 2px solid $main-color;
@@ -21,6 +22,10 @@
   @include respond-to(tablet) {
     max-width: 293px;
   }
+  @include respond-to(desktop) {
+    max-width: 293px;
+   
+  }
   &--reviews {
     margin-top: 30px;
     margin-bottom: 12px;
@@ -32,7 +37,8 @@
     }
     @include respond-to(desktop) {
       position: absolute;
-      top: 45px;
+      right: 49px;
+      top: 42px;
     }
   }
   &--write-us {
@@ -45,7 +51,7 @@
       width: 230px
     }
     @include respond-to(desktop) {
-      margin-left: 0;
+      margin-left: 4px;
       width: 230px
     }
   }

@@ -70,12 +70,12 @@
           padding-top: 69px;
           padding-bottom: 122px;
           @include respond-to(tablet) {
-            padding-top: 152px;
-            padding-bottom: 374px;
+            padding-top: 154px;
+            padding-bottom: 372px;
           }
           @include respond-to(desktop) {
-            padding-bottom: 360px;
-            padding-top: 78px;
+            padding-bottom: 359px;
+            padding-top: 79px;
           }
         }
       }
@@ -90,6 +90,13 @@
         @include respond-to(tablet) {
           font-size: 20px;
           line-height: 30px;
+          padding-left: 35px;
+          padding-top: 28px;
+          padding-bottom: 29px;
+        }
+        @include respond-to(desktop) {
+          padding-left: 39px;
+
         }
         span {
           display: inline-block;

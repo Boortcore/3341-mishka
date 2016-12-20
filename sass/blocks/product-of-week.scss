@@ -2,7 +2,7 @@
   font-family: $main-font-bold, Arial, sans-serif;
   font-weight: bold;
   font-size: 15px;
-  padding-bottom: 40px;
+  padding-bottom: 42px;
   background-image: url(../img/bg-zigzag-line.svg);
   background-repeat: repeat-x;
   background-position: 1px bottom;
@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: column;
     @include respond-to(desktop) {
-      padding-left: 225px;
+      padding-left: 222px;
     }
   }
   &__title {
@@ -57,7 +57,7 @@
     }
     @include respond-to(desktop) {
       top: 37px;
-      left: 81px;
+      left: 83px;
     }
   }
   &__description {
@@ -75,6 +75,7 @@
     }
     @include respond-to(desktop) {
       margin-bottom: 48px;
+      padding-left: 4px;
     }
     p {
       @include respond-to(tablet) {
@@ -126,7 +127,7 @@
   &__exposition-items {
     border-collapse: collapse;
     width: 100%;
-    margin-bottom: 28px;
+    margin-bottom: 26px;
     font-family: $main-font-regular, Arial, sans-serif;
     font-weight: normal;
     @include respond-to(tablet) {
@@ -138,13 +139,16 @@
       font-size: 15px;
       width: 30%;
       margin-bottom: 108px;
+      margin-left: 4px;
     }
   }
   &__parameter,
   &__value {
     padding: 8px;
     border-bottom: 1px solid #ececec;
-    @include respond-to(desktop) {}
+    @include respond-to(desktop) {
+    
+    }
   }
   &__parameter {
     padding-left: 0;

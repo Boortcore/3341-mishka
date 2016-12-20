@@ -2,7 +2,7 @@
   font-family: $main-font-bold, Arial, sans-serif;
   font-weight: bold;
   font-size: 0;
-  padding-top: 8px;
+  padding-top: 7px;
   @include respond-to(tablet) {
     padding-bottom: 14px;
     padding-top: 50px;
@@ -12,14 +12,15 @@
   }
   &__wrapper {
     @include respond-to(desktop) {
-      padding-left: 225px;
+      padding-left: 222px;
     }
   }
   &__title {
     @include general-title;
+    margin-bottom: 20px;
     @include respond-to(tablet) {
       @include general-title-tablet;
-      margin-bottom: 20px;
+
     }
     @include respond-to(desktop) {
       @include general-title-desktop;
@@ -38,6 +39,7 @@
     }
     @include respond-to(desktop) {
       justify-content: flex-start;
+      padding-left: 4px;
     }
   }
   &__item {
