@@ -4,11 +4,12 @@
   text-transform: uppercase;
   display: inline-block;
   line-height: 16px;
-   font-size: 17px;
+  font-size: 17px;
   color: $main-color;
   text-align: center;
   border: 2px solid $main-color;
   padding: 15px;
+  padding-top: 17px;
   background: #fff;
   width: 100%;
   box-sizing: border-box;
@@ -24,7 +25,6 @@
   }
   @include respond-to(desktop) {
     max-width: 293px;
-   
   }
   &--reviews {
     margin-top: 30px;
@@ -33,12 +33,12 @@
       position: absolute;
       top: 50px;
       right: 47px;
-      width: 175px
+      width: 177px
     }
     @include respond-to(desktop) {
       position: absolute;
-      right: 49px;
-      top: 42px;
+      right: 46px;
+      top: 41px;
     }
   }
   &--write-us {
@@ -52,7 +52,17 @@
     }
     @include respond-to(desktop) {
       margin-left: 4px;
-      width: 230px
+      width: 230px;
+      margin-top: 0px;
+    }
+  }
+  &--of-week {
+    @include respond-to(tablet) {
+      margin-left: -2px;
+    }
+    @include respond-to(desktop) {
+      margin-left: 4px;
+      padding-left: 22px;
     }
   }
   &--production {

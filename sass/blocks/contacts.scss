@@ -1,12 +1,12 @@
 .contacts {
   color: $main-color;
   line-height: 30px;
-  padding-top: 20px;
+  padding-top: 19px;
   @include respond-to(tablet) {
     padding-top: 61px;
   }
   @include respond-to(desktop) {
-    padding-top: 142px;
+    padding-top: 143px;
     padding-bottom: 50px
   }
   &__wrapper {
@@ -30,7 +30,7 @@
     }
     @include respond-to(desktop) {
       @include general-title-desktop;
-       margin-bottom: 48px;
+      margin-bottom: 48px;
     }
     &:before {
       @include respond-to(tablet) {
@@ -79,8 +79,13 @@
     justify-content: space-between;
     max-width: 300px;
     padding-bottom: 29px;
+
     @include respond-to(tablet) {
       max-width: 300px;
+    }
+
+    &--address {
+      padding-bottom: 39px;
     }
   }
   &__value {
@@ -88,6 +93,13 @@
     @include respond-to(tablet) {
       padding-left: 40px;
       padding-left: 25px;
+    }
+    &--address {
+      padding-right: 30px;
+      @include respond-to(tablet) {
+       width: 270px;
+        padding-right: 0;
+      }
     }
   }
   &__map {

@@ -74,6 +74,7 @@
             padding-bottom: 372px;
           }
           @include respond-to(desktop) {
+            margin: 0 200px;
             padding-bottom: 359px;
             padding-top: 79px;
           }

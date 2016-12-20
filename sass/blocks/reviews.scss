@@ -10,6 +10,7 @@
     padding-top: 16px;
   }
   @include respond-to(desktop) {
+    padding-top: 18px;
     background-position: 0 bottom;
     background-size: auto auto;
   }
@@ -26,11 +27,11 @@
       padding-top: 62px;
       padding-bottom: 147px;
       padding-left: 222px;
-      background-position: 7% 0;
+      background-position: 6% 0;
     }
   }
   &__title {
-    margin-bottom: 23px;
+    margin-bottom: 24px;
     @include general-title;
     @include respond-to(tablet) {
       @include general-title-tablet;
@@ -51,7 +52,7 @@
     }
     @include respond-to(desktop) {
       font-size: 17px;
-      margin-bottom: 36px;
+      margin-bottom: 35px;
       padding-left: 4px
     }
   }
@@ -113,6 +114,14 @@
       svg {
         fill: $link-color-active;
       }
+    }
+  }
+  p {
+    @include respond-to(tablet) {
+      padding-right:  20px;
+    }
+    @include respond-to(desktop) {
+      padding-right:  80px;
     }
   }
 }

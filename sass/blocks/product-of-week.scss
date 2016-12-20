@@ -80,7 +80,9 @@
     p {
       @include respond-to(tablet) {
         margin: 0;
+        padding-right: 10px;
       }
+
     }
   }
   &__price {
@@ -99,7 +101,7 @@
       width: 35%;
       font-size: 20px;
       line-height: 24px;
-      margin-bottom: 35px;
+      margin-bottom: 33px;
     }
   }
   &__image {
@@ -147,7 +149,7 @@
     padding: 8px;
     border-bottom: 1px solid #ececec;
     @include respond-to(desktop) {
-    
+
     }
   }
   &__parameter {
