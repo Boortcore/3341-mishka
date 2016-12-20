@@ -30,8 +30,8 @@
     @include respond-to(desktop) {
       font-size: 20px;
       position: absolute;
-      top: 71px;
-      right: 85px;
+      top: 69px;
+      right: 87px;
       width: 200px;
     }
     &:before {
@@ -47,13 +47,15 @@
       }
       @include respond-to(desktop) {
         top: -43px;
-        left: 0;
+        left: 2px;
       }
     }
   }
   &__video {
     position: relative;
     margin-bottom: 8px;
+    font-size: 0;
+    line-height: 0;
     img {
       width: 100%;
       @include respond-to(tablet) {
@@ -116,7 +118,7 @@
       padding-right: 15px;
     }
     p {
-      margin-bottom: 27px;
+      margin-bottom: 25px;
       @include respond-to(tablet) {
         margin-bottom: 36px;
       }

@@ -127,7 +127,7 @@
       border-bottom: none;
     }
     @include respond-to(desktop) {
-      padding-top: 3px;
+      //padding-top: 3px;
     }
     &:first-child {
       border-top: 1px solid #ececec;
@@ -139,7 +139,7 @@
       @include respond-to(tablet) {
         width: 48%;
         justify-content: flex-start;
-         padding-top: 10px;
+        padding-top: 10px;
       }
       @include respond-to(desktop) {
         padding-top: 9px;
@@ -188,6 +188,12 @@
       a {
         @include respond-to(tablet) {
           margin-right: 37px;
+          padding-top: 18px;
+          display: block;
+        }
+        @include respond-to(desktop) {
+          padding-top: 0;
+          display: flex;
         }
       }
     }
@@ -202,7 +208,13 @@
         font-size: 17px;
       }
       a {
+        @include respond-to(tablet) {
+          padding-top: 18px;
+          display: block;
+        }
         @include respond-to(desktop) {
+          padding-top: 0;
+          display: flex;
           margin-left: 33px;
           margin-right: 77px;
         }
@@ -242,7 +254,8 @@
         display: flex;
       }
       a {
-        display: flex;
+        padding-top: 18px;
+        display: block;
         align-items: top;
       }
     }
@@ -263,9 +276,10 @@
         flex-basis: 70%;
       }
       span {
+        padding-top: 18px;
+        display: block;
         font-family: $main-font-regular, Arial, sans-serif;
         font-weight: normal;
-        display: flex;
         align-items: center;
       }
     }
