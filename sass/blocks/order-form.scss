@@ -11,7 +11,7 @@
   }
   &__description {
     font-size: 13px;
-    margin-bottom: 13px;
+    margin-bottom: 14px;
     @include respond-to(tablet) {
       font-size: 17px;
       line-height: 30px;
@@ -32,7 +32,7 @@
       content: " ";
       position: absolute;
       right: 0px;
-      top: 10px;
+      top: 9px;
       width: 200px;
       height: 1px;
       background-color: $style-color;
@@ -381,7 +381,7 @@
       top: 12px;
       left: -62px;
       width: 37px;
-      height: 36px;
+      height: 35px;
       border: 2px solid $main-color;
       @include respond-to(tablet) {
         left: -80px;
