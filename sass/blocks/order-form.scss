@@ -15,7 +15,6 @@
   &__description {
     font-size: 13px;
     margin-bottom: 14px;
-    
     @include respond-to(tablet) {
       font-size: 17px;
       line-height: 30px;
@@ -24,6 +23,7 @@
     @include respond-to(desktop) {
       @include desktop-wrapper;
       margin-left: 3px;
+      margin-top: -2px;
     }
   }
   &__title {
@@ -75,14 +75,18 @@
     }
     &--phone {
       @include respond-to(tablet) {
+        left: 51px;
+        top: 66px;
+      }
+      @include respond-to(desktop) {
         left: 53px;
         top: 69px;
       }
     }
     &--email {
       @include respond-to(tablet) {
-        left: 53px;
-        top: 145px;
+        left: 51px;
+        top: 142px;
       }
     }
     &--more-info {
@@ -120,6 +124,10 @@
     &--colors {
       padding-top: 15px;
       @include respond-to(tablet) {
+        padding-top: 39px;
+        padding-bottom: 34px;
+      }
+      @include respond-to(desktop) {
         padding-top: 38px;
         padding-bottom: 34px;
       }
@@ -130,13 +138,23 @@
         padding-left: 168px;
         padding-top: 59px;
       }
+      @include respond-to(desktop) {
+        padding-bottom: 13px;
+        padding-left: 168px;
+        padding-top: 62px;
+      }
     }
     &--phone {
       padding-top: 3px;
       @include respond-to(tablet) {
-        padding-top: 10px;
+        padding-top: 5px;
         padding-bottom: 0;
         padding-left: 168px;
+      }
+      @include respond-to(desktop) {
+        padding-top: 10px;
+        padding-bottom: 0;
+        padding-left: 174px;
       }
     }
     &--email {
@@ -146,17 +164,21 @@
         padding-top: 20px;
         padding-bottom: 50px
       }
+      @include respond-to(desktop) {
+        padding-left: 174px;
+      }
     }
     &--more-info {
       padding-top: 14px;
       padding-bottom: 10px;
       @include respond-to(tablet) {
         padding-top: 21px;
-        padding-bottom: 32px;
+        padding-bottom: 34px;
         padding-left: 168px;
       }
       @include respond-to(desktop) {
         padding-left: 174px;
+        padding-bottom: 30px;
       }
       textarea {
         padding: 15px;
@@ -174,6 +196,7 @@
           margin-top: 31px;
           margin-bottom: 20px;
           height: 140px;
+          padding-left: 17px;
         }
         &:hover,
         &:focus {
@@ -257,8 +280,13 @@
     padding-top: 3px;
     padding-bottom: 1px;
     @include respond-to(tablet) {
-      padding-bottom: 15px;
+      padding-bottom: 16px;
       display: flex;
+    }
+    @include respond-to(desktop) {
+      padding-bottom: 19px;
+      display: flex;
+      padding-top: 0;
     }
   }
   &__name-block-label {
@@ -267,6 +295,9 @@
     @include respond-to(tablet) {
       padding-right: 25px;
     }
+    @include respond-to(desktop) {
+      padding-top: 2px
+    }
   }
   &__name-block-input {
     margin-bottom: 18px;
@@ -274,6 +305,9 @@
     @include respond-to(tablet) {
       width: 100%;
       display: inline-block;
+      padding-bottom: 12px;
+    }
+    @include respond-to(desktop) {
       padding-bottom: 15px;
     }
   }
@@ -319,7 +353,13 @@
       border-radius: 50%;
       box-sizing: border-box;
       @include respond-to(tablet) {
-        left: -80px;
+        left: -79px;
+        top: -11px;
+        width: 50px;
+        height: 50px;
+      }
+      @include respond-to(desktop) {
+        left: -78px;
         top: -12px;
         width: 50px;
         height: 50px;
@@ -346,7 +386,13 @@
     height: 17px;
     border-radius: 50%;
     @include respond-to(tablet) {
-      left: -66px;
+      left: -65px;
+      top: 3px;
+      width: 22px;
+      height: 22px;
+    }
+    @include respond-to(desktop) {
+      left: -64px;
       top: 3px;
       width: 22px;
       height: 22px;
@@ -370,6 +416,13 @@
       @include respond-to(desktop) {
         width: 13.333333%;
         margin-right: 0;
+        margin-left: 4px;
+      }
+    }
+    &:nth-of-type(even) {
+      @include respond-to(tablet) {
+        width: 20%;
+        margin-left: 51px;
       }
     }
     &:hover {
@@ -394,7 +447,11 @@
         left: -80px;
         top: 7px;
         width: 50px;
-        height: 50px;
+        height: 48px;
+      }
+      @include respond-to(desktop) {
+        left: -80px;
+        top: 7px;
       }
     }
   }
@@ -444,8 +501,8 @@
     height: 32px;
     fill: $link-color-active;
     @include respond-to(tablet) {
-      right: 70px;
-      top: 138px;
+      right: 71px;
+      top: 135px;
     }
     @include respond-to(desktop) {
       right: 230px;
