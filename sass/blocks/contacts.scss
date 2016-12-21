@@ -87,6 +87,11 @@
     &--address {
       padding-bottom: 39px;
     }
+    &--email {
+      @include respond-to(desktop) {
+      padding-bottom: 31px; 
+    }
+    }
   }
   &__value {
     padding-left: 30px;
