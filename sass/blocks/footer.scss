@@ -47,9 +47,10 @@
     align-items: center;
     padding-top: 24px;
     padding-bottom: 22px;
-    padding-left: 35px;
-    padding-right: 45px;
+    padding-left: 32px;
+    padding-right: 43px;
     border-bottom: 1px solid #e5e5e5;
+    margin-left: 6px;
     @include respond-to(tablet) {
       width: 295px;
       border-bottom: none;
@@ -61,7 +62,7 @@
     @include respond-to(desktop) {
       padding-right: 35px;
       width: 270px;
-     padding-left: 53px;
+      padding-left: 58px;
     }
   }
   &__social-btn {
@@ -98,8 +99,9 @@
     justify-content: flex-start;
     align-items: center;
     color: $link-color;
-    margin-top: 18px;
+    margin-top: 16px;
     margin-bottom: 20px;
+    margin-left: 3px;
     &:hover {
       svg {
         fill: $color-turquoise;
@@ -115,7 +117,7 @@
       justify-content: space-around;
     }
     @include respond-to(desktop) {
-      margin-top: 14px;
+      margin-top: 17px;
     }
   }
   &__title {
@@ -135,6 +137,7 @@
     width: 26px;
     height: 34px;
     fill: $style-color;
+    margin-top: 5px; 
     @include respond-to(desktop) {
       margin-right: 2px;
       margin-top: 2px;

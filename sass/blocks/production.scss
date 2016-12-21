@@ -10,7 +10,7 @@
   }
   @include respond-to(desktop) {
     flex-direction: row;
-    margin-bottom: 97px;
+    margin-bottom: 103px;
   }
   &__title {
     position: relative;
@@ -118,8 +118,10 @@
       padding-right: 15px;
     }
     p {
+      margin-top: 20px;
       margin-bottom: 25px;
       @include respond-to(tablet) {
+         margin-top:15px;
         margin-bottom: 36px;
       }
       @include respond-to(desktop) {
