@@ -89,15 +89,18 @@
     border-color: $color-aqua;
     background: $color-aqua;
     color: #fff;
+    outline: none;
     &:hover {
       border-color: $color-aqua;
       background: $color-aqua;
       color: #fff;
+      outline: none;
     }
     &:active {
       border-color: $color-aqua;
       background: $color-aqua;
       color: #fff;
+      outline: none;
     }
   }
 }
