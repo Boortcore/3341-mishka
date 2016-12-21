@@ -70,7 +70,7 @@
     @include respond-to(tablet) {
       font-size: 17px;
       max-width: 95%;
-      margin-bottom: 25px;
+      margin-bottom: 16px;
     }
     @include respond-to(desktop) {
       width: 40%;
@@ -120,7 +120,7 @@
     @include respond-to(desktop) {
       position: absolute;
       right: 50px;
-      bottom: -107px;
+      bottom: -97px;
     }
   }
   &__frame {

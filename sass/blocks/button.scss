@@ -42,18 +42,19 @@
     }
   }
   &--write-us {
-    margin-top: 30px;
+    margin-top: 28px;
     margin-bottom: 40px;
     display: block;
     @include respond-to(tablet) {
-      margin: 0 auto 57px auto;
+      margin: 0 auto 55px auto;
       display: block;
       width: 230px
+
     }
     @include respond-to(desktop) {
       margin-left: 4px;
       width: 230px;
-      margin-top: -11px;
+      margin-top: -12px;
     }
   }
   &--of-week {

@@ -121,7 +121,9 @@
         }
         &:hover {
           margin-top: -5px;
-          padding-bottom: 36px;
+          padding-bottom: 34px;
+           @include respond-to(desktop) {
+        }
         }
         &:active {
           color: rgba(255, 255, 255, .3);
@@ -155,5 +157,5 @@
       &__icon--toys {
         fill: $toys-icon-color;
       }
-      
+
     }
