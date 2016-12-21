@@ -93,7 +93,7 @@
     }
     &--email {
       @include respond-to(desktop) {
-      padding-bottom: 31px; 
+      padding-bottom: 31px;
     }
     }
   }
@@ -112,6 +112,7 @@
     }
   }
   &__map {
+    background-color: #faf3ea;
     margin-bottom: 0px;
     @include respond-to(tablet) {
       margin-bottom: 47px;

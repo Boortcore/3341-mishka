@@ -88,6 +88,10 @@
         left: 51px;
         top: 142px;
       }
+      @include respond-to(desktop) {
+        left: 56px;
+        top: 145px;
+      }
     }
     &--more-info {
       padding-top: 3px;
@@ -403,10 +407,22 @@
     padding-bottom: 21px;
     position: relative;
     @include respond-to(tablet) {
-      width: 50%;
+      width: 60%;
       padding-bottom: 36px;
       font-size: 19px;
       line-height: 18px;
+    }
+    &:nth-of-type(even) {
+      @include respond-to(tablet) {
+        width: 30%;
+        margin-left: 9px;
+      }
+    }
+    &:nth-of-type(even) {
+      @include respond-to(desktop) {
+        width: 23.333333%;
+        margin-left: 0;
+      }
     }
     @include respond-to(desktop) {
       width: 23.333333%;
@@ -419,12 +435,7 @@
         margin-left: 4px;
       }
     }
-    &:nth-of-type(even) {
-      @include respond-to(tablet) {
-        width: 20%;
-        margin-left: 51px;
-      }
-    }
+
     &:hover {
       &::before {
         border: 2px solid $style-color;
