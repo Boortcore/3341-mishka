@@ -36,6 +36,19 @@
           bottom: 0px;
         }
       }
+      &__wrapper {
+        @include container-wrapper;
+        &--for-items {
+          @include container-wrapper;
+          padding: 0;
+          @include respond-to(tablet) {
+            padding: 0 50px;
+          }
+          @include respond-to(desktop) {
+            padding: 0 50px;
+          }
+        }
+      }
       &--background {
         background-image: url('../img/hero-mobile@1x.jpg');
         @include retina() {
@@ -97,7 +110,6 @@
         }
         @include respond-to(desktop) {
           padding-left: 39px;
-
         }
         span {
           display: inline-block;
@@ -143,9 +155,5 @@
       &__icon--toys {
         fill: $toys-icon-color;
       }
-      @include respond-to(tablet) {
-        &__wrapper {
-          padding: 40px;
-        }
-      }
+      
     }

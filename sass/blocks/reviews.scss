@@ -15,6 +15,7 @@
     background-size: auto auto;
   }
   &__wrapper {
+    @include container-wrapper;
     @include respond-to(tablet) {
       background: url(../../img/review@1x.jpg) no-repeat;
       padding-bottom: 94px;

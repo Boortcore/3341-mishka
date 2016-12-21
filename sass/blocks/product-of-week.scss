@@ -22,8 +22,23 @@
   &__wrapper {
     display: flex;
     flex-direction: column;
+    @include container-wrapper;
     @include respond-to(desktop) {
       padding-left: 222px;
+    }
+  }
+  @mixin container-wrapper() {
+    width: 320px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 30px;
+    @include respond-to(tablet) {
+      width: 768px;
+      padding: 0 50px;
+    }
+    @include respond-to(desktop) {
+      width: 1150px;
+      padding: 0 50px;
     }
   }
   &__title {
@@ -82,7 +97,6 @@
         margin: 0;
         padding-right: 10px;
       }
-
     }
   }
   &__price {
@@ -148,9 +162,7 @@
   &__value {
     padding: 8px;
     border-bottom: 1px solid #ececec;
-    @include respond-to(desktop) {
-
-    }
+    @include respond-to(desktop) {}
   }
   &__parameter {
     padding-left: 0;

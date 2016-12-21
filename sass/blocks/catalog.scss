@@ -1,5 +1,5 @@
 .catalog {
-  background-color: #f9f9f9;
+  /*background-color: #f9f9f9;
   padding-top: 55px;
   padding-bottom: 57px;
   @include respond-to(tablet) {
@@ -18,5 +18,8 @@
     @include respond-to(desktop) {
       @include general-title-desktop;
     }
+  }*/
+  &__wrapper {
+    @include container-wrapper;
   }
 }

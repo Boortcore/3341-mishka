@@ -10,11 +10,15 @@
     padding-bottom: 50px
   }
   &__wrapper {
+    @include container-wrapper;
     position: relative;
     display: flex;
     flex-direction: column;
     @include respond-to(desktop) {
       padding-left: 222px;
+    }
+    &--for-map {
+       padding: 0;
     }
   }
   &__title {

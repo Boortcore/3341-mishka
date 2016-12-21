@@ -9,6 +9,9 @@
   @include respond-to(desktop) {
     padding-top: 125px
   }
+  &__wrapper {
+    @include container-wrapper;
+  }
   &__description {
     font-size: 13px;
     margin-bottom: 14px;

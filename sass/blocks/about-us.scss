@@ -12,6 +12,7 @@
         padding-bottom: 10px;
       }
       &__wrapper {
+        @include container-wrapper;
         @include respond-to(desktop) {
           padding-left: 222px;
         }
