@@ -18,7 +18,13 @@
       padding-left: 222px;
     }
     &--for-map {
-       padding: 0;
+      padding: 0;
+      @include respond-to(tablet) {
+        padding: 0;
+      }
+      @include respond-to(desktop) {
+        padding: 0;
+      }
     }
   }
   &__title {
@@ -83,18 +89,16 @@
     justify-content: space-between;
     max-width: 300px;
     padding-bottom: 29px;
-
     @include respond-to(tablet) {
       max-width: 300px;
     }
-
     &--address {
       padding-bottom: 39px;
     }
     &--email {
       @include respond-to(desktop) {
-      padding-bottom: 31px;
-    }
+        padding-bottom: 31px;
+      }
     }
   }
   &__value {
@@ -106,7 +110,7 @@
     &--address {
       padding-right: 30px;
       @include respond-to(tablet) {
-       width: 270px;
+        width: 270px;
         padding-right: 0;
       }
     }
