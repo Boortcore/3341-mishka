@@ -7,17 +7,101 @@
     padding-top: 72px;
   }
   @include respond-to(desktop) {
-    padding-top: 145px
+    padding-top: 125px
+  }
+  &__wrapper {
+    @include container-wrapper;
   }
   &__description {
     font-size: 13px;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
     @include respond-to(tablet) {
       font-size: 17px;
       line-height: 30px;
+      margin-bottom: 19px;
     }
     @include respond-to(desktop) {
       @include desktop-wrapper;
+      margin-left: 3px;
+      margin-top: -2px;
+    }
+  }
+  &__title {
+    position: relative;
+    text-transform: uppercase;
+    font-family: $main-font-bold, Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 13px;
+    color: $style-color;
+    &::after {
+      content: " ";
+      position: absolute;
+      right: 0px;
+      top: 9px;
+      width: 200px;
+      height: 1px;
+      background-color: $style-color;
+      @include respond-to(tablet) {
+        content: none;
+      }
+    }
+    @include respond-to(tablet) {
+      position: absolute;
+      line-height: 16px;
+      font-size: 17px;
+    }
+    @include respond-to(desktop) {
+      @include respond-to(tablet) {
+        left: 57px;
+      }
+    }
+    &--type {
+      @include respond-to(tablet) {
+        left: 51px;
+        top: 55px;
+      }
+    }
+    &--colors {
+      @include respond-to(tablet) {
+        left: 51px;
+        top: 68px;
+      }
+    }
+    &--name {
+      @include respond-to(tablet) {
+        left: 53px;
+        top: 67px;
+      }
+    }
+    &--phone {
+      @include respond-to(tablet) {
+        left: 51px;
+        top: 66px;
+      }
+      @include respond-to(desktop) {
+        left: 53px;
+        top: 69px;
+      }
+    }
+    &--email {
+      @include respond-to(tablet) {
+        left: 51px;
+        top: 142px;
+      }
+      @include respond-to(desktop) {
+        left: 56px;
+        top: 145px;
+      }
+    }
+    &--more-info {
+      padding-top: 3px;
+      @include respond-to(tablet) {
+        left: 53px;
+        top: 67px;
+      }
+    }
+    @include respond-to(desktop) {
+      left: 112px;
     }
   }
   &__item {
@@ -25,11 +109,10 @@
     line-height: 18px;
     padding: 10px 0;
     @include respond-to(tablet) {
-      padding: 60px 0;
+      padding: 50px 0;
       font-size: 19px;
       line-height: 18px;
       padding-left: 186px;
-      position: relative;
     }
     @include respond-to(desktop) {
       @include desktop-wrapper;
@@ -38,153 +121,409 @@
       @include respond-to(tablet) {
         font-size: 17px;
         line-height: 30px;
-        padding-bottom: 17px;
+        padding-bottom: 13px;
         padding-top: 50px;
       }
     }
     &--colors {
       padding-top: 15px;
       @include respond-to(tablet) {
-        padding-top: 43px;
-        padding-bottom: 38px;
+        padding-top: 39px;
+        padding-bottom: 34px;
+      }
+      @include respond-to(desktop) {
+        padding-top: 38px;
+        padding-bottom: 34px;
       }
     }
     &--name {
-      padding-top: 15px;
       @include respond-to(tablet) {
-        padding-bottom: 23px;
-        padding-left: 170px;
+        padding-bottom: 16px;
+        padding-left: 168px;
+        padding-top: 59px;
+      }
+      @include respond-to(desktop) {
+        padding-bottom: 13px;
+        padding-left: 168px;
+        padding-top: 62px;
       }
     }
     &--phone {
       padding-top: 3px;
       @include respond-to(tablet) {
+        padding-top: 5px;
         padding-bottom: 0;
-        padding-left: 170px;
+        padding-left: 168px;
+      }
+      @include respond-to(desktop) {
+        padding-top: 10px;
+        padding-bottom: 0;
+        padding-left: 174px;
       }
     }
     &--email {
-      padding-bottom: 25px;
-      padding-left: 170px;
+      padding-bottom: 15px;
+      @include respond-to(tablet) {
+        padding-left: 168px;
+        padding-top: 20px;
+        padding-bottom: 50px
+      }
+      @include respond-to(desktop) {
+        padding-left: 174px;
+      }
     }
     &--more-info {
-      padding-top: 15px;
+      padding-top: 14px;
       padding-bottom: 10px;
-      padding-left: 170px;
-    }
-  }
-  &__title {
-    text-transform: uppercase;
-    font-family: $main-font-bold;
-    margin-bottom: 10px;
-    @include respond-to(tablet) {
-      position: absolute;
-      line-height: 16px;
-      left: 0px;
-      top: 62px;
-      font-size: 17px;
-    }
-    @include respond-to(desktop) {
-      left: 57px;
+      @include respond-to(tablet) {
+        padding-top: 21px;
+        padding-bottom: 34px;
+        padding-left: 168px;
+      }
+      @include respond-to(desktop) {
+        padding-left: 174px;
+        padding-bottom: 30px;
+      }
+      textarea {
+        padding: 15px;
+        margin-top: 11px;
+        padding-bottom: 12px;
+        border: 2px solid $main-color;
+        height: 140px;
+        @include respond-to(tablet) {
+          padding: 10px;
+          margin-top: 26px;
+          margin-bottom: 27px;
+          height: 140px;
+        }
+        @include respond-to(tablet) {
+          margin-top: 31px;
+          margin-bottom: 20px;
+          height: 140px;
+          padding-left: 17px;
+        }
+        &:hover,
+        &:focus {
+          border: 2px solid $style-color;
+          outline: none;
+        }
+      }
     }
   }
   &__values {
-    font-family: $main-font-bold;
+    font-family: $main-font-bold, Arial, sans-serif;
+    font-weight: bold;
     display: flex;
     flex-direction: column;
     input[type="radio"],
     input[type="checkbox"] {
       display: none;
     }
+    input {
+      width: 100%;
+      background: 0 0;
+      border: none;
+      border-bottom: 2px solid #000;
+      outline: none;
+      padding-bottom: 16px;
+      @include respond-to(tablet) {
+        padding-bottom: 15px;
+        padding-left: 17px;
+      }
+      &:hover,
+      &:focus {
+        border-bottom: 2px solid $style-color;
+      }
+    }
     &--type {
       padding-left: 61px;
-      @include respond-to(tablet) {}
-      label {
-        padding-top: 22px;
-        padding-bottom: 10px;
-        @include respond-to(tablet) {
-          padding-top: 3px;
-          padding-bottom: 45px;
-        }
+      padding-bottom: 2px;
+      @include respond-to(tablet) {
+        padding-bottom: 0;
+      }
+      @include respond-to(desktop) {
+        padding-left: 81px;
       }
     }
     &--colors {
       padding-left: 61px;
-      padding-bottom: 00px;
       @include respond-to(tablet) {
         flex-direction: row;
         flex-wrap: wrap;
+        padding-top: 5px
       }
-      label {
-        padding-top: 25px;
-        padding-bottom: 18px;
-        @include respond-to(tablet) {
-          width: 50%;
-          padding-bottom: 30px;
-        }
-        @include respond-to(desktop) {
-          width: 33.333333%;
-        }
+      @include respond-to(desktop) {
+        padding-left: 81px;
       }
     }
     &--name {
-      padding-top: 12px;
+      padding-top: 10px;
       @include respond-to(tablet) {
-        padding-top: 45px;
+        padding-top: 2px;
+      }
+      @include respond-to(desktop) {
+        padding-left: 9px;
+        padding-top: 0;
       }
     }
     &--phone {
-      padding-top: 8px;
-      padding-bottom: 25px;
+      padding-top: 6px;
+      padding-bottom: 11px;
       @include respond-to(tablet) {
         padding-top: 55px;
       }
+      @include respond-to(desktop) {
+        padding-top: 52px;
+      }
     }
     &--email {
-      padding-top: 8px;
-      padding-bottom: 8px;
-    }
-    &--more-info {
-      textarea {
-        padding: 15px;
-        margin-top: 11px;
-        @include respond-to(tablet) {
-          margin-top: 26px;
-          margin-bottom: 25px;
-        }
-      }
+      padding-top: 6px;
     }
   }
   &__name-block {
-    padding: 5px 0;
+    padding-top: 3px;
+    padding-bottom: 1px;
     @include respond-to(tablet) {
       padding-bottom: 16px;
+      display: flex;
+    }
+    @include respond-to(desktop) {
+      padding-bottom: 19px;
+      display: flex;
+      padding-top: 0;
     }
   }
   &__name-block-label {
     display: inline-block;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
     @include respond-to(tablet) {
-      padding-right: 30px;
+      padding-right: 25px;
+    }
+    @include respond-to(desktop) {
+      padding-top: 2px
     }
   }
   &__name-block-input {
-    margin-bottom: 27px;
+    margin-bottom: 18px;
+    padding-bottom: 17px;
+    @include respond-to(tablet) {
+      width: 100%;
+      display: inline-block;
+      padding-bottom: 12px;
+    }
+    @include respond-to(desktop) {
+      padding-bottom: 15px;
+    }
   }
   &__more-info-text {
     font-size: 13px;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
     margin-top: 0;
     @include respond-to(tablet) {
       font-size: 17px;
       position: absolute;
-      right: 45px;
-      top: 12px
+      right: 50px;
+      top: 13px
     }
-    @include respond-to(tablet) {
-      right: 227px;
-      top: 5px
+    @include respond-to(desktop) {
+      right: 222px;
+      top: 13px
     }
   }
-  &__section {}
+  &__section:nth-child(2n+1) {
+    @include respond-to(tablet) {
+      background-color: $bg-color;
+    }
+  }
+  &__label-type {
+    position: relative;
+    cursor: pointer;
+    padding-top: 22px;
+    padding-bottom: 8px;
+    @include respond-to(tablet) {
+      padding-top: 3px;
+      padding-bottom: 55px;
+      font-size: 19px;
+      line-height: 18px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: -62px;
+      top: 10px;
+      width: 39px;
+      height: 41px;
+      border: 2px solid $main-color;
+      border-radius: 50%;
+      box-sizing: border-box;
+      @include respond-to(tablet) {
+        left: -79px;
+        top: -11px;
+        width: 50px;
+        height: 50px;
+      }
+      @include respond-to(desktop) {
+        left: -78px;
+        top: -12px;
+        width: 50px;
+        height: 50px;
+      }
+    }
+    &:hover {
+      &::before {
+        border: 2px solid $style-color;
+      }
+    }
+    &:active {
+      &::before {
+        border: 2px solid $link-color-active;
+      }
+    }
+  }
+  input:checked + &__label-type::after {
+    background: $color-aqua;
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 23px;
+    width: 16px;
+    height: 17px;
+    border-radius: 50%;
+    @include respond-to(tablet) {
+      left: -65px;
+      top: 3px;
+      width: 22px;
+      height: 22px;
+    }
+    @include respond-to(desktop) {
+      left: -64px;
+      top: 3px;
+      width: 22px;
+      height: 22px;
+    }
+  }
+  &__label-colors {
+    padding-top: 22px;
+    padding-bottom: 21px;
+    position: relative;
+    @include respond-to(tablet) {
+      width: 60%;
+      padding-bottom: 36px;
+      font-size: 19px;
+      line-height: 18px;
+    }
+    &:nth-of-type(even) {
+      @include respond-to(tablet) {
+        width: 30%;
+        margin-left: 9px;
+      }
+    }
+    &:nth-of-type(even) {
+      @include respond-to(desktop) {
+        width: 23.333333%;
+        margin-left: 0;
+      }
+    }
+    @include respond-to(desktop) {
+      width: 23.333333%;
+      margin-right: 117px;
+    }
+    &:nth-child(3n) {
+      @include respond-to(desktop) {
+        width: 13.333333%;
+        margin-right: 0;
+        margin-left: 4px;
+      }
+    }
+
+    &:hover {
+      &::before {
+        border: 2px solid $style-color;
+      }
+    }
+    &:active {
+      &::before {
+        border: 2px solid $link-color-active;
+      }
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: -62px;
+      width: 37px;
+      height: 35px;
+      border: 2px solid $main-color;
+      @include respond-to(tablet) {
+        left: -80px;
+        top: 7px;
+        width: 50px;
+        height: 48px;
+      }
+      @include respond-to(desktop) {
+        left: -80px;
+        top: 7px;
+      }
+    }
+  }
+  input:checked + &__label-colors::after {
+    content: "";
+    position: absolute;
+    left: -53px;
+    width: 22px;
+    height: 17px;
+    background: url(../img/icon-tick.svg) no-repeat 50% 50%;
+    background-size: 22px 17px;
+    @include respond-to(tablet) {
+      left: -69px;
+      top: 25px;
+      width: 33px;
+      height: 22px;
+      background-size: 33px 22px;
+    }
+  }
+  &__icon-phone {
+    position: absolute;
+    right: 38px;
+    top: 37px;
+    width: 25px;
+    height: 25px;
+    fill: $link-color-active;
+    @include respond-to(tablet) {
+      right: 75px;
+      top: 58px;
+    }
+    @include respond-to(desktop) {
+      right: 233px;
+      top: 58px;
+    }
+    input:hover + & {
+      fill: $style-color;
+    }
+    input:focus + & {
+      fill: $style-color;
+    }
+  }
+  &__icon-email {
+    position: absolute;
+    top: 144px;
+    right: 33px;
+    width: 32px;
+    height: 32px;
+    fill: $link-color-active;
+    @include respond-to(tablet) {
+      right: 71px;
+      top: 135px;
+    }
+    @include respond-to(desktop) {
+      right: 230px;
+      top: 138px;
+    }
+    input:hover + & {
+      fill: $style-color;
+    }
+    input:focus + & {
+      fill: $style-color;
+    }
+  }
 }

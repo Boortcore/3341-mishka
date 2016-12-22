@@ -1,41 +1,147 @@
 .footer {
-  font-family: $main-font-bold;
+  font-family: $main-font-bold, Arial, sans-serif;
+  font-weight: bold;
   background-color: $footer-bg;
-  padding-top: 55px;
-  padding-bottom: 45px;
+  @include respond-to(tablet) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   &__wrapper {
+    @include container-wrapper;
     display: flex;
     flex-direction: column;
     justify-content: center;
     @include respond-to(tablet) {
       flex-direction: row;
-      justify-content: space-between
+      justify-content: space-between;
     }
-  }
-  &__title {
-    font-size: 19px;
-    line-height: 18px;
   }
   &__logo {
     display: none;
     @include respond-to(tablet) {
       display: block;
+      padding-top: 20px;
+      padding-right: 95px;
+    }
+  }
+  &__logo-link {
+    svg {
+      width: 102px;
+      height: 34px;
+    }
+    &:hover {
+      svg {
+        fill: $style-color;
+      }
+    }
+    &:active {
+      svg {
+        width: 102px;
+        height: 34px;
+        opacity: .5;
+      }
     }
   }
   &__social-buttons {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    padding-top: 26px;
+    padding-bottom: 20px;
+    padding-left: 32px;
+    padding-right: 43px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-left: 6px;
     @include respond-to(tablet) {
-      width: 147px;
+      width: 295px;
+      border-bottom: none;
+      margin-top: 4px;
+      padding-left: 47px;
+      padding-right: 25px;
+      margin-left: -3px;
+    }
+    @include respond-to(desktop) {
+      padding-right: 35px;
+      width: 270px;
+      padding-left: 58px;
+    }
+  }
+  &__social-btn {
+    svg {
+      &:hover {
+        fill: $style-color;
+      }
+      &:active {
+        opacity: .5;
+      }
+    }
+  }
+  &__social-btn--insta {
+    svg {
+      width: 21px;
+      height: 21px;
+    }
+  }
+  &__social-btn--fb {
+    svg {
+      width: 15px;
+      height: 28px;
+    }
+  }
+  &__social-btn--tw {
+    svg {
+      width: 23px;
+      height: 20px;
     }
   }
   &__creators {
+    padding-left: 35px;
     display: flex;
-    justify-content: space-around;
-
+    justify-content: flex-start;
+    align-items: center;
+    color: $link-color;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    margin-left: 3px;
+    &:hover {
+      svg {
+        fill: $color-turquoise;
+      }
+    }
+    &:active {
+      color: $link-color-active;
+      svg {
+        opacity: .5;
+      }
+    }
     @include respond-to(tablet) {
-      justify-content: space-between;
-      width: 190px;
+      justify-content: space-around;
+    }
+    @include respond-to(desktop) {
+      margin-top: 17px;
+    }
+  }
+  &__title {
+    font-size: 19px;
+    line-height: 18px;
+    display: inline-block;
+    margin: 0;
+    padding-right: 30px;
+    @include respond-to(tablet) {
+      padding-right: 30px;
+    }
+    @include respond-to(desktop) {
+      padding-right: 29px;
+    }
+  }
+  &__logo-htmlacademy {
+    width: 26px;
+    height: 34px;
+    fill: $style-color;
+    margin-top: 5px;
+    @include respond-to(desktop) {
+      margin-right: 2px;
+      margin-top: 2px;
     }
   }
 }

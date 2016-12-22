@@ -1,21 +1,44 @@
 .product-of-week {
-
-  font-family: $main-font-bold;
+  font-family: $main-font-bold, Arial, sans-serif;
+  font-weight: bold;
   font-size: 15px;
-  padding-bottom: 40px;
+  padding-bottom: 42px;
+  background-image: url(../img/bg-zigzag-line.svg);
+  background-repeat: repeat-x;
+  background-position: 1px bottom;
+  background-size: auto 6px;
   @include respond-to(tablet) {
-   padding-top: 28px;
-   padding-bottom: 62px;
+    padding-top: 28px;
+    padding-bottom: 69px;
+    background-position: 0 bottom;
+    background-size: auto 15px;
   }
   @include respond-to(desktop) {
     padding-top: 105px;
-    padding-bottom: 85px;
+    padding-bottom: 97px;
+    background-position: 0 bottom;
+    background-size: auto auto;
   }
   &__wrapper {
     display: flex;
     flex-direction: column;
+    @include container-wrapper;
     @include respond-to(desktop) {
-      padding-left: 225px;
+      padding-left: 222px;
+    }
+  }
+  @mixin container-wrapper() {
+    width: 320px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 30px;
+    @include respond-to(tablet) {
+      width: 768px;
+      padding: 0 50px;
+    }
+    @include respond-to(desktop) {
+      width: 1150px;
+      padding: 0 50px;
     }
   }
   &__title {
@@ -49,11 +72,12 @@
     }
     @include respond-to(desktop) {
       top: 37px;
-      left: 81px;
+      left: 83px;
     }
   }
   &__description {
-    font-family: $main-font-regular;
+    font-family: $main-font-regular, Arial, sans-serif;
+    font-weight: normal;
     color: $main-color;
     line-height: 24px;
     margin-top: 5px;
@@ -66,10 +90,12 @@
     }
     @include respond-to(desktop) {
       margin-bottom: 48px;
+      padding-left: 4px;
     }
     p {
       @include respond-to(tablet) {
         margin: 0;
+        padding-right: 10px;
       }
     }
   }
@@ -89,22 +115,37 @@
       width: 35%;
       font-size: 20px;
       line-height: 24px;
-      margin-bottom: 35px;
+      margin-bottom: 33px;
     }
   }
   &__image {
+    z-index: -1;
     margin-bottom: 18px;
     @include respond-to(tablet) {
       position: absolute;
-      right: 30px;
-      top: 90px;
+      right: 50px;
+      top: 125px;
+      @include respond-to(desktop) {
+        top: -30px;
+      }
+    }
+    img {
+      @include respond-to(tablet) {
+        width: 333px;
+        height: 404px;
+      }
+      @include respond-to(desktop) {
+        width: 525px;
+        height: 636px;
+      }
     }
   }
   &__exposition-items {
     border-collapse: collapse;
     width: 100%;
-    margin-bottom: 28px;
-    font-family: $main-font-regular;
+    margin-bottom: 26px;
+    font-family: $main-font-regular, Arial, sans-serif;
+    font-weight: normal;
     @include respond-to(tablet) {
       font-size: 15px;
       width: 40%;
@@ -114,14 +155,14 @@
       font-size: 15px;
       width: 30%;
       margin-bottom: 108px;
+      margin-left: 4px;
     }
   }
   &__parameter,
   &__value {
     padding: 8px;
     border-bottom: 1px solid #ececec;
-    @include respond-to(desktop) {
-    }
+    @include respond-to(desktop) {}
   }
   &__parameter {
     padding-left: 0;

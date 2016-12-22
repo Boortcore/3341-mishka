@@ -1,47 +1,157 @@
 .top-menu {
+  position: relative;
   text-align: center;
   font-size: 17px;
-  font-family: $main-font-bold;
+  font-family: $main-font-bold, Arial, sans-serif;
+  font-weight: bold;
+  top: -80px;
   z-index: 2;
-  position: relative;
+  @include respond-to(tablet) {
+    top: 0px;
+  }
+  &__link-logo {
+    &:hover {
+      opacity: .7;
+    }
+    &:active {
+      opacity: .4;
+    }
+  }
+  &__toggle {
+    position: absolute;
+    top: 27px;
+    right: 32px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    background: 0 0;
+    border: none;
+    outline: none;
+    z-index: 13;
+    background: url(../img/icon-menu-close.svg) no-repeat 50% 50%;
+    @include respond-to(tablet) {
+      display: none
+    }
+
+  }
+  &--closed &__toggle {
+    background: url(../img/icon-menu-open.svg) no-repeat 50% 50%;
+  }
+  &--closed &__item--toggle {
+    display: none;
+  }
   &__items {
+    position: absolute;
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
-    position: relative;
     @include respond-to(tablet) {
+      position: relative;
       flex-direction: row;
       justify-content: flex-start;
       flex-wrap: wrap;
     }
   }
+  a {
+    display: flex;
+    align-items: center;
+    color: $link-color;
+    width: 100%;
+    justify-content: center;
+    &:hover {
+      color: $link-color-hover;
+      .top-menu__icon {
+        fill: $style-color;
+      }
+    }
+    &:active {
+      color: $link-color-active;
+      .top-menu__icon {
+        opacity: .5;
+      }
+    }
+  }
+  &__image-logo {
+    width: 86px;
+    height: 35px;
+    @include respond-to(tablet) {
+      width: 112px;
+      height: 46px;
+    }
+    @include respond-to(desktop) {
+      width: 148px;
+      height: 43px;
+    }
+  }
+  &__icon {
+    fill: $main-color;
+    position: absolute;
+    left: 12%;
+    top: 50%;
+    @include respond-to(tablet) {
+      transform: translate(-50%, -50%);
+      top: 50%;
+    }
+  }
+  &__icon--search {
+    transform: translateY(-50%);
+    @include respond-to(tablet) {
+      transform: translate(-50%, -50%);
+      left: 50%;
+    }
+    @include respond-to(desktop) {}
+  }
+  &__icon--cart {
+    transform: translateY(-50%);
+  }
   &__item {
-    border-bottom: 1px solid #ececec;
+    position: relative;
     display: flex;
     justify-content: center;
     min-height: 80px;
+    background-color: #fff;
+    border-bottom: 1px solid #ececec;
     @include respond-to(tablet) {
       justify-content: center;
       min-height: 90px;
+      border-bottom: none;
+    }
+    @include respond-to(desktop) {
+      //padding-top: 3px;
     }
     &:first-child {
       border-top: 1px solid #ececec;
     }
-    a {
-      display: flex;
-      align-items: center;
-      color: #000;
-      width: 100%;
-      justify-content: center;
-    }
     &--logo {
+      justify-content: center;
+      align-items: center;
+      padding-top: 4px;
       @include respond-to(tablet) {
         width: 48%;
+        justify-content: flex-start;
+        padding-top: 10px;
+      }
+      @include respond-to(desktop) {
+        padding-top: 9px;
+        width: 23.8%;
       }
       a {
         @include respond-to(tablet) {
           justify-content: flex-start;
+        }
+      }
+      img {
+        @include respond-to(tablet) {
+          width: 112px;
+          height: 46px;
+        }
+        @include respond-to(desktop) {
+          width: 148px;
+          height: 73px;
         }
       }
     }
@@ -55,39 +165,73 @@
         }
       }
     }
+    &--closed {
+      display: none;
+    }
     &--catalog {
       @include respond-to(tablet) {
         font-size: 15px;
         order: 1;
-        border-bottom: none;
+        background-color: transparent;
+      }
+      @include respond-to(desktop) {
+        order: -2;
+        font-size: 17px;
+        border-right: 1px solid #ececec;
       }
       a {
         @include respond-to(tablet) {
-          margin-right: 35px;
+          margin-right: 37px;
+          padding-top: 18px;
+          display: block;
+        }
+        @include respond-to(desktop) {
+          padding-top: 0;
+          display: flex;
         }
       }
     }
     &--knitting {
       @include respond-to(tablet) {
+        background-color: transparent;
         font-size: 15px;
         order: 1;
-        border-bottom: none;
+      }
+      @include respond-to(desktop) {
+        order: -2;
+        font-size: 17px;
       }
       a {
-        @include respond-to(tablet) {}
+        @include respond-to(tablet) {
+          padding-top: 18px;
+          display: block;
+        }
+        @include respond-to(desktop) {
+          padding-top: 0;
+          display: flex;
+          margin-left: 33px;
+          margin-right: 77px;
+        }
       }
     }
     &--search {
       @include respond-to(tablet) {
-        width: 11%;
+        font-size: 0;
+        width: 13%;
         border-left: 1px solid #ececec;
         border-right: 1px solid #ececec;
         justify-content: center;
       }
+      @include respond-to(desktop) {
+        width: 8%;
+      }
     }
     &--card {
       @include respond-to(tablet) {
-        width: 41%;
+        width: 37%;
+      }
+      @include respond-to(desktop) {
+        width: 25%;
       }
       a {
         @include respond-to(tablet) {
@@ -96,9 +240,42 @@
       }
     }
     &--new,
-    &--sale,
-    &--delivery {
+    &--sale {
+      background-color: transparent;
       display: none;
+      font-size: 15px;
+      @include respond-to(desktop) {
+        display: flex;
+      }
+      a {
+        padding-top: 18px;
+        display: block;
+        align-items: top;
+      }
+    }
+    &--sale {
+      margin-left: 61px;
+    }
+    &--delivery {
+      background-color: transparent;
+      display: none;
+      @include respond-to(tablet) {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 15px;
+        order: 3;
+        flex-basis: 53%;
+      }
+      @include respond-to(desktop) {
+        flex-basis: 70%;
+      }
+      span {
+        padding-top: 18px;
+        display: block;
+        font-family: $main-font-regular, Arial, sans-serif;
+        font-weight: normal;
+        align-items: center;
+      }
     }
   }
 }

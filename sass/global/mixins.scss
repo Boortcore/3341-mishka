@@ -1,6 +1,6 @@
 @mixin desktop-wrapper() {
-  padding-left: 170px;
-  padding-right: 170px;
+  padding-left: 173px;
+  padding-right: 175px;
 }
 
 @mixin general-title() {
@@ -26,21 +26,48 @@
 }
 
 @mixin respond-to($media) {
-
-  @if $media == tablet {
-    @media screen and (min-width: $tablet-width) { @content }
-  };
-
-  @if $media == desktop {
-    @media screen and (min-width: $desktop-width) { @content; }
+  @if $media==tablet {
+    @media screen and (min-width: $tablet-width) {
+      @content
+    }
+  }
+  ;
+  @if $media==desktop {
+    @media screen and (min-width: $desktop-width) {
+      @content;
+    }
   }
 }
 
+@mixin make-box-shadow() {
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+}
 
-@mixin clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
+@mixin retina() {
+  @media (min-resolution: 144dpi) {
+    @content
+  }
+  @media (min-resolution: 1.5dppx) {
+    @content
+  }
+}
+
+@mixin container-wrapper() {
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 30px;
+  @include respond-to(tablet) {
+    width: 768px;
+    padding: 0 50px;
+  }
+  @include respond-to(desktop) {
+    width: 1150px;
+    padding: 0 50px;
   }
 }

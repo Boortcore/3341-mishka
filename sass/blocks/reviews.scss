@@ -1,22 +1,38 @@
 .reviews {
-
-  padding-bottom: 37px;
+  padding-bottom: 41px;
   padding-top: 17px;
+  background-image: url(../img/bg-zigzag-line.svg);
+  background-repeat: repeat-x;
+  background-position: 0 bottom;
+  background-size: auto 6px;
   @include respond-to(tablet) {
-    padding-bottom: 127px;
-    padding-top: 77px;
+    background-size: auto 15px;
+    padding-top: 16px;
   }
   @include respond-to(desktop) {
-    padding-top: 64px;
-    padding-bottom: 175px;
+    padding-top: 18px;
+    background-position: 0 bottom;
+    background-size: auto auto;
   }
   &__wrapper {
-     @include respond-to(desktop) {
-      padding-left: 225px;
+    @include container-wrapper;
+    @include respond-to(tablet) {
+      background: url(../../img/review@1x.jpg) no-repeat;
+      padding-bottom: 94px;
+      padding-top: 79px;
+      @include retina() {
+        background: url(../../img/review@2x.jpg) no-repeat;
+      }
+    }
+    @include respond-to(desktop) {
+      padding-top: 62px;
+      padding-bottom: 147px;
+      padding-left: 222px;
+      background-position: 6% 0;
     }
   }
   &__title {
-    margin-bottom: 23px;
+    margin-bottom: 24px;
     @include general-title;
     @include respond-to(tablet) {
       @include general-title-tablet;
@@ -30,22 +46,26 @@
     color: $main-color;
     line-height: 30px;
     font-size: 15px;
-    margin-bottom: 22px;
+    margin-bottom: 23px;
     @include respond-to(tablet) {
       font-size: 17px;
       margin-bottom: 53px;
     }
     @include respond-to(desktop) {
       font-size: 17px;
-      margin-bottom: 36px;
+      margin-bottom: 35px;
+      padding-left: 4px
     }
   }
   &__name {
-    //margin-bottom: 27px;
-    font-family: $main-font-bold;
+    font-family: $main-font-bold, Arial, sans-serif;
+    font-weight: bold;
     font-size: 17px;
     line-height: 33px;
     font-style: normal;
+    @include respond-to(desktop) {
+      padding-left: 4px
+    }
   }
   &__address {
     color: $main-color;
@@ -53,13 +73,56 @@
     @include respond-to(tablet) {
       display: block;
     }
+    @include respond-to(desktop) {
+      padding-left: 4px
+    }
   }
   &__buttons {
+    display: inline-block;
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+    padding-bottom: 7px;
     @include respond-to(tablet) {
       position: absolute;
-      right: 50px;
-      bottom: 10px;
-      display: inline-block;
+      right: 49px;
+      bottom: 88px;
+    }
+    @include respond-to(desktop) {
+      bottom: 140px;
+    }
+  }
+  &__btn {
+    padding: 12px 41px 12px 37px;
+    font-size: 0;
+    line-height: 0;
+    border: 1px solid #ececec;
+    @include respond-to(tablet) {
+      border: none;
+      padding: 12px 19px 12px 19px;
+    }
+    svg {
+      height: 26px;
+      width: 50px;
+    }
+    &:hover {
+      svg {
+        fill: $link-color-hover;
+      }
+    }
+    &:active {
+      svg {
+        fill: $link-color-active;
+      }
+    }
+  }
+  p {
+    @include respond-to(tablet) {
+      padding-right:  20px;
+    }
+    @include respond-to(desktop) {
+      padding-right:  80px;
     }
   }
 }

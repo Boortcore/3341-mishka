@@ -1,16 +1,29 @@
 .button {
-  font-family: $main-font-bold;
+  font-family: $main-font-bold, Arial, sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   display: inline-block;
-  line-height: 17px;
+  line-height: 16px;
+  font-size: 17px;
   color: $main-color;
   text-align: center;
   border: 2px solid $main-color;
   padding: 15px;
+  padding-top: 17px;
   background: #fff;
   width: 100%;
   box-sizing: border-box;
+  &:hover {
+    background: #444444;
+    color: #fff;
+  }
+  &:active {
+    color: #8f8f8f;
+  }
   @include respond-to(tablet) {
+    max-width: 293px;
+  }
+  @include respond-to(desktop) {
     max-width: 293px;
   }
   &--reviews {
@@ -18,27 +31,39 @@
     margin-bottom: 12px;
     @include respond-to(tablet) {
       position: absolute;
-      top: -29px;
+      top: 50px;
       right: 47px;
-      width: 175px
+      width: 177px
     }
     @include respond-to(desktop) {
       position: absolute;
-      top: -20px;
+      right: 46px;
+      top: 41px;
     }
   }
   &--write-us {
-    margin-top: 30px;
+    margin-top: 28px;
     margin-bottom: 40px;
     display: block;
     @include respond-to(tablet) {
-      margin: 0 auto 57px auto;
+      margin: 0 auto 55px auto;
       display: block;
       width: 230px
+
     }
     @include respond-to(desktop) {
-      margin-left: 0;
-      width: 230px
+      margin-left: 4px;
+      width: 230px;
+      margin-top: -12px;
+    }
+  }
+  &--of-week {
+    @include respond-to(tablet) {
+      margin-left: -2px;
+    }
+    @include respond-to(desktop) {
+      margin-left: 4px;
+      padding-left: 22px;
     }
   }
   &--production {
@@ -48,13 +73,34 @@
       max-width: 100%;
     }
   }
-
   &--submit {
+    &:active {
+      outline: none;
+    }
     @include respond-to(tablet) {
       width: 230px;
     }
     @include respond-to(desktop) {
-      margin-left: 170px;
+      margin-left: 174px;
+    }
+  }
+  &--modal {
+    min-width: 100%;
+    border-color: $color-aqua;
+    background: $color-aqua;
+    color: #fff;
+    outline: none;
+    &:hover {
+      border-color: $color-aqua;
+      background: $color-aqua;
+      color: #fff;
+      outline: none;
+    }
+    &:active {
+      border-color: $color-aqua;
+      background: $color-aqua;
+      color: #fff;
+      outline: none;
     }
   }
 }

@@ -1,0 +1,73 @@
+.modal {
+  text-align: center;
+  width: 320px;
+  padding: 30px;
+  border-top: 1px solid $link-color-active;
+  border-bottom: 1px solid $link-color-active;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 15;
+  @include respond-to(tablet) {
+      padding-bottom: 50px;
+    }
+  &--hidden {
+    display: none;
+  }
+  @include respond-to(tablet) {
+    width: 566px;
+    padding-left: 110px;
+    padding-right: 110px;
+    border: 2px solid $link-color-active;
+    border-radius: 2px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  }
+  &__input {
+    display: none;
+  }
+  &__header {
+    margin: 0;
+    padding-bottom: 22px;
+    font-family: $main-font-bold;
+    font-size: 25px;
+    line-height: 30px;
+    @include respond-to(tablet) {
+       padding-bottom:15px;
+      font-size: 30px;
+      line-height: 57px;
+    }
+  }
+  span {
+    font-size: 15px;
+    line-height: 30px;
+    @include respond-to(tablet) {
+      font-size: 17px;
+      line-height: 30px;
+    }
+  }
+  &__sizes {
+    display: flex;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    justify-content: space-between;
+    font-family: $main-font-bold, Arial, sans-serif;
+    font-weight: bold;
+  }
+  label {
+    display: flex;
+    height: 52px;
+
+    border: 2px solid $link-color-active;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      border: 2px solid $link-color-hover;
+    }
+  }
+  &__input:checked + label {
+    border: 2px solid $color-aqua;
+  }
+}

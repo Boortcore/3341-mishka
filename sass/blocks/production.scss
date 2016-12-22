@@ -4,15 +4,20 @@
   flex-direction: column;
   border: 1px solid #ededed;
   border-radius: 4px;
+
+  margin-bottom: 57px;
+  @include make-box-shadow;
   @include respond-to(tablet) {
     margin-bottom: 63px;
   }
   @include respond-to(desktop) {
     flex-direction: row;
-    margin-bottom: 97px;
+    margin-bottom: 103px;
   }
   &__title {
-    font-family: $main-font-bold;
+    position: relative;
+    font-family: $main-font-bold, Arial, sans-serif;
+    font-weight: bold;
     font-size: 17px;
     width: 65%;
     margin-left: 35%;
@@ -22,18 +27,38 @@
       margin-left: 105px;
       font-size: 20px;
       line-height: 24px;
-      padding-bottom: 2px;
+      padding-bottom: 4px;
+      margin-top: 19px
     }
     @include respond-to(desktop) {
       font-size: 20px;
       position: absolute;
-      top: 71px;
-      right: 85px;
+      top: 63px;
+      right: 87px;
       width: 200px;
+    }
+    &:before {
+      content: url('data:image/svg+xml;utf8,<svg fill="#62d1ba" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve"><g transform="translate(0 192)"><path d="M26-177l6-4v16l-6-4V-177z M24-177v8c0,2.209-1.791,4-4,4H4c-2.209,0-4-1.791-4-4v-8c0-2.209,1.791-4,4-4h10 c0-1.105,0.895-2,2-2v-2H5c-0.553,0-1-0.447-1-1s0.447-1,1-1h12c0.553,0,1,0.447,1,1v3c1.105,0,2,0.895,2,2 C22.209-181,24-179.209,24-177z M12-177H4v8h8V-177z M20-176c0-0.553-0.447-1-1-1h-4c-0.553,0-1,0.447-1,1s0.447,1,1,1h4 C19.553-175,20-175.447,20-176z"/></g></svg>');
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      left: -59px;
+      top: 17px;
+      @include respond-to(tablet) {
+        top: 5px;
+        left: -64px;
+      }
+      @include respond-to(desktop) {
+        top: -43px;
+        left: 2px;
+      }
     }
   }
   &__video {
+    position: relative;
     margin-bottom: 8px;
+    font-size: 0;
+    line-height: 0;
     img {
       width: 100%;
       @include respond-to(tablet) {
@@ -41,6 +66,8 @@
       }
       @include respond-to(desktop) {
         min-width: 680px;
+        margin-bottom: 0;
+        height: 100%;
       }
     }
     @include respond-to(tablet) {
@@ -48,6 +75,24 @@
     }
     @include respond-to(desktop) {
       margin-bottom: 0;
+    }
+  }
+  &__play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    svg {
+      width: 101px;
+      height: 77px;
+      transition: transform .3s ease, opacity .3s ease;
+    }
+    &:hover svg {
+      transform: scale(1.2);
+    }
+    &:active svg {
+      transform: scale(.8);
+      opacity: .6
     }
   }
   &__production-wrapper {
@@ -65,7 +110,7 @@
   &__description {
     color: $main-color;
     font-size: 13px;
-    padding-bottom: 35px;
+    padding-bottom: 33px;
     @include respond-to(tablet) {
       font-size: 15px;
       line-height: 30px;
@@ -74,15 +119,16 @@
       padding-top: 160px;
       padding-left: 40px;
       padding-right: 15px;
-
     }
     p {
-      margin-bottom: 27px;
+      margin-top: 20px;
+      margin-bottom: 25px;
       @include respond-to(tablet) {
+         margin-top:15px;
         margin-bottom: 36px;
       }
       @include respond-to(desktop) {
-        margin-bottom: 47px;
+        margin-bottom: 45px;
       }
     }
   }
