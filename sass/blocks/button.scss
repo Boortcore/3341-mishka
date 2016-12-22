@@ -85,7 +85,7 @@
     }
   }
   &--modal {
-    max-width: 100%;
+    min-width: 100%;
     border-color: $color-aqua;
     background: $color-aqua;
     color: #fff;
