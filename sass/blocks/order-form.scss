@@ -295,6 +295,7 @@
   }
   &__name-block-label {
     display: inline-block;
+    vertical-align: baseline;
     margin-bottom: 14px;
     @include respond-to(tablet) {
       padding-right: 25px;
@@ -309,6 +310,7 @@
     @include respond-to(tablet) {
       width: 100%;
       display: inline-block;
+      vertical-align: baseline;
       padding-bottom: 12px;
     }
     @include respond-to(desktop) {

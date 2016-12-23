@@ -21,7 +21,7 @@ gulp.task("style", function () {
       autoprefixer({
         browsers: [
         "last 2 versions"
-      ]
+        ]
       })
     ]))
   .pipe(rename("style.min.css"))
@@ -59,7 +59,7 @@ gulp.task("mystyle", function () {
         sort: true
       })
      ]))
-    .pipe(csso())
+    //.pipe(csso())
     .pipe(rename("style.min.css"))
   .pipe(gulp.dest("build/css"))
 });
