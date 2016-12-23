@@ -81,8 +81,6 @@
     display: flex;
     align-self: flex-start;
     justify-content: center;
-    display: inline-block;
-    vertical-align: baseline;
     padding-top: 35px;
     padding-bottom: 7px;
     @include respond-to(tablet) {
@@ -95,6 +93,7 @@
     }
   }
   &__btn {
+    display: inline-block;
     padding: 12px 41px 12px 37px;
     font-size: 0;
     line-height: 0;
