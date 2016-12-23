@@ -20,7 +20,7 @@
           z-index: 2;
           content: '';
           position: absolute;
-          background-image: url(../img/bg-zigzag-fill.svg);
+          background-image: url('../img/bg-zigzag-fill.svg');
           background-position: -5px top;
           background-size: auto 23px;
           width: 100%;
@@ -114,6 +114,7 @@
         span {
           display: inline-block;
           width: 50px;
+          vertical-align: baseline;
         }
         svg {
           position: absolute;

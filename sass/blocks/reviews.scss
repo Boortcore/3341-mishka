@@ -1,7 +1,7 @@
 .reviews {
   padding-bottom: 41px;
   padding-top: 17px;
-  background-image: url(../img/bg-zigzag-line.svg);
+  background-image: url('../img/bg-zigzag-line.svg');
   background-repeat: repeat-x;
   background-position: 0 bottom;
   background-size: auto 6px;
@@ -17,11 +17,11 @@
   &__wrapper {
     @include container-wrapper;
     @include respond-to(tablet) {
-      background: url(../../img/review@1x.jpg) no-repeat;
+      background: url('../../img/review@1x.jpg') no-repeat;
       padding-bottom: 94px;
       padding-top: 79px;
       @include retina() {
-        background: url(../../img/review@2x.jpg) no-repeat;
+        background: url('../../img/review@2x.jpg') no-repeat;
       }
     }
     @include respond-to(desktop) {
@@ -78,10 +78,11 @@
     }
   }
   &__buttons {
-    display: inline-block;
-    align-self: flex-start;
     display: flex;
+    align-self: flex-start;
     justify-content: center;
+    display: inline-block;
+    vertical-align: baseline;
     padding-top: 35px;
     padding-bottom: 7px;
     @include respond-to(tablet) {
@@ -119,10 +120,10 @@
   }
   p {
     @include respond-to(tablet) {
-      padding-right:  20px;
+      padding-right: 20px;
     }
     @include respond-to(desktop) {
-      padding-right:  80px;
+      padding-right: 80px;
     }
   }
 }

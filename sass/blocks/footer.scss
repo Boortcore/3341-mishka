@@ -125,6 +125,7 @@
     font-size: 19px;
     line-height: 18px;
     display: inline-block;
+    vertical-align: baseline;
     margin: 0;
     padding-right: 30px;
     @include respond-to(tablet) {

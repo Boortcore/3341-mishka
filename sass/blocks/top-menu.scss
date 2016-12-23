@@ -30,14 +30,14 @@
     border: none;
     outline: none;
     z-index: 13;
-    background: url(../img/icon-menu-close.svg) no-repeat 50% 50%;
+    background: url('../img/icon-menu-close.svg') no-repeat 50% 50%;
     @include respond-to(tablet) {
       display: none
     }
 
   }
   &--closed &__toggle {
-    background: url(../img/icon-menu-open.svg) no-repeat 50% 50%;
+    background: url('../img/icon-menu-open.svg') no-repeat 50% 50%;
   }
   &--closed &__item--toggle {
     display: none;
@@ -119,12 +119,6 @@
       justify-content: center;
       min-height: 90px;
       border-bottom: none;
-    }
-    @include respond-to(desktop) {
-      //padding-top: 3px;
-    }
-    &:first-child {
-      border-top: 1px solid #ececec;
     }
     &--logo {
       justify-content: center;

@@ -33,8 +33,8 @@
     font-weight: bold;
     margin-bottom: 13px;
     color: $style-color;
-    &::after {
-      content: " ";
+    &:after {
+      content: '';
       position: absolute;
       right: 0px;
       top: 9px;
@@ -215,8 +215,8 @@
     font-weight: bold;
     display: flex;
     flex-direction: column;
-    input[type="radio"],
-    input[type="checkbox"] {
+    input[type='radio'],
+    input[type='checkbox'] {
       display: none;
     }
     input {
@@ -346,8 +346,8 @@
       font-size: 19px;
       line-height: 18px;
     }
-    &::before {
-      content: "";
+    &:before {
+      content: '';
       position: absolute;
       left: -62px;
       top: 10px;
@@ -370,19 +370,19 @@
       }
     }
     &:hover {
-      &::before {
+      &:before {
         border: 2px solid $style-color;
       }
     }
     &:active {
-      &::before {
+      &:before {
         border: 2px solid $link-color-active;
       }
     }
   }
-  input:checked + &__label-type::after {
+  input:checked + &__label-type:after {
     background: $color-aqua;
-    content: "";
+    content: '';
     position: absolute;
     left: -50px;
     top: 23px;
@@ -437,17 +437,17 @@
     }
 
     &:hover {
-      &::before {
+      &:before {
         border: 2px solid $style-color;
       }
     }
     &:active {
-      &::before {
+      &:before {
         border: 2px solid $link-color-active;
       }
     }
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       top: 10px;
       left: -62px;
@@ -466,13 +466,13 @@
       }
     }
   }
-  input:checked + &__label-colors::after {
+  input:checked + &__label-colors:after {
     content: "";
     position: absolute;
     left: -53px;
     width: 22px;
     height: 17px;
-    background: url(../img/icon-tick.svg) no-repeat 50% 50%;
+    background: url('../img/icon-tick.svg') no-repeat 50% 50%;
     background-size: 22px 17px;
     @include respond-to(tablet) {
       left: -69px;
