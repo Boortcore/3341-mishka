@@ -17,11 +17,11 @@
   &__wrapper {
     @include container-wrapper;
     @include respond-to(tablet) {
-      background: url('../../img/review@1x.jpg') no-repeat;
+      background: url('../img/review@1x.jpg') no-repeat;
       padding-bottom: 94px;
       padding-top: 79px;
       @include retina() {
-        background: url('../../img/review@2x.jpg') no-repeat;
+        background: url('../img/review@2x.jpg') no-repeat;
         background-size: 350px auto;
       }
     }
