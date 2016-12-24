@@ -22,6 +22,7 @@
       padding-top: 79px;
       @include retina() {
         background: url('../../img/review@2x.jpg') no-repeat;
+        background-size: 350px auto;
       }
     }
     @include respond-to(desktop) {
