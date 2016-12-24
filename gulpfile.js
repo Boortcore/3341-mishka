@@ -54,11 +54,6 @@ gulp.task("mystyle", function () {
         ]
       })
     ]))
-    /*.pipe(postcss([
-      mqpacker({
-        sort: true
-      })
-     ]))*/
     .pipe(csso())
     .pipe(rename("style.min.css"))
   .pipe(gulp.dest("build/css"))
